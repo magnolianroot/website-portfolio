@@ -1,0 +1,274 @@
+10
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+  
+
+</style>
+
+
+body, html{
+  height: 100%;
+
+
+
+}
+
+body {
+  background-color: #06061c;
+  margin:auto;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+
+
+}
+
+
+* { 
+  font-family: 'Source Code Pro', monospace;
+  scroll-behavior: smooth;
+  initial-letter: 2;
+  box-sizing: border-box;
+  font-size:large;
+  justify-content: space-between; 
+ 
+
+}
+
+
+
+
+/*make div containters somehow translucent bg*/
+.container-md {
+
+  position:sticky;
+
+      background-color: rgba(255, 0, 0, 0.5); /* Adjust the RGBA values for the desired color and transparency */
+      backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+      border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    }
+
+
+
+/* .navbar {
+background: linear-gradient(rgba);
+
+}
+
+
+/*footer-link-success */
+.footer-nav {
+  color: #8989b1;
+  position:fixed;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  text-shadow:#f5c6cb;
+  text-align:center;
+  display:inline-flex;
+  align-items:end;
+
+}
+
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 300px;
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*make blurry effect */
+.navbar  {
+  margin: 20px 5px;
+  padding: 3px;
+  height: 70px;
+  width:100%;
+  text-transform: uppercase;
+  color: #8989b191;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+
+  
+}
+
+.navbar:hover {
+  color: #06061c;
+
+
+}
+
+
+.nav-link {
+  
+  text-decoration: none;
+  color: #9696d3d7;
+  justify-content:right;
+  
+}
+
+.nav-link:hover {
+color: #06061c;
+}
+
+
+/*back to top button hidden*/
+#topFunction {
+  position:fixed;
+  bottom: 36px;
+  right: 30px;
+  inline-size: 90px;
+  z-index: 1000;
+  cursor:pointer;
+  background: none;
+  
+
+}
+
+
+
+
+
+.container {
+display: flex;
+justify-content:space-between;
+gap: ;
+border: #8989b1;
+background-color: #06061c;
+
+
+
+}
+
+.div, .flex-item {
+  align-items: center;
+  align-content: center;
+  color: #8989b1;
+  margin: 0px 30px 0px 50px;
+  padding: 100px 30px 20px 10px;
+  padding: 10px 10px 30px 30px;
+  width:max-content;
+  height:max-content;
+  margin: 0px; 
+  display: inline-block;
+  width:   ;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+  
+}
+
+
+
+.modal-header {
+  padding: 1px 2px;
+  position:absolute;
+  top: 100px;
+
+  border: 2px solid #8989b12a;
+  color: #8989b1;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 50px 30px 30px 50px;
+  
+ 
+
+}
+
+.modal-header:hover {
+  color:rgba(182, 238, 200, 0.877);
+border: 4px solid #8989b1;}
+
+
+
+.flex-container:hover {
+  color:rgba(182, 238, 200, 0.877);
+  border: 2px solid #8989b1;
+
+  
+
+.mx-auto {
+width: auto;
+}
+
+
+/*dismissable alert */
+.movable-alert:hover {
+  
+
+}
+
+
+
+.underline-hover:hover {
+  transition: text-decoration 0.5s;
+  text-decoration: underline;
+  
+  
+}
+
+}
+
+
+
+/*/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.2px);
+-webkit-backdrop-filter: blur(7.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+/*updated source code pro font*/
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+</style>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Source+Code+Pro:wght@200;300;400&display=swap');
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/> 
+</style>
+/* ?font-family: 'Inter', sans-serif;
+font-family: 'Source Code Pro', monospace;CSS rule to specify families*/ 
