@@ -1,8 +1,8 @@
-10
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
-  
+ 
 
 </style>
 
@@ -237,18 +237,13 @@ width: auto;
 
 }
 
-
-
-/*/* From https://css.glass */
-background: rgba(255, 255, 255, 0.5);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.2px);
--webkit-backdrop-filter: blur(7.2px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  
 
 
 /*updated source code pro font*/
+
+@import 'sass.css';
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
 </style>
