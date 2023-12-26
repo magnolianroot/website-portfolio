@@ -55,12 +55,21 @@ crossorigin="anonymous"></script>
 <body class="d-flex container-fluid ">
 
 
+<!--popper button and tooltip div-->
+<button id="button" aria-describedby="tooltip">My button</button>
+<div id="tooltip" role="tooltip">My tooltip</div>
+
+
+
+
+
+
 <nav class="navbar navbar-expand-sm sticky-top fixed-bottom ">
   <a class=" navbar navbar-brand container-sm" href="#">Victoria Joseph</a>
   <button class="navbar-toggler icon" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"><div id="button" aria-describedby="tooltip">navbar<div id="arrow" data-popper-arrow></div></div></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" >
     <ul class="navbar-nav">
       <li class="nav-item active">
       <li class="nav-item">
@@ -104,17 +113,17 @@ crossorigin="anonymous"></script>
 
 
 
-<div>
+<div>  <!--check 4 broken links-->
   <footer class="footer-nav container-fluid">
 <ul>
-<p>Business and collaborative inquiries? Connect with me: josephv1791@gmail.com</p>
+<p class="FooterLinks">Business and collaborative inquiries? Connect with me: josephv1791@gmail.com</p>
      <li class="footerLink"><a href="https://www.linkedin.com/in/victoria-joseph-2690331a8/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" href="Victoria Joseph LinkedIn"></i></a></li>
      <li class="footerLink"><a href="https://github.com/magnolianroot" target="_blank"><i class="fa-brands fa-github-alt fa-2x" href="Victoria Josephs GitHub" ></i></a></li>
      <li class="footerLink"><a href="https://patreon.com/vikdelmant" target="_blank"><i class="fa-brands fa-patreon fa-2x" href="Victoria Josephs Patreon"></i></a></li>
      <li class="footerLink"><a href="https://x.com/magnolianroot" target="_blank"><i class="fa-brands fa-x-twitter fa-2x" href="Victoria Josephs X"></i></a></li>
-   <!--fix--> <li class="footerLink"><a href="https://" target="_blank"><i class="fa-brands fa-blogger fa-2x" href="Victoria Josephs Blog"></i></a></li>
-   <!--fix--> <li class="footerLink"><a href="https://instagram.com/magnolianroot" target="_blank"><i class="fa-brands fa-instagram fa-2x" href="Victoria Joseph Instagram"></i></a></li>
-    <!--fix--><li class="footerLink"><a href="https://youtube.com/magnolianroot" target="_blank"><i class="fa-brands fa-youtube fa-2x" href="Victoria Josephs YouTube"></i></a></li>
+     <li class="footerLink"><a href="https://" target="_blank"><i class="fa-brands fa-blogger fa-2x" href="Victoria Josephs Blog"></i></a></li>
+     <li class="footerLink"><a href="https://instagram.com/magnolianroot" target="_blank"><i class="fa-brands fa-instagram fa-2x" href="Victoria Joseph Instagram"></i></a></li>
+     <li class="footerLink"><a href="https://youtube.com/magnolianroot" target="_blank"><i class="fa-brands fa-youtube fa-2x" href="Victoria Josephs YouTube"></i></a></li>
     
     </ul>   
 </footer>
@@ -122,13 +131,10 @@ crossorigin="anonymous"></script>
 
 </main>
 
-$(document).ready(function() {
-  
-});
-
 <!--site js file--><script src="sitebetascripts.js"></script>
-<!--bootstrap--> js <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+<!--bootstrap... js?--> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!---popper--> <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<!--popper tutorial idk--><script src="https://unpkg.com/@popperjs/core@2"></script>
 </body>
 
 
@@ -137,7 +143,7 @@ $(document).ready(function() {
 
 
 
-NOTES -
+<!--NOTES - -->
 <!--insert favicon file into doc-->
 <!--create pic/gif for cursor on hvoer,
 implement chatgpt api tts and ...-->
