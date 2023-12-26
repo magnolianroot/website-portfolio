@@ -39,6 +39,34 @@ body {
 
 }
 
+/*popper*/
+#tooltip {
+  background-color: #333;
+  color: #FEF9E7;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  
+}
+
+#arrow, #arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+  
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+
 
 
 
@@ -68,26 +96,21 @@ background: linear-gradient(rgba);
   height: 90px;
   width: 100%;
   text-shadow:#f5c6cb;
-  text-align:center;
+  text-align: left;
+  list-style: none;
   display:inline-flex;
-  align-items:end;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+  height: 40px;
+  list-style: none;
 
 }
 
-
-.carousel-inner {
-  overflow: visible;
-}
-
-.carousel-item {
+.footerLink {
+  list-style: none;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 500px;
-  width: 300px;
-  
-
-
 }
 
 
@@ -111,19 +134,14 @@ background: linear-gradient(rgba);
   color: #8989b191;
   grid-area: span;
   background:linear-gradient(blur);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(8px);
 
   
 }
 
-.navbar:hover {
-  color: #06061c;
 
 
-}
-
-
-.nav-link {
+.nav-item {
   
   text-decoration: none;
   color: #9696d3d7;
@@ -131,17 +149,14 @@ background: linear-gradient(rgba);
   
 }
 
-.nav-link:hover {
-color: #06061c;
-}
 
 
 /*back to top button hidden*/
-#topFunction {
+#topBtn {
   position:fixed;
   bottom: 36px;
   right: 30px;
-  inline-size: 90px;
+  inline-size: 60px;
   z-index: 1000;
   cursor:pointer;
   background: none;
@@ -154,10 +169,10 @@ color: #06061c;
 
 
 .container {
+  margin: 400px;
+  padding: ;
 display: flex;
 justify-content:space-between;
-gap: ;
-border: #8989b1;
 background-color: #06061c;
 
 
@@ -175,7 +190,6 @@ background-color: #06061c;
   height:max-content;
   margin: 0px; 
   display: inline-block;
-  width:   ;
   flex-flow: row wrap;
   justify-content: space-evenly;
   
@@ -183,29 +197,6 @@ background-color: #06061c;
 }
 
 
-
-.modal-header {
-  padding: 1px 2px;
-  position:absolute;
-  top: 100px;
-
-  border: 2px solid #8989b12a;
-  color: #8989b1;
-  font-weight: bold;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  text-align: center;
-  padding: 0px;
-  margin: 50px 30px 30px 50px;
-  
- 
-
-}
-
-.modal-header:hover {
-  color:rgba(182, 238, 200, 0.877);
-border: 4px solid #8989b1;}
 
 
 
