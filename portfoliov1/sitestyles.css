@@ -40,13 +40,13 @@ body {
 }
 
 /*popper*/
-#tooltip {
+#tooltip[data-show] {
   background-color: #333;
   color: #FEF9E7;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 13px;
-  
+  display: block, none;
 }
 
 #arrow, #arrow::before {
@@ -65,8 +65,6 @@ body {
   content: '';
   transform: rotate(45deg);
 }
-
-
 
 
 
@@ -112,11 +110,6 @@ background: linear-gradient(rgba);
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
 
 
 
