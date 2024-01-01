@@ -34,6 +34,7 @@ const popperInstance = Popper.createPopper(button, tooltip, {
   ],
 });
                         
+//   import { createPopper } from '@popperjs/core';
 
 function show() {
   tooltip.setAttribute('data-show', '');
@@ -148,4 +149,15 @@ function nextSlide() {
 window.addEventListener('scroll', function() {
   document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
 });
+
+
+/*Twitter profile timeline */
+
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "magnolianroot"
+  },
+  document.getElementById("container")
+);
 
