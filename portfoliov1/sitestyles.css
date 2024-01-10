@@ -160,8 +160,8 @@ border-radius: 25px;
 position: fixed;
 cursor: pointer;
 top: 100px;
-
-
+touch-action: pinch-zoom;
+      
 }
 
 
@@ -224,9 +224,10 @@ width: auto;
   
 }
 
-}
 
-  
+
+
+
 
 /*updated source code pro font*/
 
