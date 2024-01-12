@@ -40,12 +40,12 @@ body {
 }
 
 /*popper*/
-#tooltip[data-show] {
+#tooltip {
   background-color: #333;
   color: #FEF9E7;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   display: block, none;
 }
 
@@ -66,7 +66,11 @@ body {
   transform: rotate(45deg);
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
 
+}
 
 
 /* .navbar {
@@ -112,7 +116,7 @@ background: linear-gradient(rgba);
 
 
 /*make blurry effect ?? neumorphism buggy */
-.nav-item  {
+.nav-item, .navbar  {
   margin: 20px 5px;
   padding: 3px;
   height: 70px;
@@ -167,8 +171,10 @@ touch-action: pinch-zoom;
 
 
 .container {
-  margin: 40px;
+  margin: 10px;
   padding: 40px;
+  width: 1000px;
+  height: px;
 display: flex;
 justify-content:space-between;
 background-color: #06061c;
