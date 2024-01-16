@@ -18,22 +18,18 @@ window.addEventListener('scroll', function(){
 })
 
 
-// popper
+// popper 1/10
 const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
 
-const popperInstance = Popper.createPopper(button, tooltip, {
-  modifiers: [
-    {
-      name: 'offset',
-      options: {
-        offset: [0, 7],
-        placement: 'top',
-      },
-    },
-  ],
+Popper.createPopper(button, tooltip, {
+  placement: 'top',
 });
-                        
+    
+   const popperInstance = Popper.createPopper(button, tooltip);
+
+
+
 //   import { createPopper } from '@popperjs/core';
 
 function show() {
@@ -89,7 +85,8 @@ function hide() {
     ],
   }));
 }
-
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 function show() {
   tooltip.setAttribute('data-show', '');
@@ -162,3 +159,4 @@ twttr.widgets.createTimeline(
   document.getElementById("container")
 );
 
+  
