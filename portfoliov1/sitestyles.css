@@ -10,12 +10,8 @@
 
 
 
-html {
- 
 
-}
-
-body {
+body, main {
   margin:auto;
   overflow:hidden;
   display: flex;
@@ -34,7 +30,7 @@ body {
   initial-letter: 2;
   box-sizing: border-box;
   font-size:large;
-  
+  background-color: #06061c;
  
 
 }
@@ -101,32 +97,35 @@ background: linear-gradient(rgba);
 }
 
 
-/*footer perfect beta ver*/
+/*footer perfect beta ver
 .footer {
   flex-direction: row;
   flex-wrap: nowrap;
   
-}
+} */
 
-
-
-.footerLink {
-  list-style: none;
-  display: flex;
-}
 
 
 .container {
   background:linear-gradient(blur);
   backdrop-filter: blur(3px);
   background-color: none;
+   margin: 10px;
+  padding: 40px;
+  width: 1000px;
+  height: px;
+display: flex;
+justify-content:space-between;
+background-color: #06061c;
+
+
 }
 
 
 
 
 /*make blurry effect ?? neumorphism buggy */
-.nav-item, #navnav  {
+.nav-item, .navnav  {
   margin: 20px 5px;
   padding: 3px;
   height: 70px;            
@@ -179,31 +178,17 @@ touch-action: pinch-zoom;
 
 
 
-.container {
-  margin: 10px;
-  padding: 40px;
-  width: 1000px;
-  height: px;
-display: flex;
-justify-content:space-between;
-background-color: #06061c;
-
-
-
-}
-
-.div, .flex-item {
+ .div, .flex-item {
   align-items: center;
   align-content: center;
   color: #8989b1;
   margin: 0px 30px 0px 50px;
   padding: 100px 30px 20px 10px;
-  padding: 10px 10px 30px 30px;
   width:max-content;
   height:max-content;
   margin: 0px; 
   display: inline-block;
-  flex-flow: row wrap;
+
   justify-content: space-evenly;
   
   
