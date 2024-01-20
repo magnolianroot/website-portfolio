@@ -11,7 +11,7 @@
 
 
 html {
-  background-color: #06061c;
+ 
 
 }
 
@@ -21,8 +21,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  
+  height: 300px;
+  background-color: #06061c;
 
 
 }
@@ -34,7 +34,7 @@ body {
   initial-letter: 2;
   box-sizing: border-box;
   font-size:large;
-  justify-content: space-between; 
+  
  
 
 }
@@ -80,7 +80,7 @@ background: linear-gradient(rgba);
 
 
 /*footer-link-success */
-.footer-nav {
+.footer-nav, .FooterLinks {
   
   position:fixed;
   bottom: 0;
@@ -95,13 +95,24 @@ background: linear-gradient(rgba);
   backdrop-filter: blur(3px);
   height: 60px;
   list-style: none;
-
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  display: flex;
 }
+
+
+/*footer perfect beta ver*/
+.footer {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+
+
 
 .footerLink {
   list-style: none;
   display: flex;
-  justify-content: center;
 }
 
 
@@ -109,7 +120,6 @@ background: linear-gradient(rgba);
   background:linear-gradient(blur);
   backdrop-filter: blur(3px);
   background-color: none;
-
 }
 
 
@@ -203,7 +213,7 @@ background-color: #06061c;
 
 
 
-.flex-container:hover {
+.container:hover {
   color:rgba(182, 238, 200, 0.877);
   border: 2px solid #8989b1;
 
