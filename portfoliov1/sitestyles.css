@@ -11,7 +11,7 @@
 
 
 
-body, main {
+body, main{
   margin:auto;
   overflow:hidden;
   display: flex;
@@ -30,7 +30,7 @@ body, main {
   initial-letter: 2;
   box-sizing: border-box;
   font-size:large;
-  background-color: #06061c;
+  
  
 
 }
@@ -104,7 +104,7 @@ background: linear-gradient(rgba);
   
 } */
 
-
+background-color: #06061c;
 
 .container {
   background:linear-gradient(blur);
@@ -114,9 +114,9 @@ background: linear-gradient(rgba);
   padding: 40px;
   width: 1000px;
   height: px;
-display: flex;
-justify-content:space-between;
-background-color: #06061c;
+  display: flex;
+  justify-content:space-between;
+
 
 
 }
@@ -125,7 +125,7 @@ background-color: #06061c;
 
 
 /*make blurry effect ?? neumorphism buggy */
-.nav-item, .navnav  {
+.nav-item, .navbar {
   margin: 20px 5px;
   padding: 3px;
   height: 70px;            
