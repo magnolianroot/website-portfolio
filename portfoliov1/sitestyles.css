@@ -11,7 +11,7 @@
 
 
 
-body, main{
+body, .container  {
   margin:auto;
   overflow:hidden;
   display: flex;
@@ -19,7 +19,7 @@ body, main{
   justify-content: center;
   height: 300px;
   background-color: #06061c;
-
+  
 
 }
     
