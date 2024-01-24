@@ -74,9 +74,9 @@ background: linear-gradient(rgba);
 
 }
 
-
+.footer-nav, .FooterLinks 
 /*footer-link-success */
-.footer-nav, .FooterLinks {
+.FooterLinks, .textbox {
   
   position:fixed;
   bottom: 0;
@@ -87,22 +87,26 @@ background: linear-gradient(rgba);
   list-style: none;
   display:inline-flex;
   grid-area: span;
-  background:linear-gradient(blur);
   backdrop-filter: blur(3px);
   height: 60px;
   list-style: none;
   flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: space-around;
   display: flex;
 }
 
 
-/*footer perfect beta ver
-.footer {
+
+/*footer perfect beta ver*/
+.textbox {
   flex-direction: row;
   flex-wrap: nowrap;
-  
-} */
+  color: #8989b191;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(8px);
+} 
 
 background-color: #06061c;
 
