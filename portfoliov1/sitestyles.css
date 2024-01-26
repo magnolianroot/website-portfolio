@@ -93,7 +93,7 @@ background: linear-gradient(rgba);
   display: flex;
   align-items: center;
   background:linear-gradient(blur);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
   justify-content: space-around;
 }
 
@@ -105,7 +105,7 @@ background: linear-gradient(rgba);
 
 
 }
-text-shadow:#f5c6cb;
+/*text-shadow:#f5c6cb;*/
 
 background-color: #06061c;
 
@@ -146,18 +146,17 @@ background-color: #06061c;
   padding: 3px;
   height: 70px;            
   text-transform: uppercase;
-  color: #8989b191;
   grid-area: span;
   background:linear-gradient(blur);
   backdrop-filter: blur(2px);
-
+  
     
 
 }
 
 
 
-.nav-item {
+#navbarNav {
   
   text-decoration: none;
   color: #9696d3d7;
