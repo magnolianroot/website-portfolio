@@ -1,181 +1,256 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=0">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" 
-crossorigin="anonymous"></script>
 
 
-    <title>Home | Victoria Joseph</title>  
-<link rel="stylesheet" href="sitestyles.css"> <!--link to css stylesheet-->
-
-<link rel="icon" type="image/x-icon" href="/favicon/favicon-16x16.png">
-
-<!--Source Sans Pro Font--> <!--Source Code Pro Font-->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
 
 
-<!--fix favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+ 
 
-<script src="https://kit.fontawesome.com/321a18ed6e.js" crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!--react-bootstrap css, replace some...sum w the actual integrity value which can be found in the bootstrap documentation
- or found a different source for the bootstrap css file-->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+body, .container, main {
+  margin:auto;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: #06061c;
+  
+
+}
+    
+
+* { 
+  font-family: 'Source Code Pro', monospace;
+  scroll-behavior: smooth;
+  initial-letter: 2;
+  box-sizing: border-box;
+  font-size:large;
+  
+ 
+
+}
+
+/*popper*/
+#tooltip {
+  background-color: #333;
+  color: #FEF9E7;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: block, none;
+}
+
+#arrow, #arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+  
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+
+}
+
+
+/* .navbar {
+background: linear-gradient(rgba);
+
+}
+
+.footer-nav, .FooterLinks 
+/*footer-link-success */
+.FooterLinks, .textbox {
+  
+  position:fixed;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  text-shadow:#f5c6cb;
+  text-align: left;
+  list-style: none;
+  display:inline-flex;
+  grid-area: span;
+  backdrop-filter: blur(3px);
+  height: 60px;
+  list-style: none;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+  
+}
+
+
+
+/*footer perfect beta ver*/
+.textbox {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #8989b191;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(8px);
+  align-items: center;
+} 
+
+background-color: #06061c;
+
+.container {
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+  background-color: none;
+   margin: 100px;
+  padding: 400px 100px;
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  justify-content:space-between;
+  
+
+
+}
+
+
+
+
+/*make blurry effect ?? neumorphism buggy */
+.nav-item, .navbar {
+  margin: 20px 5px;
+  padding: 3px;
+  height: 70px;            
+  text-transform: uppercase;
+  color: #8989b191;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(8px);
+    
+
+}
+
+
+
+.nav-item {
+  
+  text-decoration: none;
+  color: #9696d3d7;
+  justify-content:right;
+  
+}
+
+
+
+/*back to top button hidden*/
+#topBtn {
+  position:fixed;
+  bottom: 36px;
+  right: 30px;
+  inline-size: 60px;
+  z-index: 1000;
+  cursor:pointer;
+  background: none;
+  
+
+}
+
+
+#portraitpic {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 25px;
+  position: fixed;
+  cursor: pointer;
+  top: 100px;
+  touch-action: pinch-zoom;
+      
+}
+
+
+
+ .div, .flex-item {
+  align-items: center;
+  align-content: center;
+  color: #8989b1;
+  margin: 0px 30px 0px 50px;
+  padding: 100px 30px 20px 10px;
+  width:max-content;
+  height:max-content;
+  margin: 0px; 
+  display: inline-block;
+
+  justify-content: space-evenly;
+  
+  
+}
+
+
+
+
+
+.FooterLinks:hover {
+  color:rgba(182, 238, 200, 0.877);
+ /* border: 2px solid #8989b1;  */
+ cursor:pointer;
+
+  
+}
+
+
+.mx-auto {
+width: auto;
+}
+
+
+/*dismissable alert */
+.movable-alert:hover {
+  
+
+}
+
+
+
+.underline-hover:hover {
+  transition: text-decoration 0.5s;
+  text-decoration: underline;
+  
+  
+}
+
+
+
+
+
+
+/*updated source code pro font*/
+
+@import 'sass.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Source+Code+Pro:wght@200;300;400&display=swap');
+
+
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
-/>
-
-</head>
-
-
-
-<!--create twitter feed on margin right, left space for .col-xl-9 -->
-<!--<i class="fa-solid fa-toggle-on"></i>-->
-
-<!-- <body class="d-flex container-fluid justify-content-between">
-
-
-<!--popper button and tooltip div-->
-
-<!-- <button id="button" aria-describedby="tooltip" data-placement="top">Resume/CV</button>-->
-<body class="portfolio-doc container ">
-<main class=" main-container container-fluid ">
-  <div class="col-xl-9"  
-  
-  <div class="container >
-<a href="site-images/victoria-joseph-resume.pdf" download="victoria-joseph-resume.pdf" target="_blank"> 
-  <button id="button" aria-describedby="tooltip" data-placement="top">Resume/CV</button>
-<div id="tooltip" role="tooltip" data-placement="top">my resume
-    <div id="arrow" data-popper-arrow data-bs-custom-class="custom-tooltip"></div>
-</div>
-
-<button type="button" class="btn btn-secondary" data-toggle="  tooltip" data-placement="top" title="This is a tooltip">Hover me</button>     
-
-
-<div id="navnav container shadow p-4 "
-<nav class="navbar navbar-expand-sm sticky-top ">
-  <a class=" navbar navbar-brand container-sm" href="#">Victoria Joseph</a>
-  <button class="navbar-toggler icon" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><div id="button" aria-describedby="tooltip">navbar<div id="arrow" data-popper-arrow></div></div></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav" >
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-      <li class="nav-item">
-        <a class="navbar nav-link" href="#portal">Portal</a>   <!----insert relative url here-->
-      </li>
-      </li>
-    </ul>
-  </div>
-</nav>
-</div>
-
-
-
-
-
-<div class="d-flex flex-column shadow p-4"
-<header class= "">
-  <div class=" container-fluid border border-3">
-    <span>Welcome,</span>
-      <br>I strive to find simple and efficient solutions to complex problems. 
-        Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.  
-</div>
-</header>
-
-
-<div class="shadow p-4">
- <section class="container-fluid border border-2 ">
- <p>~ Wrote HTML/CSS and JavaScript utilizing Bootstrap to build dynamic site.<br>
-  ~ Created and designed site UI/UX with the assistance of ChatGPT for efficient, modern and user-friendly content.
-  ~ Publish written blog posts, short-stories, and personal works to share with audience.<br>
-  ~ Helped a business owner advance and implement our ideas for personal branding, site/mobile UI/UX, and code formatting
- </p>
- </section>
-</div>
-  
-
-
-<a href="#">
-  <img src="/site-images/selfie1.jpg" id="portraitpic" alt="portrait pic">
-</a>
-
-
-
-<a href="#">
-  <img src="/site-gifs/sticker-3d-sticker-by-linefriends.gif" id="topBtn" alt="top-button">
-</a>
-
-
-
-</div>
-</main>
-
-  
-<!--gifs in folder-->
-
-
-
-<!--footer beta <footer id="myText" class="footer-container"</footer>-->
-
-<!--footer id="blurryFooter"-->
-
-
-
-<div class="d-flex shadow p-4">  <!--check 4 broken links-->
-  <footer class="footer-nav container-sm flex-row sticky-bottom">
-<ul class="FooterLinks  justify-content-sm-around">
-<p class="textbox">Business and collaborative inquiries? Connect with me: josephv1791@gmail.com</p>
-     <li class="footerLink"><a href="https://github.com/magnolianroot" target="_blank"><i class="fa-brands fa-github-alt fa-2x" href="Victoria Josephs GitHub" ></i></a></li>
-     <li class="footerLink"><a href="https://www.linkedin.com/in/victoria-joseph-2690331a8/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" href="Victoria Joseph LinkedIn"></i></a></li>
-     <li class="footerLink"><a href="https://patreon.com/vikdelmant" target="_blank"><i class="fa-brands fa-patreon fa-2x" href="Victoria Josephs Patreon"></i></a></li>
-     <li class="footerLink"><a href="https://x.com/magnolianroot" target="_blank"><i class="fa-brands fa-x-twitter fa-2x" href="Victoria Josephs X"></i></a></li>
-     <li class="footerLink"><a href="https://    " target="_blank"><i class="fa-brands fa-blogger fa-2x" href="Victoria Josephs Blog"></i></a></li>
-     <li class="footerLink"><a href="https://instagram.com/magnolianroot" target="_blank"><i class="fa-brands fa-instagram fa-2x" href="Victoria Joseph Instagram"></i></a></li>
-     <li class="footerLink"><a href="https://youtube.com/magnolianroot" target="_blank"><i class="fa-brands fa-youtube fa-2x" href="Victoria Josephs YouTube"></i></a></li>
-         
-    </ul>   
-</footer>
-</div>
-
-</div>  <!--site wrapper-->
-
-</html>
-<!--site js file--><script src="sitebetascripts.js"></script>
-<!--bootstrap... js?--> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<!---popper--> <script src="https://unpkg.com/@popperjs/core@2"></script>
-</body>
-
-
-</html>
-
-
-
-
-<!--NOTES - -->
-<!--insert favicon file into doc-->
-<!--create pic/gif for cursor on hvoer,
-implement chatgpt api tts and ...-->
-<!--add chatbot w chatgpt api-->
-<!--add sidebar on lg breakpoint-->
-<!--add ghost buttons?, site favicon-->
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/> 
+</style>
+/* ?font-family: 'Inter', sans-serif;
+font-family: 'Source Code Pro', monospace;CSS rule to specify families*/ 
