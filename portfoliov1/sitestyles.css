@@ -11,15 +11,13 @@
 
 
 
-.body, .main, .portfolio-doc   {
+.body, .main, .portfolio-doc  {
   overflow:hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3000px;
   width: 2000px;
-  margin: 
-  padding:
   background-color: #06061c;
   
 
@@ -33,7 +31,7 @@
   box-sizing: border-box;
   font-size:large;
   
- 
+
 
 }
 
@@ -135,7 +133,7 @@ background-color: #06061c;
   height:max-content;
   margin: 20px; 
   display: inline-block;
-
+  background-color: #020212;      
   justify-content: space-evenly;
   
   
