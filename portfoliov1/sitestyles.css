@@ -11,13 +11,15 @@
 
 
 
-body, .container  {
-  margin:auto;
+.body, .main, .portfolio-doc   {
   overflow:hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 3000px;
+  width: 2000px;
+  margin: 
+  padding:
   background-color: #06061c;
   
 
@@ -94,6 +96,7 @@ background: linear-gradient(rgba);
   flex-direction: row;
   justify-content: space-around;
   display: flex;
+  
 }
 
 
@@ -106,26 +109,40 @@ background: linear-gradient(rgba);
   grid-area: span;
   background:linear-gradient(blur);
   backdrop-filter: blur(8px);
+  align-items: center;
 } 
 
 background-color: #06061c;
 
-.container {
+.container-fluid {
   background:linear-gradient(blur);
   backdrop-filter: blur(3px);
   background-color: none;
-   margin: 100px;
-  padding: 400px 100px;
+  margin: 100px;
+  padding: 10px 100px;
   width: 1000px;
   height: 200px;
   display: flex;
   justify-content:space-between;
   
-
-
 }
 
 
+.div, .flex-item {
+  align-items: center;
+  align-content: center;
+  color: #8989b1;
+  margin: 0px 30px 0px 50px;
+  padding: 100px 30px 20px 10px;
+  width:max-content;
+  height:max-content;
+  margin: 0px; 
+  display: inline-block;
+
+  justify-content: space-evenly;
+  
+  
+}
 
 
 /*make blurry effect ?? neumorphism buggy */
@@ -137,7 +154,8 @@ background-color: #06061c;
   color: #8989b191;
   grid-area: span;
   background:linear-gradient(blur);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(2px);
+
     
 
 }
@@ -172,32 +190,13 @@ background-color: #06061c;
   width: 60px;
   height: 60px;
   display: inline-block;
- border-radius: 25px;
-position: fixed;
-cursor: pointer;
-top: 100px;
-touch-action: pinch-zoom;
+  border-radius: 25px;
+  position: fixed;
+  cursor: pointer;
+  top: 100px;
+  touch-action: pinch-zoom;
       
 }
-
-
-
- .div, .flex-item {
-  align-items: center;
-  align-content: center;
-  color: #8989b1;
-  margin: 0px 30px 0px 50px;
-  padding: 100px 30px 20px 10px;
-  width:max-content;
-  height:max-content;
-  margin: 0px; 
-  display: inline-block;
-
-  justify-content: space-evenly;
-  
-  
-}
-
 
 
 
