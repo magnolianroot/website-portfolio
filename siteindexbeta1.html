@@ -64,7 +64,7 @@ crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="c:\Users\josep\AppData\Local\Temp\391f5c25-f313-4948-8854-040509a5a88a_favicon_io_portfolio.zip.88a\favicon.ico"/>
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
-<header>
+
 <!--theme switch-->
 <li class="nav-item d-flex" >
   <i class="fas fa-sun"></i>
@@ -87,12 +87,38 @@ crossorigin="anonymous"></script>
   
 
 
+  <div id="mobile-menu-close">
+    <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+</div>
+<ul id="menu" class="shadow">
+    <li>
+        <a href="#about">About</a>
+    </li>
+    <li>
+        <a href="#experience">Experience</a>
+    </li>
+    <li>
+        <a href="#education">Education</a>
+    </li>
+    <li>
+        <a href="#projects">Projects</a>
+    </li>
+    <li>
+        <a href="#skills">Skills</a>
+    </li>
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+</ul>
+
+
 
 <!--make nav appear only at scroll down-->
 
-<div class="container-fluid">
-  <divc class="row data-bs-target shadow-2 .d-flex flex-row  "</div>
-<nav class="navbar-nav fixed-top navbar-expand-sm ">
+<!--jumbrotron-->
+<header>
+<nav class="navbar navbar-expand-md fixed-top  ">
+    <div class="container-fluid">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -113,15 +139,15 @@ crossorigin="anonymous"></script>
         <a class="nav-link" href="https://x.com/magnolianroot" target="_blank" role="button>Pricing</a>
         <i class="fab fa-twitter fa-lg"></i>
       </li>
-
-
-     
-      
     </ul>  
-    </div>  
-  </div>      
+  </div>  
+</div>      
 </nav>     
-</div>
+</header>
+
+
+
+
 
 <li class="nav-item align-items-center d-flex" >
   <i class="fas fa-sun"></i>
@@ -135,17 +161,20 @@ crossorigin="anonymous"></script>
 
 
 
-<!--ripple -->
-<button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init data-mdb-ripple-color="light">Primary</button>
+<!--ripple + favicon -->
+<button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init data-mdb-ripple-color="light">my resume</button>
 data-mdb-ripple-centered="true"
+<a href="favicon.ico" class="btn-rounded-white">Download Resume</a>
 
+
+<!--fix homeportal first p-->
 <div id="homeportal">
 
 
   <div id="lead-content">
     <h1>Victoria Joseph</h1>
     <h2>Full Stack Developer</h2>
-    <a href="#" class="btn-rounded-white">Download Resume</a>
+
 </div>
 
 
@@ -159,17 +188,25 @@ data-mdb-ripple-centered="true"
 <!--bootstrap 4 grid about section-->
 <h3>
 <div class="container">
-<div class=" row gy-4 ms-3 flex-grow shadow-3 text-center border-2"
-<div class="  gap-3 d-flex "> </div> 
+<div class=" row gy-4 ms-3  text-center border-2"
+<div class="  gap-3 d-flex flex-grow shadow-3 "> </div> 
 
 <p>
       <br>About me</br>
-       </h2>
+      <pre>
+
+        lorem Ipsum, Lorem
+        JavaScript    HTML      CSS
+        Bootstrap     SQL       Node.js
+        Shopify       WordPress UI/UX
+        ChatGPT       GitHub    Git   
+    
+    
+      </pre>
       
       
       </div>
       </div>
-</header>
 </div>
 </h3>
 </p>
@@ -185,16 +222,7 @@ data-mdb-ripple-centered="true"
 <div class="container ">
 <div class="row col-md-4 col gap-3">
   <div class=" text-center flex-grow shadow-3"
-  <pre>
-
-    lorem Ipsum, Lorem
-    JavaScript    HTML      CSS
-    Bootstrap     SQL       Node.js
-    Shopify       WordPress UI/UX
-    ChatGPT       GitHub    Git   
-
-
-  </pre>
+   <!--fill-->
 
 
 </p>
