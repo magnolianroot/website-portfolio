@@ -1,0 +1,83 @@
+
+
+/*
+@mixin theme ($theme:NavStack){
+  margin: 20px 5px;
+  padding: 3px;
+  height: 70px;
+  width:100%;
+  text-transform: uppercase;
+  color: #8989b191;
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+
+}
+
+@mixin theme ($theme:ColorTransition){
+
+/*color transition effect*/   
+color: #8989b1; /* Initial color */
+transition: color 0.9s ease;
+color: #d8b4b8; /* Color change on hover */
+
+}
+
+.footer-nav {
+  @include theme($theme:NavStack);
+  @include theme($theme:ColorTransition);
+} 
+*/
+
+mdb 
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .element {
+    color: var(--mdb-primary-text-emphasis);
+    background-color: var(--mdb-primary-bg-subtle);
+  }
+}
+
+// mdb background utilities
+SCSS
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
+
+@import '~mdb-ui-kit/src/scss/mdb.pro.scss';
+
+// DARK SKIN
+$my-theme-primary: #1266f1;
+$my-theme-secondary: #b23cfd;
+$my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary);
+
+.dark {
+@include mdb-theme($my-dark-theme);
+}
