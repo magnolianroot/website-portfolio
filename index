@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-mdb-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=0">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" 
+crossorigin="anonymous"></script>
+
+
+    <title>Digital Portfolio | Victoria Joseph</title>  
+<link rel="stylesheet" href="stylesheet.css"> <!--link to css stylesheet-->
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon-16x16.png">
+
+<!--Source Sans Pro Font--> <!--Source Code Pro Font-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+<script src="https://kit.fontawesome.com/321a18ed6e.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!--jquery newest-->
+
+<!--react-bootstrap css, replace some...sum w the actual integrity value which can be found in the bootstrap documentation
+ or found a different source for the bootstrap css file-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<script>
+  const isSystemThemeSetToDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (isSystemThemeSetToDark) {
+    document.documentElement.dataset.mdbTheme = "dark";
+  };
+
+</script>
+
+</head>
+
+<link rel="icon" type="image/png" href="c:\Users\josep\AppData\Local\Temp\391f5c25-f313-4948-8854-040509a5a88a_favicon_io_portfolio.zip.88a\favicon.ico"/>
+<link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
+
+
+<!--theme switch-->
+<li class="nav-item d-flex" >
+  <i class="fas fa-sun"></i>
+  <!-- Default switch -->
+  <div class="ms-2 form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
+  </div>
+  <i class="fas fa-moon"></i>
+</li>
+
+<main> <!--where root directory starts/lives-->
+
+ 
+
+<!--june recent ver-->
+  
+  <div class=" homepage grid">
+<body class=" homepage g-col-4 bg-900 bodypage border d-flex align-items-center justify-content-center"  data-bs-spy="scroll"">
+  <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
+  
+
+
+
+
+
+<!--make nav appear only at scroll down-->
+
+<div class="container-fluid">
+  <divc class="row data-bs-target shadow-2 .d-flex flex-row  "</div>
+<nav class="navbar-nav fixed-top navbar-expand-sm ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav "> 
+      <li class="nav-item"> <!-- list start-->
+        <a class="nav-link active" aria-current="page" href="#">Victoria Joseph</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank"  role="button" ></a>
+        <i class="fab fa-linkedin fa-lg  ">a</i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/magnolianroot">github</a>
+          <i class="fab fa-github fa-lg"></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://x.com/magnolianroot" target="_blank" role="button>Pricing</a>
+        <i class="fab fa-twitter fa-lg"></i>
+      </li>
+
+        
+      <li>  <!-- list start-->  <!--list remake above
+          <a class="nav-link disabled" href="#imageportal" id="imageportal" aria-disabled="true" >Image Portal</a></li>  0
+        <li class="footerLink"><a href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" href="Victoria Joseph's LinkedIn"></i></a></li>
+        <li class="footerLink"><a href="https://github.com/magnolianroot" target="_blank"><i class="fa-brands fa-github-alt fa-2x" href="Victoria Joseph's GitHub" ></i></a></li>
+        <li class="footerLink"><a href="https://patreon.com/vikdelmant" target="_blank"><i class="fa-brands fa-patreon fa-2x" href="Victoria Joseph's Patreon"></i></a></li>
+        <li class="footerLink"><a href="https://x.com/magnolianroot" target="_blank"><i class="fa-brands fa-x-twitter fa-2x" href="Victoria Joseph's X"></i></a></li>
+        <li class="footerLink"><a href="https://" target="_blank"><i class="fa-brands fa-blogger fa-2x" href="Victoria Joseph's Blog"></i></a></li>
+        <li class="footerLink"><a href="https://youtube.com/magnolianroot" target="_blank"><i class="fa-brands fa-youtube fa-2x" href="Victoria Joseph's YouTube"></i></a></li>
+
+      </li>     
+      </li>  -->
+     
+      
+    </ul>  
+    </div>  
+  </div>      
+</nav>     
+</div>
+
+<li class="nav-item align-items-center d-flex" >
+  <i class="fas fa-sun"></i>
+  <!-- Default switch -->
+  <div class="ms-2 form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
+  </div>
+  <i class="fas fa-moon"></i>
+</li>
+
+
+<!--ripple -->
+<button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init data-mdb-ripple-color="light">Primary</button>
+data-mdb-ripple-centered="true"
+
+<div id="homeportal">
+
+
+  <div id="lead-content">
+    <h1>Victoria Joseph</h1>
+    <h2>Full Stack Developer</h2>
+    <a href="#" class="btn-rounded-white">Download Resume</a>
+</div>
+
+
+
+
+// add functionality
+<!-- <span>Welcome,</span>  -->
+
+
+
+<!--bootstrap 4 grid about section-->
+<h3>
+<div class="container">
+<div class=" row gy-4 ms-3 flex-grow shadow-3 text-center border-2"
+<div class="  gap-3 d-flex "> </div> 
+
+<p>
+      <br>About me</br>
+       </h2>
+      
+      
+      </div>
+      </div>
+</header>
+</div>
+</h3>
+</p>
+
+
+<!--I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
+       As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
+        Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
+
+
+<!--??? correct grid-->
+<div class="container ">
+<div class="row col-md-4 col gap-3">
+  <div class=" text-center flex-grow shadow-3"
+<p>
+ lorem Ipsum, Lorem
+ <pre>
+  JavaScript    HTML      CSS
+  Bootstrap     SQL       Node.js
+  Shopify       WordPress UI/UX
+  ChatGPT       GitHub    Git       
+
+
+              </pre>
+
+
+  </div>
+</p>
+</div>
+</div>         
+</div>  
+
+
+<!--code button with ripple effcetc  -->
+  <!--upload to website serving-hosting platform first, gith7ub pages-->
+  <a href="experienced-web-dev-pdf.pdf" download="experienced-web-dev.pdf" class="  ">Download Resume</a>
+
+  <button type="button" class="btn btn-light"<a href="experienced-web-dev-pdf.pdf" download="experienced-web-dev-pdf.pdf" data-mdb-ripple-init data-mdb-ripple-color="dark" <i class="fa fa-download"></i>>Resume</button>
+  <button type="button" class="btn btn-dark" data-mdb-ripple-init>Dark</button>
+
+
+<!--template info-->
+
+
+
+<!--github pages-->
+<?php  $printing = "test"; ?>
+
+
+
+
+</div>
+<!--bootstrap 4 grid end-->
+
+<!--gifs in folder, imagur buggy-->  
+
+
+<a href="https://imgur.com/TeQ1hO9"></a>
+
+
+
+  <!--if fail add line breaks, html pre element-->
+
+
+
+
+
+
+
+<!--footer beta <footer id="myText" class="footer-container"</footer>-->
+
+<!--footer id="blurryFooter"-->
+
+
+<!--example of responsive grid g-col-2 g-col-md-4  -->
+
+<!-- Footer -->
+ <div id="footer-container"
+<div class="row shadow-3 ">
+  <!-- Grid container -->
+  <div id="footer-list" ">
+    <!-- Section: Social media -->
+    <section class=" list-item mb-4">
+      <!-- LinkedIn -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
+        ><i class="fab fa-linkedin"></i   
+      ></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/magnolianroot" target="_blank" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+    </section>
+  </div>
+</div>
+
+<!-- Section: Dark variant -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Section: footer social -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>contact me</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+
+
+<!--code update-->
+
+
+
+
+          <footer class="bg-body-tertiary fitext-center text-md-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright: Victoria Joseph
+              <a class="text-body" href="https://victoriajoseph.com">victoriajoseph.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
+
+
+
+
+  
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--scrollbar-->
+<div class="scrollbar" id="style-1">   
+  <div class="force-overflow"></div>
+</div>
+
+</div>  
+-
+</main>
+
+
+
+
+
+
+<!--site js file--><script src="scripts,js.js"></script>
+<!--bootstrap--> 
+<!--jquery--> <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.umd.min.js"
+></script>
+
+
+</div>
+
+
+</body>
+</div>  <!--ending body div-->
+</div>
+
+
+
+</html>
+
+
+
+
+NOTES -
+<!--insert favicon file into doc-->
+<!--create pic/gif for cursor on hover,
+implement chatgpt api tts and ...-->
+<!--add chatbot w chatgpt api-->
+<!--add sidebar on lg breakpoint-->
+<!--add ghost buttons?, site favicon-->
+
+
+
+
+<!--site notes
+circle cursor, fluid element-->
+
+
+<!-- recycle footer list <div class="container shadow-3 ">
+  <div class="myul row align-items-center d-flex "
+<ul class="list-inline col-sm-2 gy-2 ">
+    <li class="list-inline-item" >JavaScript</li>
+    <li class="list-inline-item">HTML</li>
+    <li class="list-inline-item">CSS</li>
+    <li class="list-inline-item">Bootstrap</li>
+    <li class="list-inline-item">SQL</li>   
+    <li class="list-inline-item">Node.js</li>   
+    <li class="list-inline-item">PHP</li>
+
+    <li class="list-inline-item">UI/UX</li>
+    <li class="list-inline-item">ChatGPT</li>
+    <li class="list-inline-item">GitHub</li>
+    <li class="list-inline-item">Git</li>    
+    <li class="list-inline-item">WordPress</li>  
+    <li class="list-inline-item">Shopify</li> 
+    <li class="list-inline-item">PHP</li>
+
+
+li <div class="container ">
+<div class="row col-md-4 col gap-3">
+  <div class=" text-center flex-grow shadow-3"
+<p>
+ lorem Ipsum, Lorem
+
+
+ <pre>
+  JavaScript    HTML      CSS
+  Bootstrap     SQL       Node.js
+  Shopify       WordPress UI/UX
+  ChatGPT       GitHub    Git       
+
+
+              </pre>
+
+
+  </div>
+</p>
+</div>
+</div>         
+</div>  
+
+
+
+
+-->
