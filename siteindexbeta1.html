@@ -7,7 +7,7 @@
 crossorigin="anonymous"></script>
 
 
-    <title>Digital Portfolio | Victoria Joseph</title>  
+    <title>Victoria Joseph | Digital Portfolio</title>  
 <link rel="stylesheet" href="sitestyles.css"> <!--link to css stylesheet-->
 
 <link rel="icon" type="image/x-icon" href="/favicon/favicon-16x16.png">
@@ -65,16 +65,6 @@ crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<!--theme switch-->
-<li class="nav-item d-flex" >
-  <i class="fas fa-sun"></i>
-  <!-- Default switch -->
-  <div class="ms-2 form-check form-switch">
-    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
-  </div>
-  <i class="fas fa-moon"></i>
-</li>
-
 <main class="container"> <!--where root directory starts/lives-->
 
  
@@ -98,14 +88,22 @@ crossorigin="anonymous"></script>
  
 
 
+<!--theme switch-->
+<li class="nav-item d-flex" >
+  <i class="fas fa-sun"></i>
+  <!-- Default switch -->
+  <div class="ms-2 form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
+  </div>
+  <i class="fas fa-moon"></i>
+</li>
 
 
 <!--my mdb nav-->
-<nav class="navbar navbar-expand-md ">
+<nav class="navbar navbar-brand navbar-expand-md role="navigation">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-nav" href="#">Victoria Joseph</a>
 
     <!-- Toggle button -->
     <button
@@ -119,20 +117,25 @@ crossorigin="anonymous"></script>
     >
       <i class="fas fa-bars"></i>
     </button>
+  ></a>
 
     <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="nav-link active aria-current="page" href="#">home portal</a>   <!--homportal-->
+          <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/magnolianroot" target="_blank" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
         <li class="nav-item">
-          <a class="nav-link active"aria-current="page" href="#">Link</a>   <!--homportal-->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
- <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+          <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+         <li class="nav-item">
+          <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+<div>
         <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
           <a
@@ -142,27 +145,27 @@ crossorigin="anonymous"></script>
             role="button"
             data-mdb-toggle="dropdown"
             aria-expanded="false"
-          >
-            Dropdown
           </a>
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <a class="dropdown-item" href="#">Action</a>
+            <li class="nav-item">
+              <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/magnolianroot" target="_blank" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
             </li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
+            <li class="nav-item">
+              <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
+              ><i class="fab fa-linkedin"></i
+            ></a>
             </li>
             <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <li class="nav-item">
+              <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-            >Disabled</a
-          >
         </li>
       </ul>
       <!-- Left links -->
@@ -171,14 +174,18 @@ crossorigin="anonymous"></script>
   </div>
   <!-- Container wrapper -->
 </nav>
+
+
 <!-- Navbar -->
 
 
 
+<a class="link" href="#homeportal" data-scroll>About Me</a>
+<!-- update link <a class="link" href="#projects" data-scroll>Projects</a>-->
 
 
-
-
+<a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
 
 
 
@@ -214,26 +221,21 @@ data-mdb-ripple-centered="true"
 <!--fix homeportal first p-->
 <div id="homeportal">
 
-
-  <div id="lead-content">
-    <h1>Victoria Joseph</h1>
-    <h2>Full Stack Developer</h2>
+<h1>
+  <div class="container border border-2"
+    <span class="site-title">Victoria Joseph <br>Full Stack Developer • Designer</span>  
 
 </div>
+</h1>
 
 
-
-
-// add functionality
-<!-- <span>Welcome,</span>  -->
-
-
-
+<!--put this side by side w pre -->
 <!--bootstrap 4 grid about section-->
-<h3>
-<div class="container">
-<div class=" row gy-4 ms-3  text-center border-2"
-<div class="  gap-3 d-flex flex-grow shadow-3 "> </div> 
+<section>
+<div class="container border border-2">
+<div class=" row gy-4 ms-3 "
+<div class="  gap-3 d-flex flex-grow shadow-3 " </div> 
+</section>
 
 <p>
       <br>About me</br>
@@ -256,10 +258,10 @@ data-mdb-ripple-centered="true"
 </p>
 
 
-<!--I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
+<p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
-
+</p>
 
 <!--??? correct grid-->
 
@@ -339,10 +341,6 @@ data-mdb-ripple-centered="true"
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
         ><i class="fab fa-twitter"></i
       ></a>
-
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
     </section>
   </div>
 </div>
@@ -362,7 +360,7 @@ ss
 
 
 <!--copyright-->
-<div class="footer container"</div>  <!--???? fix-->
+<div class="footer container" <!--???? fix-->
   <footer class=" bg-body-tertiary fitext-center text-md-start">
     <!-- Copyright -->
     <div class=" row text-center p-3">
@@ -371,7 +369,7 @@ ss
     </div>
     <!-- Copyright -->
   </footer>
-
+</div> 
 
 
 
@@ -443,6 +441,9 @@ ss
 
 </div>  
 -
+
+
+ 
 </main>
 
 
