@@ -65,14 +65,14 @@ crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<main class="container"> <!--where root directory starts/lives-->
+<main> <!--where root directory starts/lives ...class container???-->
 
  
 
 <!--june recent ver-->
   
 <div class=" homepage grid">
-<body class=" homepage g-col-4 bg-900 bodypage border d-flex align-items-center justify-content-center"  data-bs-spy="scroll"">
+<body class="homepage g-col-4 bg-900 bodypage border d-flex align-items-center justify-content-center"  data-bs-spy="scroll"">
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   
 
@@ -85,10 +85,8 @@ crossorigin="anonymous"></script>
 
 
 <header>
- 
+ <div class="container"
 
-
-<!--theme switch-->
 <li class="nav-item d-flex" >
   <i class="fas fa-sun"></i>
   <!-- Default switch -->
@@ -102,7 +100,7 @@ crossorigin="anonymous"></script>
 <!--my mdb nav-->
 <nav class="navbar navbar-brand navbar-expand-md role="navigation">
   <!-- Container wrapper -->
-  <div class="container-fluid">
+  <div class="container-fluid"></div>
     <!-- Navbar brand -->
 
     <!-- Toggle button -->
@@ -136,6 +134,22 @@ crossorigin="anonymous"></script>
           <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
           ><i class="fab fa-twitter"></i
         ></a>
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <li class="nav-item">
+        <!-- Default switch -->
+        <div class="ms-2 form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
+        </div>
+        <i class="fas fa-moon"></i>
+</li>
+
+<!--ripple + favicon -->
+<button btn-lg data-mdb-ripple-init data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
+<a href="favicon.ico" class="btn-rounded-white">Download Resume</a>
+
+
+
 <div>
         <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
@@ -165,6 +179,7 @@ crossorigin="anonymous"></script>
               ><i class="fab fa-twitter"></i
             ></a>
             </li>
+
           </ul>
         </li>
         </li>
@@ -181,7 +196,7 @@ crossorigin="anonymous"></script>
 
 
 
-<a class="link" href="#homeportal" data-scroll>About Me</a>
+<a class="link" href="#homeportal" data-scroll>home portal</a>
 <!-- update link <a class="link" href="#projects" data-scroll>Projects</a>-->
 
 
@@ -191,39 +206,18 @@ crossorigin="anonymous"></script>
 
 
 
+    </div>
+</header> <!--separate from main bluprint-->
 
-
-
-
-</header>
-
-
-  <i class="fas fa-sun"></i>
-  <!-- Default switch -->
-  <div class="ms-2 form-check form-switch">
-    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
-  </div>
-  <i class="fas fa-moon"></i>
-
-
-
-
-<!--ripple + favicon -->
-<button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init data-mdb-ripple-color="light">my resume</button>
-data-mdb-ripple-centered="true"
-<a href="favicon.ico" class="btn-rounded-white">Download Resume</a>
 
 
 <!--fix homeportal first p-->
-<div id="homeportal">
+<div id="homeportal"></div>
 
 <h1>
-  <div class="container border border-2"
-  <div class="row">
-    <div class="col-lg-6">
+  <div class="container border border-2 d-grid gap-3 col-md-6"
     <span class="site-title">Victoria Joseph <br>Full Stack Developer • Designer</span>  
   </div>
-</div>
 </h1>
 
 
@@ -231,17 +225,14 @@ data-mdb-ripple-centered="true"
 <!--bootstrap 4 grid about section-->
 
 
-<div class="col-lg-6 border border-2">"
-  <div class=" d-flex flex-grow shadow-3">
-      <br>About me</br>
+<div class="container border border-2 d-grid gap-3 col-md-6"
+      <br>About me
       <pre>
         JavaScript    HTML      CSS
         Bootstrap     SQL       Node.js
         Shopify       WordPress UI/UX
         ChatGPT       GitHub    Git   
       </pre>
-        </div>
-      </div>
     </div>
 
 
@@ -254,18 +245,6 @@ data-mdb-ripple-centered="true"
 </div>
 </div>
 
-
-<!--??? correct grid-->
-
-<!--code button with ripple effcetc  -->
-  <!--upload to website serving-hosting platform first, gith7ub pages-->
-  <a href="experienced-web-dev-pdf.pdf" download="experienced-web-dev.pdf" class="  ">Download Resume</a>
-
-  <button type="button" class="btn btn-light"<a href="experienced-web-dev-pdf.pdf" download="experienced-web-dev-pdf.pdf" data-mdb-ripple-init data-mdb-ripple-color="dark" <i class="fa fa-download"></i>>Resume</button>
-  <button type="button" class="btn btn-dark" data-mdb-ripple-init>Dark</button>
-
-
-<!--template info-->
 
 
 
@@ -300,12 +279,12 @@ data-mdb-ripple-centered="true"
 <!--example of responsive grid g-col-2 g-col-md-4  -->
 
 <!-- Footer -->
- <div id="footer-container fixed-bottom"
-<div class="row shadow-3 ">
-  <!-- Grid container -->
+<!-- Grid container -->
+<div class="col shadow-3 container d-grid ">
+  <footer class="container"
   <div id="footer-list" ">
     <!-- Section: Social media -->
-    <section class=" list-item mb-4">
+    <div class=" list-item mb-4">
       <!-- LinkedIn -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
         ><i class="fab fa-linkedin"></i   
@@ -320,17 +299,29 @@ data-mdb-ripple-centered="true"
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/magnolianroot" target="_blank" role="button"
         ><i class="fab fa-twitter"></i
       ></a>
-    </section>
+
+      <!--copyright-->
+    <!-- Copyright -->
+    <div class="col text-center ">
+      © 2024 Copyright: Victoria Joseph
+      <a class="text-body" href="insert github pages here">victoriajoseph.com</a>
   </div>
+    <!-- Copyright -->
 </div>
+    </footer>
+  </div>
 
-<!--download btn trial Full width
-<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button>-->
+
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+
+<!--??? correct grid-->
+
+<!--code button with ripple effcetc  -->
+  <!--upload to website serving-hosting platform first, gith7ub pages-->
 
 
-ffff
 
-ss
+<!--template info-->
 
 
 <!-- Section: Dark variant -->
@@ -338,45 +329,9 @@ ss
 
 
 
-<!--copyright-->
-<div class="footer container" <!--???? fix-->
-  <footer class=" bg-body-tertiary fitext-center text-md-start">
-    <!-- Copyright -->
-    <div class=" row text-center p-3">
-      © 2024 Copyright: Victoria Joseph
-      <a class="text-body" href="insert github pages here">victoriajoseph.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-</div> 
-
-
-
-
 
     <!-- Section: footer social -->
 
-    <!-- Section: Form -->
-    <section class="">
-      <form action="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>contact me</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="email" id="form5Example24" class="form-control" />
-              <label class="form-label" for="form5Example24">Email address</label>
-            </div>
-          </div>
 
 
 
@@ -397,7 +352,7 @@ ss
 
 
  
-</main>
+</main> <!--main end-->
 
 
 
@@ -443,26 +398,6 @@ implement chatgpt api tts and ...-->
 
 <!--site notes
 circle cursor, fluid element-->
-
-
-<!-- recycle footer list <div class="container shadow-3 ">
-  <div class="myul row align-items-center d-flex "
-<ul class="list-inline col-sm-2 gy-2 ">
-    <li class="list-inline-item" >JavaScript</li>
-    <li class="list-inline-item">HTML</li>
-    <li class="list-inline-item">CSS</li>
-    <li class="list-inline-item">Bootstrap</li>
-    <li class="list-inline-item">SQL</li>   
-    <li class="list-inline-item">Node.js</li>   
-    <li class="list-inline-item">PHP</li>
-
-    <li class="list-inline-item">UI/UX</li>
-    <li class="list-inline-item">ChatGPT</li>
-    <li class="list-inline-item">GitHub</li>
-    <li class="list-inline-item">Git</li>    
-    <li class="list-inline-item">WordPress</li>  
-    <li class="list-inline-item">Shopify</li> 
-    <li class="list-inline-item">PHP</li>
 
 
 li <div class="container ">
