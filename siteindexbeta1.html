@@ -87,7 +87,7 @@
 
 
 <header>
- <div class="container"
+ <div class="container px-4"
 
 <li class="nav-item d-flex" >
   <i class="fas fa-sun"></i>
@@ -99,10 +99,25 @@
 </li>
 
 
+
+<!--container with gutter template
+ <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3">Custom column padding</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Custom column padding</div>
+    </div>
+  </div>
+</div>
+-->
+
+
 <!--my mdb nav-->
-<nav class="navbar navbar-brand navbar-expand-md role="navigation">
+<nav class=" row navbar navbar-brand navbar-expand-md role="navigation">
   <!-- Container wrapper -->
-  <div class="container-fluid fixed-top"></div>
+  <div class="container-fluid fixed-top px-4"></div>
     <!-- Navbar brand -->
 
     <!-- Toggle button -->
@@ -147,8 +162,8 @@
         
 </li>
 
-<!--ripple + favicon -->
-<button btn-lg data-mdb-ripple-init data-mdb-ripple-color="success" type="button" class="btn btn-dark">my resume</button>
+<!--ripple + favicon fix tooltip btn -->
+<button btn-lg data-mdb-ripple-init  data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-dark">my resume</button>
 
 
 
@@ -225,7 +240,7 @@
 <!--bootstrap 4 grid about section-->
 
 
-<div class=" container border border-2 d-grid gap-3 col-md-6">
+<div class=" row border border-2 d-grid gap-3 col-md-6">
       <br>About me:
       <pre>
         JavaScript    HTML      CSS
@@ -237,7 +252,7 @@
 
 
 <!-- formatting fixed-->
-<div class=" container d-grid gap-3 col-md-6 ">
+<div class=" row d-grid gap-3 col-md-6 ">
 <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
@@ -247,7 +262,7 @@
 
 
 <!--github pages-->
-<?php  $printing = "test"; ?>
+
 
 <button class="id">
 
@@ -272,11 +287,13 @@
 <!-- Footer -->
 <!-- Grid container -->
 
+
+<!--resume download fix-->
 <button btn-lg data-mdb-ripple-init data-mdb-ripple-color="success" type="button" class="btn btn-dark">my resume</button>
 
 
 
-<div class="col shadow-3 container d-grid fixed-bottom ">
+<div class="row shadow-3 container d-grid fixed-bottom ">
   <footer id="footer-nav" 
   <div id="footer-list" ">
     <!-- Section: Social media -->
@@ -298,7 +315,7 @@
 
       <!--copyright-->
     <!-- Copyright -->
-    <div class="col text-center ">
+    <div class="--container text-center ">
       © 2024 Copyright: Victoria Joseph
       <a class="text-body" href="insert github pages here">victoriajoseph.com</a>
   </div>
@@ -345,6 +362,19 @@
 </div>
 
 </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
