@@ -50,12 +50,7 @@
 
 <!--site theme + alert func-->
 <script>
-  const isSystemThemeSetToDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  if (isSystemThemeSetToDark) {
-    document.documentElement.dataset.mdbTheme = "dark";
-  };
- 
 
  console.log("Welcome to the home portal")  // alert func, add php
 </script>
@@ -87,37 +82,10 @@
 
 
 <header>
- <div class="container px-4"
-
-<li class="nav-item d-flex" >
-  <i class="fas fa-sun"></i>
-  <!-- Default switch -->
-  <div class="ms-2 form-check form-switch">
-    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
-  </div>
-  <i class="fas fa-moon"></i>
-</li>
-
-
-
-<!--container with gutter template
- <div class="container px-4">
-  <div class="row gx-5">
-    <div class="col">
-      <div class="p-3">Custom column padding</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Custom column padding</div>
-    </div>
-  </div>
-</div>
--->
-
-
-<!--my mdb nav-->
-<nav class=" row navbar navbar-brand navbar-expand-md role="navigation">
+  
+<nav class=" container navbar navbar-brand navbar-expand-md role = "navigation">
   <!-- Container wrapper -->
-  <div class="container-fluid fixed-top px-4"></div>
+  <div class=" container fixed-top px-4"></div>
     <!-- Navbar brand -->
 
     <!-- Toggle button -->
@@ -222,7 +190,7 @@
 
 
 
-<!--fix homeportal first p-->
+<!--fix homeportal first p FIX-->
 <div id="homeportal"></div>
 <a class="link" href="#homeportal" data-scroll>home portal</a>
 <!-- update link <a class="link" href="#projects" data-scroll>Projects</a>-->
@@ -240,7 +208,10 @@
 <!--bootstrap 4 grid about section-->
 
 
-<div class=" row border border-2 d-grid gap-3 col-md-6">
+<div class=" container border border-2 d-grid gap-3 col-md-6">
+  <div class="row d-grid  gap-3 col-md-6">
+    <div class="col "
+    <div class="p-2"
       <br>About me:
       <pre>
         JavaScript    HTML      CSS
@@ -248,11 +219,20 @@
         Shopify       WordPress UI/UX
         PHP           GitHub    Git   
       </pre>
+      </div>
+ <div class="col  "
+ <div class="p-4"</div>
+      <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
+       As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
+        Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
+        </p>
+      </div>
+     </div>
     </div
 
 
 <!-- formatting fixed-->
-<div class=" row d-grid gap-3 col-md-6 ">
+<div class=" container d-grid gap-3 col-md-6 ">
 <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
