@@ -49,7 +49,11 @@ html{
 }
 
 
-
+.site-title {
+  font-style:italic;
+  font-size: 30px;
+  
+}
 
 /*themeing target*/\
 
