@@ -112,7 +112,7 @@
   ></a>
 
     <!-- Collapsible wrapper -->
-    <div class="navbar-nav">
+    <div class="navbar-nav sticky-top">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left links -->
              <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
@@ -137,7 +137,8 @@
 <!--ripple + favicon fix collapse-->
 <button btn-lg data-mdb-ripple-init  data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
 
-
+<button type="button" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark">Primary</button>
+btn-outline-primary btn-rounded
 
 <div>
         <!-- Navbar dropdown -->
@@ -195,7 +196,7 @@
 
 
 <!--fix homeportal first p FIX-->
-
+<div id="homepage"></div>
 <a class="link" href="#homeportal" data-scroll>home portal</a>
 <!-- update link <a class="link" href="#projects" data-scroll>Projects</a>-->
 <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -278,10 +279,17 @@
 
 
 <div class="row shadow-3 container d-grid fixed-bottom ">
-  <footer id="footer-nav" 
+  <footer id="footer-nav bg-body-tertiary" 
   <div id="footer-list" ">
+
+
     <!-- Section: Social media -->
-    <div class=" list-item mb-4">
+     <section class="d-flex justify-content-center justify-content-lg-between p-4"
+     <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    
+     <div class=" list-item mb-4">
       <!-- LinkedIn -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
         ><i class="fab fa-linkedin"></i   
@@ -297,12 +305,12 @@
         ><i class="fab fa-twitter"></i
       ></a>
 
-      <!--copyright-->
     <!-- Copyright -->
     <div class="--container text-center ">
       © 2024 Copyright: Victoria Joseph
       <a class="text-body" href="insert github pages here">victoriajoseph.com</a>
   </div>
+  </section>
     <!-- Copyright -->
       </div>
     </footer>
