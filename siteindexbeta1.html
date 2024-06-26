@@ -69,16 +69,24 @@
 <!--june 23 recent ver <div class=" homepage grid"> fix-->
   
 
-<body class="container g-col-4 bg-900  d-flex  "  data-bs-spy="scroll"">
+<body data-bs-spy="scroll"">
   <div class="row"
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   
 
 
 
-<!--make nav appear only at scroll down-->
+  <!-- 
+  body fix 
+  body class=" homepage g-col-4 bg-900  d-flex  " 
+  <div class="row d-grid  gap-3 col-md-6">
+    <div class="col "
+    <div class="p-2"
+  </div>--> 
+ 
 
-<!---->
+
+<!--make nav appear only at scroll down-->
 
 
 
@@ -107,7 +115,7 @@
     <div class="navbar-nav">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left links -->
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
           <a class="nav-link active aria-current="page" href="#">home portal</a>   <!--homportal-->
           <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/magnolianroot" target="_blank" role="button"
           ><i class="fab fa-github"></i
@@ -125,9 +133,6 @@
         <div class="ms-2 form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
         </div>
-        <i class="fas fa-moon"></i>
-        
-</li>
 
 <!--ripple + favicon fix collapse-->
 <button btn-lg data-mdb-ripple-init  data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
@@ -190,14 +195,14 @@
 
 
 <!--fix homeportal first p FIX-->
-<div id="homeportal"></div>
+
 <a class="link" href="#homeportal" data-scroll>home portal</a>
 <!-- update link <a class="link" href="#projects" data-scroll>Projects</a>-->
 <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 
 </div>
-<h1>
-  <div class="site-title">Victoria Joseph ~ Full Stack Developer • Designer  
+<h1>    <!--make title resume link-->
+  <div class="site-title data-mdb-ripple-color="success" ">Victoria Joseph ~ Full Stack Developer • Designer  
   </div>
 </h1>
 
@@ -206,7 +211,7 @@
 <!--bootstrap 4 grid about section-->
 
 
-<div class=" homepage d-grid gap-3 col-md-6">
+
   <div class="row d-grid  gap-3 col-md-6">
     <div class="col "
     <div class="p-2"

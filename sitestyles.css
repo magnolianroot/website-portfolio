@@ -10,6 +10,17 @@ html{
 
 }
 
+* { 
+  
+  scroll-behavior: smooth;
+  initial-letter: 2;
+  
+
+  justify-content: space-between; 
+  
+
+}
+
 
 
 /* dark theme bg    background-color: rgb(4, 20, 9);
@@ -27,8 +38,6 @@ html{
   background-color: rgb(4, 20, 9);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow-y: scroll;
   position: relative;
 
@@ -52,9 +61,32 @@ html{
   font-style:italic;
   font-size: 30px;
   
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+
+
+}
+
+/*fix afterglow*/
+
+a:visited {
+  text-decoration: none;
 }
 
 
+a:hover {
+  color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+/*fix*/
 .header, .nav {
 
 
@@ -71,6 +103,49 @@ html{
   padding: 14px;
   text-decoration: none;
 }
+
+.navbar-nav {
+  margin: 20px;
+ 
+  
+    background: rgba(63, 5, 44, 0.479); 
+   grid-area: span;
+   background:linear-gradient(blur);
+   backdrop-filter: blur(3px);
+   text-decoration: none;
+   justify-content: end;
+   -webkit-backdrop-filter: blur(4.5px);
+   top: 10px;
+ 
+ }
+ 
+
+ .nav-link {
+  text-decoration: none;
+
+}
+
+
+
+.navbar:hover {
+
+  text-decoration: none;
+  background-color: ;
+  
+}
+
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+
+
+  }
+  
+
+
+
+
+
 
 
 
@@ -99,11 +174,15 @@ html{
     align-items: center;
 
     text-align:center;
- 
+   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+
+
 }
 
 
-
+/* add success to button click effect */
 
 a:hover {
   color: #fdec6e;
@@ -114,30 +193,6 @@ a:hover {
   transition: all 0.2s ease-in;
 }
 
-
-/*fix afterglow*/
-
-a:visited {
-  text-decoration: none;
-  color: #fff;
-}
-
-a {
-  color:#fff;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-a:hover {
-  color: #fdec6e;
-  text-shadow:0px 0px 30px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
 
 
 
@@ -230,19 +285,6 @@ wrap i think */
 
 
 
-
-* { 
-  
-  scroll-behavior: smooth;
-  initial-letter: 2;
-  
-
-  justify-content: space-between; 
-  
-
-}
-
-
 .flex-grow {
   flex: 1 0 auto;
 
@@ -292,8 +334,13 @@ background: linear-gradient(rgba);
 }
 
 
+/* /???*/
+.col {
+  justify-content: center;
+  align-items: center;
 
 
+}
 
 
 
@@ -307,25 +354,8 @@ background: linear-gradient(rgba);
 
 
 /* .navmake blurry effect */
-.navbar-nav {
- margin: 20px;
 
- 
-   background: rgba(63, 5, 44, 0.479); 
-  grid-area: span;
-  background:linear-gradient(blur);
-  backdrop-filter: blur(3px);
-  text-decoration: none;
-  justify-content: end;
-  -webkit-backdrop-filter: blur(4.5px);
-  top: 10px;
 
-}
-
-.div.container {
-  text-align: center;
-
-}
 
 
 
@@ -351,31 +381,6 @@ background: linear-gradient(rgba);
 
 
 
-.nav-link {
-  text-decoration: none;
-
-}
-
-.footer:hover fab fa-linkedin{
-  transform:translate3d(0,-10px,20px);
-  color:#077099;
-}
-
-
-.navbar:hover {
-
-  text-decoration: none;
-  background-color: ;
-  
-}
-
-
-  .nav-link:hover::before {
-    transform: scaleX(1);
-
-
-  }
-  
 
 
 
