@@ -406,7 +406,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* hero area */
 
+.about-img{
+ margin-left: -100px;
+ right: -60px;
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+
+}
+
+.position-absolute{
+  font-weight: 700;
+
+}
 
 
 

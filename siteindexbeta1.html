@@ -62,14 +62,14 @@
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<main> <!--where root directory starts/lives ...class container???-->
+<main class="container" > <!--where root directory starts/lives ...class container???-->
 
  
 
 <!--june 23 recent ver <div class=" homepage grid"> fix-->
   
 
-<body data-bs-spy="scroll"">
+<body   data-bs-spy="scroll"">
   <div class="row"
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   
@@ -135,10 +135,18 @@
         </div>
 
 <!--ripple + favicon fix collapse-->
-<button btn-lg data-mdb-ripple-init  data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
+<button type="button"  >
+<button btn-lg data-mdb-ripple-init data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
 
-<button type="button" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark">Primary</button>
-btn-outline-primary btn-rounded
+
+
+<!--hero area fix-->
+  <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+    <img class="img-fluid w-100 rounded-circle shadow-sm" src="0101001" alt="Victoria Joseph | Full Stack Developer">
+  </div>
+
+
+
 
 <div>
         <!-- Navbar dropdown -->
@@ -202,7 +210,8 @@ btn-outline-primary btn-rounded
 <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 
 </div>
-<h1>    <!--make title resume link-->
+<h1 class="mb-4">    <!--make title resume link-->
+
   <div class="site-title data-mdb-ripple-color="success" ">Victoria Joseph ~ Full Stack Developer • Designer  
   </div>
 </h1>
