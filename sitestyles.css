@@ -28,13 +28,13 @@ html{
 */
 
 /* apply this theme to homepage id */
-.homepage   {
+main  {
 
   margin:auto;
   overflow:hidden;
   font-family: 'Source Code Pro', monospace;
 
-
+  flex-wrap: wrap;
   background-color: rgb(4, 20, 9);
   display: flex;
   flex-direction: column;
@@ -95,19 +95,10 @@ a:hover {
 
 
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
 .navbar-nav {
   margin: 20px;
  
-  
+  float: left;
     background: rgba(63, 5, 44, 0.479); 
    grid-area: span;
    background:linear-gradient(blur);
@@ -116,7 +107,8 @@ a:hover {
    justify-content: end;
    -webkit-backdrop-filter: blur(4.5px);
    top: 10px;
- 
+   text-align: center;
+  padding: 14px;
  }
  
 
@@ -152,17 +144,6 @@ a:hover {
 
 /*themeing target*/
 
-.container {
-
-  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
-  -webkit-backdrop-filter: blur(6.9px);
-
-
-
-
-}
-
 
 
 .container {
@@ -177,6 +158,14 @@ a:hover {
    box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
   backdrop-filter: blur(6.9px);  !!!
   -webkit-backdrop-filter: blur(6.9px);
+
+  display: flex; /*keep*/ 
+
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+
+
 
 
 }
@@ -270,16 +259,6 @@ wrap i think */
 
 /*    color: #072016f5;  
   .container: background-color: #c5afaf;*/
-
-
-
-
-
-.flex-container { 
-
-
-}
-
 
 
 
