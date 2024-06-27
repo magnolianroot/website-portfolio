@@ -28,7 +28,7 @@ html{
 */
 
 /* apply this theme to homepage id */
-main  {
+main {
 
   margin:auto;
   overflow:hidden;
@@ -49,12 +49,22 @@ main  {
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
   backdrop-filter: blur(6.9px);  !!!
   -webkit-backdrop-filter: blur(6.9px);
+  flex-flow: column wrap;
 
-
-
+justify-content: flex-between;
 
 
 }
+
+/* flex-box item grow*/
+.item {
+    flex-grow: 1;   
+}
+.item-1 {
+    flex-grow: 2;
+}
+
+
 
 
 .site-title {
