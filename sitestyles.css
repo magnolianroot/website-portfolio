@@ -56,7 +56,7 @@ justify-content: flex-between;
 
 }
 
-/* flex-box item grow*/
+/* flex-box item grow finish*/
 .item {
     flex-grow: 1;   
 }
@@ -170,6 +170,10 @@ a:hover {
   -webkit-backdrop-filter: blur(6.9px);
 
   display: flex; /*keep*/ 
+  flex-wrap;
+
+
+
 
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
   backdrop-filter: blur(6.9px);  !!!
