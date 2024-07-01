@@ -1,5 +1,8 @@
 
 @import '~mdb-ui-kit/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
 
 html{
   height: 100%;
@@ -75,7 +78,7 @@ justify-content: flex-between;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-
+font-family:eb garamond ;
 
 }
 
@@ -119,6 +122,10 @@ a:hover {
    top: 10px;
    text-align: center;
   padding: 14px;
+  position: sticky;
+  top: 0;
+
+
  }
  
 
@@ -126,6 +133,22 @@ a:hover {
   text-decoration: none;
 
 }
+
+/* geeks for geeks glow effect */
+
+    margin-top: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'century gothic';
+    color: #ffffcc;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px green,
+        0 0 30px green,
+        0 0 40px green,
+        0 0 55px green,
+        0 0 70px green;
+
 
 
 
@@ -194,6 +217,7 @@ a:hover {
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out   ;
 }
 
 
