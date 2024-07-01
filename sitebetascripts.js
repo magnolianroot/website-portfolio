@@ -1,3 +1,6 @@
+
+
+
 //back-to-top button 
 let window = document;
 window.onscroll = function () {
@@ -159,4 +162,10 @@ twttr.widgets.createTimeline(
   document.getElementById("container")
 );
 
-  
+
+/*navbar togglr */
+  const toggleMenu = document.querySelector(".toggle-menu");
+const navTop = document.querySelector(".nav-top");
+toggleMenu.addEventListener("click", () => {
+  navTop.classList.toggle("is-active");
+});
