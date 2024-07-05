@@ -62,7 +62,7 @@
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<main class="container"> <!--where root directory starts/lives ...class container???-->
+<main class="container d-flex"> <!--where root directory starts/lives ...class container???-->
 "
 
 <!--june 23 recent ver <div class=" homepage grid"> fix-->
@@ -86,16 +86,17 @@
  
 
 
-<!--make nav appear only at scroll down-->
+    <!-- Navbar brand -->
+<!--make nav appear only at scroll down; container tag always full height h-100    <div class="  px-4"></div> -->
 
 <!--USING FLEXBOX-->
 
-<header class="container col">
+<header class="container  h-100col">
+<div class=" px-4"
+
   
 <nav class="sticky-top navbar navbar-brand navbar-expand-md role = "navigation">
-  <!-- Container wrapper -->
-  <div class="  px-4"></div>
-    <!-- Navbar brand -->
+  <div class="container-fluid">    <!--container wrapper-->
 
     <!-- Toggle button -->
     <button class="navbar-toggler  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
@@ -107,10 +108,11 @@
   ></a>
 
     <!-- Collapsible wrapper -->
+
     <div class="navbar-nav ">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left links -->
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
+             <ul class="navbar-nav me-auto mb-2 mb-md-0 "></ul>
           <a class="nav-link active aria-current="page" href="#">home portal</a>   <!--homportal-->
           <a class="nav-link" data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/magnolianroot" target="_blank" role="button"
           ><i class="fab fa-github"></i
@@ -133,7 +135,7 @@
 <button btn-lg data-mdb-ripple-init data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
 
 
-
+<div class="container-fluid"> <!--containher wrapper, toggle button after-->
 <div>
   <nav class="navbar navbar-expand-md bg-body-transparent fixed-top">
         <!-- Navbar dropdown -->
@@ -175,7 +177,7 @@
   </div>
   <!-- Container wrapper -->
 </nav>
-
+</div>
 
 <!-- Navbar -->
 
@@ -206,11 +208,6 @@
 </div></a>
 </h1>
 
-<!-- make title intpo button <button type="button"  >
-  <button btn-lg data-mdb-ripple-init data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
-
-  <a href="experienced-web-dev-pdf.pdf" target="_blank">Visit Example</a>
--->
 
 <!--put this side by side w pre -->
 <!--bootstrap 4 grid about section-->
@@ -218,36 +215,28 @@
 
   <div class="row gap-3 col-md-6">
     <h2>
+  <pre>
     <div class="col "
-      <br>About me:
       <pre>
+        <br> skills:
         JavaScript    HTML      CSS
         Bootstrap     SQL       Node.js
         Shopify       WordPress UI/UX
         PHP           GitHub    Git   
       </pre>
+      <h2>
       </div>
-    </h2>
 
- <div class="row "
-   <div class="col "
+
+    </header>  <!--header end-->
+<div class="row gap-3 col-md-6
+    <div class="col>
       <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
         </p>
       </div>
-     </div>
-    </div
- 
-<div class="gap-3 col-md-6 ">
-  <div class=" row"
-<p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
-       As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
-        Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
-</p>
-</div>
-</div>
-
+    </div>
 
 <!--github pages-->
 
@@ -280,14 +269,12 @@
  <footer id="footer-nav bg-body-tertiary" 
 L<div class="row">
 
-  <div id="footer-list" ">
+  <div id="footer-list col>
 
-
+    me-5 d-none d-lg-block
     <!-- Section: Social media -->
      <section class="d-flex justify-content-center justify-content-lg-between p-4"
-     <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
+
     
      <div class=" list-item mb-4">
       <!-- LinkedIn -->
