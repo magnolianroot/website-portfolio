@@ -119,12 +119,23 @@ font-family:eb garamond ;
    text-decoration: none;
    justify-content: end;
    -webkit-backdrop-filter: blur(4.5px);
-   top: 10px;
-   text-align: center;
-  padding: 14px;
   position: sticky;
-  top: 0;
   font-family:eb garamond ;
+padding: 0 30px;
+width: 400px;
+
+display: flex;
+height: 100px;
+  position: fixed;
+left: 0;
+right: 0;
+width: 500px;
+margin: 0 auto;
+top: 120px;
+
+
+ /*justify-content: center;
+align-items: center;*/
 
  }
  
