@@ -21,6 +21,8 @@ html{
 
   justify-content: space-between; 
   
+  box-sizing: border-box;
+
 
 }
 
@@ -318,7 +320,10 @@ wrap i think */
   .container: background-color: #c5afaf;*/
 
 
+.footer-nav {
+color:inherit;
 
+}
 
 
 .flex-grow {
@@ -327,13 +332,11 @@ wrap i think */
 }
 
 
-/*make div containters somehow translucent bg*/
+/*make div containters somehow translucent bg
 
 /* .navbar {
 background: linear-gradient(rgba);
-
 }
-
 
 
 /*footer link inline*/
@@ -392,6 +395,12 @@ background: linear-gradient(rgba);
 /* .navmake blurry effect */
 
 
+col {
+  display: inline-block;
+
+
+
+}
 
 
 
