@@ -113,29 +113,27 @@ font-family:eb garamond ;
 .navbar-nav {
   margin: 20px;
  
-   float: left;
    background: rgba(63, 5, 44, 0.479); 
    grid-area: span;
    background:linear-gradient(blur);
    backdrop-filter: blur(3px);
    text-decoration: none;
-   justify-content: end;
    -webkit-backdrop-filter: blur(4.5px);
   position: sticky;
   font-family:eb garamond ;
 padding: 0 30px;
 width: 400px;
 
-display: flex;
-height: 100px;
-  position: fixed;
 left: 0;
 right: 0;
 width: 500px;
 margin: 0 auto;
-top: 120px;
 
-
+top: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 1.5rem 2rem;
  /*justify-content: center;
 align-items: center;*/
 
