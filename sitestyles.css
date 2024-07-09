@@ -129,12 +129,19 @@ right: 0;
 width: 500px;
 
 top: 0;
-display: flex;
+display: flex; !important /
+gap: 1rem;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 1.5rem 2rem;
  /*justify-content: center;
 align-items: center;*/
+}
+
+nav-list {
+.flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: wrap;
 
  }
  
