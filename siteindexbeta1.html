@@ -62,9 +62,9 @@
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<main  > <!--where root directory starts/lives ...class container???-->
+<main> <!--where root directory starts/lives ...class container???-->
 
-class="container .d-flex"  <!--makes flexbox containers-->
+<!--class="container .d-flex"  makes flexbox containers-->
 
 
 
@@ -74,8 +74,7 @@ class="container .d-flex"  <!--makes flexbox containers-->
   col-xs-6 
 
 
-<body  >  <!--nav parent container i.e. all containers-->
-<div class="container"
+<body class="container d-flex" >  <!--nav parent container i.e. all containers-->
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   
@@ -92,13 +91,12 @@ class="container .d-flex"  <!--makes flexbox containers-->
  
 
 
-<!--make nav appear only at scroll down-->
 
-<!--USING FLEXBOX-->
+<!--flexbox-->
 
 
-<header class="container">
-<nav class="sticky-top navbar navbar-brand navbar-expand-md role = "navigation">
+<header>
+<nav class="sticky-top navbar navbar-brand navbar-expand-lg role = "navigation">
   <div class="container-fluid">    <!--container wrapper-->
 
     <!-- Toggle button -->
@@ -139,9 +137,9 @@ class="container .d-flex"  <!--makes flexbox containers-->
 href="experienced-web-dev-pdf.pdf" target="_blank">
 
 
-<div class="container-fluid"> <!--containher wrapper, toggle button after-->
-<div>
-  <nav class="navbar navbar-expand-md bg-body-transparent fixed-top">
+ <!--containher wrapper, toggle button after navbar-expand-md class only added for nvr collapse-->
+  <nav class=" container-fluid bg-body-transparent sticky-top">
+     <div class="container-fluid">
         <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
           <a
@@ -180,9 +178,8 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
     <!-- Collapsible wrapper -->
   </div>
   <!-- Container wrapper -->
+<div>
 </nav>
-</div>
-</div>
 <!-- Navbar -->
 
 
@@ -232,43 +229,24 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
 
     </header>  <!--header end-->
 <!-- <div class="row">-->
-    <div class="col-md-6 gap-3">
+    <div class=" col-lg" >
       <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
         </p>
-      </div>
     </div>
   </section>
 <!--github pages-->
 
+<!--resume + btn-top fix alignment-->
+<a id="btn-top" href="#" class="btn btn-light btn-md back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
-<button class="id">
-
-
-<!--bootstrap 4 grid end-->
-
-<!--gifs in folder, imagur buggy-->  
-
-  <!--if fail add line breaks, html pre element-->
-
-
-
-     
-
-
-
-<!--example of responsive grid g-col-2 g-col-md-4  -->
 
 <!-- Footer -->
-<!-- Grid container -->
-
-
-<!--resume + btn-top fix alignment-->
- <a id="btn-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-
+ 
+ <footer id="footer-nav bg-body-tertiary" 
 <div class="container">
-  <footer id="footer-nav bg-body-tertiary" 
+
   <div id="footer-list">
 
      <section class="d-flex justify-content-center justify-content-lg-between p-4"
@@ -293,7 +271,7 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
     <!-- Copyright -->
     <div class="--container text-center ">
       © 2024 Copyright: Victoria Joseph
-      <a class="text-body" href="insert github pages here">victoriajoseph.com</a>
+      <a class="text-body" href="insert github pages here"></a>
   </div>
 
     <!-- Copyright -->
@@ -301,25 +279,8 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
       </div>
     </footer>
 
+
 </div>
-
-
-<!--template info-->
-
-
-<!-- Section: Dark variant -->
-
-
-
-
-
-    <!-- Section: footer social -->
-
-
-
-
-<!--code update-->
-
 
 
 
@@ -331,16 +292,6 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
 </div>
 
 </div>  
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -376,22 +327,4 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
 
 
 </html>
-
-
-
-
-<!--insert favicon file into doc-->
-<!--create pic/gif for cursor on hover,
-implement chatgpt api tts and ...-->
-<!--add chatbot w chatgpt api-->
-<!--add sidebar on lg breakpoint-->
-<!--add ghost buttons?, site favicon-->
-
-
-
-
-</div>
-</div>         
-</div>  
-
 

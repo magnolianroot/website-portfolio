@@ -365,15 +365,12 @@ background: linear-gradient(rgba);
 
 
 /*footer link inline*/
-#footer-list, #footer-container {
+footer {
 
  /* Optional: For improved browser support */
  white-space: normal;
 
 
-
-
- 
    background: rgba(61, 34, 53, 0.603); 
   grid-area: span;
   background:linear-gradient(blur);
@@ -402,6 +399,7 @@ background: linear-gradient(rgba);
 .col {
   justify-content: center;
   align-items: center;
+  display: inline-block;
 
 
 }
@@ -419,13 +417,6 @@ background: linear-gradient(rgba);
 
 /* .navmake blurry effect */
 
-
-col {
-  display: inline-block;
-
-
-
-}
 
 
 
