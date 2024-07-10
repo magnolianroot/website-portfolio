@@ -137,6 +137,54 @@ padding: 1.5rem 2rem;
  /*justify-content: center;
 align-items: center;*/
 }
+ 
+
+
+ body {    /*container*/
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+
+
+}
+
+
+div {
+
+
+  .flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; 8 !important
+    justify-content: center;
+position: relative; !important;
+    box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
+    align-items: center;
+transition:0.4s ease-in-out;
+    text-align:center;
+   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+
+  display: flex; /*keep*/ 
+  flex-wrap: wrap;
+
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+  .flex-grow: 1;
+  flex-shrink: 1;
+
+}
+
+
+
 
 nav-list {
 .flex-grow: 1;
@@ -186,19 +234,9 @@ flex-wrap: wrap;
 
 
 
-body {
-  display: flex;
-  flex-wrap: wrap;
- 
-
-
-
-}
-
-
 section {
 
-  flex: 3;  
+  flex: 4;  
   justify-content: flex-evenly;
 flex-direction: col;
 
@@ -210,34 +248,6 @@ flex-direction: col;
 /*themeing target*/
 
 
-
-.container {
-  display: flex;
-  flex-direction: column; 8 !important
-    justify-content: center;
-position: relative; !important;
-    box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
-    align-items: center;
-transition:0.4s ease-in-out;
-    text-align:center;
-   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
-  -webkit-backdrop-filter: blur(6.9px);
-
-  display: flex; /*keep*/ 
-  flex-wrap;
-
-
-
-
-  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
-  -webkit-backdrop-filter: blur(6.9px);
-
-
-
-
-}
 
 
 /* add success to button click effect */
