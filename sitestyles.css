@@ -46,7 +46,7 @@ main {
 
   overflow-y: auto;    /* Trigger vertical scroll    */
   overflow-x: hidden; /*idk*/
-padding: 40px;
+padding: 700px 40px;
 
   color: #3b4768;
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
@@ -72,7 +72,7 @@ justify-content: flex-between;
 
 .site-title, h2 {
   font-style:italic;
-  font-size: 30px;
+  font-size: 50px;
   
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -107,14 +107,14 @@ font-family:eb garamond ;
 }
 
 
-
+/*backdrop-filter: blur(3px);*/
 .navbar-nav {
   margin: 20px;
  
    background: rgba(63, 5, 44, 0.479); 
    grid-area: span;
    background:linear-gradient(blur);
-   backdrop-filter: blur(3px);
+ 
    text-decoration: none;
    -webkit-backdrop-filter: blur(4.5px);
   position: sticky;
@@ -146,6 +146,23 @@ align-items: center;*/
 
 
 }
+
+/*flex items*/
+col {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex-direction: row;
+  }
+}
+
+
 
 
 div {
@@ -187,6 +204,7 @@ nav-list {
 .flex-grow: 1;
 flex-shrink: 1;
 flex-wrap: wrap;
+justify-content: flex-center;
 
  }
  
