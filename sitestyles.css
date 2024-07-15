@@ -67,7 +67,12 @@ justify-content: flex-between;
     flex-grow: 2;
 }
 
+:root {
+ --bg-color:rgb(4, 20, 9);
 
+
+
+}
 
 
 .site-title, h2 {
