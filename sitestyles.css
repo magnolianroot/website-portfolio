@@ -67,12 +67,7 @@ justify-content: flex-between;
     flex-grow: 2;
 }
 
-:root {
- --bg-color:rgb(4, 20, 9);
 
-
-
-}
 
 
 .site-title, h2 {
@@ -147,6 +142,557 @@ align-items: center;*/
   display: flex;
   flex-wrap: wrap;
 
+
+
+
+}
+
+/*flex items*/
+col {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex-direction: row;
+  }
+}
+
+
+
+
+div {
+
+
+  .flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; 8 !important
+    justify-content: center;
+position: relative; !important;
+    box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
+    align-items: center;
+transition:0.4s ease-in-out;
+    text-align:center;
+   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+
+  display: flex; /*keep*/ 
+  flex-wrap: wrap;
+
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+  .flex-grow: 1;
+  flex-shrink: 1;
+
+}
+
+
+
+
+nav-list {
+.flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: wrap;
+justify-content: flex-center;
+
+ }
+ 
+
+ .nav-link {
+  text-decoration: none;
+
+}
+
+/* geeks for geeks glow effect
+
+    margin-top: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'century gothic';
+    color: #ffffcc;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px green,
+        0 0 30px green,
+        0 0 40px green,
+        0 0 55px green,
+        0 0 70px green;
+*/
+
+
+
+.navbar-nav:hover {
+
+  text-decoration: none;
+  background-color: ;
+  
+}
+
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+
+
+  }
+  
+
+
+
+section {
+
+  flex: 4;  
+  justify-content: flex-evenly;
+flex-direction: col;
+
+
+}
+
+
+
+/*themeing target*/
+
+
+
+
+/* add success to button click effect */
+
+a:hover {
+  color: #fdec6e;
+  text-shadow:0px 0px 30px #f0dc49;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out   ;
+}
+
+
+
+.alert {
+  opacity: 1.7;
+  transition: opacity 0.6s; /* 600ms to fade out */
+  font-family:eb garamond ;
+}
+
+
+
+
+
+
+
+/*   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+wrap i think */
+
+
+.force-overflow {
+	min-height: 450px;
+}
+
+
+
+
+
+/* position: relative on element spying on, usually body*/
+.nav {
+
+
+}
+
+
+.section, {
+
+
+  overflow-y:scroll;
+  display: inline-block;
+ 
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  max-width: ;
+
+
+   height: 40vh;
+  
+  }
+
+
+
+
+
+
+  .container:hover {
+
+/*
+    transition-delay:200ms;
+    transition-timing-function:ease-in;
+    transition-duration:600ms; /*fix*/
+    */
+
+  
+  }
+  
+
+/*
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.05); */
+  
+
+
+
+/*    color: #072016f5;  
+  .container: background-color: #c5afaf;*/
+
+
+.footer-nav {
+color:inherit;
+
+}
+
+
+.flex-grow {
+  flex: 1 0 auto;
+
+}
+
+
+/*make div containters somehow translucent bg
+
+/* .navbar {
+background: linear-gradient(rgba);
+}
+
+
+/*footer link inline*/
+footer {
+
+ /* Optional: For improved browser support */
+ white-space: normal;
+
+
+   background: rgba(61, 34, 53, 0.603); 
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+  text-decoration: none;
+  justify-content:right;
+  -webkit-backdrop-filter: blur(4.5px);
+  top: 10px;
+ background-blend-mode: luminosity;
+
+
+
+
+
+}
+
+
+#footer-list {
+
+
+
+}
+
+
+/* /???*/
+.col {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+
+}
+
+
+
+.myul {
+  display: inline-block;
+  text-align: left;
+
+
+}
+
+
+
+/* .navmake blurry effect */
+
+
+
+
+
+
+
+/*back to top button hidden*/
+#myBtn {
+  position:fixed;
+  bottom: 36px;
+  right: 30px;
+  inline-size: 90px;
+  z-index: 1000;
+  cursor:grabbing;
+  display: none;
+
+}
+
+/* #myBtn:hover {
+  background-color: #555;
+
+} */
+
+
+
+
+
+
+
+.li {
+
+
+}
+
+
+/* scrollbar*/
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(216, 203, 203, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 11, 14);
+  outline: 2px solid rgb(22, 1, 6);
+}
+
+
+/* hero area */
+
+.about-img{
+ margin-left: -100px;
+ right: -60px;
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+
+}
+
+.position-absolute{
+  font-weight: 700;
+
+}dd
+
+
+
+/*
+glassmorphic From https://css.glass /* 
+
+
+background: rgba(255, 255, 255, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);  !!!
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.05); */
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+
+html{
+  height: 100vh; !important /* fixed*/ 
+ width: 100vh;
+
+
+
+}
+
+* { 
+  
+  scroll-behavior: smooth;
+  initial-letter: 2;
+  
+
+  
+  box-sizing: border-box;
+
+
+}
+
+
+
+/* dark theme bg    background-color: rgb(4, 20, 9);
+ lite theme bg      rgb(204, 223, 210);
+*/
+
+/* apply this theme to homepage id */ /*main is container w control of children elements */
+main {
+
+  margin:auto;
+  overflow:hidden;
+  font-family: 'Source Code Pro', monospace;
+
+  flex-wrap: wrap;
+  background-color: rgb(4, 20, 9);
+  display: flex; !important  */important for div or containher*/
+  flex-direction: column;
+  overflow-y: scroll;
+  position: relative;
+
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden; /*idk*/
+padding: 700px 40px;
+
+  color: #3b4768;
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px);  !!!
+  -webkit-backdrop-filter: blur(6.9px);
+  flex-flow: column wrap;
+
+justify-content: flex-between;
+
+
+
+
+/*css cariables begin*/
+:root {
+  --bg-color:rgb(4, 20, 9);
+
+
+
+
+}
+
+}
+
+/* flex-box item grow finish*/
+.item {
+    flex-grow: 1;   
+}
+.item-1 {
+    flex-grow: 2;
+
+
+
+
+
+}
+
+/* Media query to set website layout according to screen size */
+@media screen and (min-width: 768px){
+ col,
+ col,
+ col, {
+  width: 50%;
+  
+
+  }
+}
+
+@media screen and (min-width: 500px){
+  col,
+  col,
+  col, {
+   width: 100%;
+   
+ 
+   }
+ }
+
+
+
+ fff
+.site-title, h2 {
+  font-style:italic;
+  font-size: 50px;
+  
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+font-family:eb garamond ;
+
+}
+
+/*fix afterglow*/
+
+.site-title:visited, h2:visited {
+  text-decoration: none;
+}
+
+
+.site-title:hover, h2:hover {
+  color: #aca4bd;
+  text-shadow:0px 0px 30px #a79abe;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+/*fix*/
+.header, .nav {
+
+
+
+}
+
+
+/*backdrop-filter: blur(3px);*/
+.navbar-nav {
+  margin: 20px;
+ 
+color: var(--bg-color);
+   grid-area: span;
+   background:linear-gradient(blur);
+ 
+   text-decoration: none;
+   -webkit-backdrop-filter: blur(4.5px);
+  position: sticky;
+  font-family:eb garamond ;
+padding: 0 30px;
+width: 400px;
+  margin: 10px;
+left: 0;
+right: 0;
+width: 500px;
+overflow: hidden;
+top: 0;
+display: flex; !important /
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 1.5rem 2rem;
+ /*justify-content: center;
+align-items: center;*/
+}
+ 
+
+
+ body {    /*container*/
+  display: flex;
+  flex-wrap: wrap;
+  
 
 
 
