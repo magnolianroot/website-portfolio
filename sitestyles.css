@@ -6,7 +6,6 @@
 
 html{
   height: 100vh; !important /* fixed*/ 
- width: 100vh;
 
 
 
@@ -34,34 +33,39 @@ font-family: 'Source Code Pro', monospace; font for footer and nav, header
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
+  font-family:eb garamond ;
   background-color: rgb(4, 20, 9);
   margin:auto;
   overflow:hidden;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*important*/
   align-items: strech; /*important*/
-  display: flex; !important  */important for div or containher*/
-  display: flex;
+  display: flex;  */important for div or containher*/
+
 	flex-flow: row wrap;
   overflow-y: scroll;
   position: relative;
-
+  align-content: space-around;
   overflow-y: auto;    /* Trigger vertical scroll    */
   overflow-x: hidden; /*idk*/
   padding: 700px 40px;
 
   color: #3b4768;
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
+  backdrop-filter: blur(6.9px); 
   -webkit-backdrop-filter: blur(6.9px);
   flex-flow: column wrap;
 
-justify-content: flex-between;
+justify-content: flex-around;
 
 }
 
+body {
+  margin: 0px;
+  padding: 0PX;
 
+}
 
 /* flex-box item grow finish*/
 .item {
@@ -76,7 +80,7 @@ justify-content: flex-between;
   gap:20px;
 }
 
-.site-title,  {
+.site-title  {
   font-style:italic;
   font-size: 50px;
   
@@ -88,14 +92,24 @@ justify-content: flex-between;
 
 }
 
-div {
 
-  font-family: 'Source Code Pro', monospace;
-
-}
+/*  font-family: 'Source Code Pro', monospace;*/
 
 
-section {
+
+pre {
+
+  flex: 2;  
+  justify-content: flex-evenly;
+  flex-direction: col;
+
+  overflow-y:scroll;
+  display: inline-block;
+ 
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  font-family:eb garamond ;
 
  
 }
@@ -113,7 +127,7 @@ section {
 
 div:hover {
   color: #aca4bd;
-  text-shadow:0px 0px 30px #a79abe;
+  text-shadow:0px 0px 30px #b1507d;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -121,41 +135,43 @@ div:hover {
 }
 
 
-/*fix*/
+/*fix
 .header, .nav {
 
 
 
 }
-
+*/
 
 /*backdrop-filter: blur(3px);*/
-.navbar-nav {
+nav {
   margin: 20px;
  
-   background: rgba(63, 5, 44, 0.479); 
+   backdrop-filter: rgba(63, 5, 44, 0.363); 
    grid-area: span;
    background:linear-gradient(blur);
- 
    text-decoration: none;
    -webkit-backdrop-filter: blur(4.5px);
   position: sticky;
-  font-family:eb garamond ;
+
 padding: 0 30px;
 width: 400px;
   margin: 10px;
 left: 0;
 right: 0;
 width: 500px;
-
+  flex-grow: 1;
 top: 0;
-display: flex; !important /
+
 gap: 1rem;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 1.5rem 2rem;
  /*justify-content: center;
 align-items: center;*/
+
+
+
 }
  
 
@@ -190,32 +206,33 @@ col {
 div {
 
 
-  .flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 1;
 }
 
 
 .container {
-  display: flex;
-  flex-direction: column; 8 !important
+
+  flex-direction: row; 
     justify-content: center;
-position: relative; !important;
+position: relative; 
     box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
     align-items: center;
 transition:0.4s ease-in-out;
     text-align:center;
    box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
+  backdrop-filter: blur(6.9px);  
   -webkit-backdrop-filter: blur(6.9px);
 
   display: flex; /*keep*/ 
   flex-wrap: wrap;
 
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px);  !!!
+  backdrop-filter: blur(6.9px); 
   -webkit-backdrop-filter: blur(6.9px);
-  .flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 1;
+  width: 100vh;
 
 }
 
@@ -223,7 +240,7 @@ transition:0.4s ease-in-out;
 
 
 nav-list {
-.flex-grow: 1;
+flex-grow: 1;
 flex-shrink: 1;
 flex-wrap: wrap;
 justify-content: flex-center;
@@ -257,7 +274,7 @@ justify-content: flex-center;
 .navbar-nav:hover {
 
   text-decoration: none;
-  background-color: ;
+ /* background-color: ;  */
   
 }
 
@@ -271,14 +288,6 @@ justify-content: flex-center;
 
 
 
-section {
-
-  flex: 4;  
-  justify-content: flex-evenly;
-flex-direction: col;
-
-
-}
 
 
 
@@ -334,23 +343,6 @@ wrap i think */
 }
 
 
-.section, {
-
-
-  overflow-y:scroll;
-  display: inline-block;
- 
-  justify-content: space-evenly;
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-  max-width: ;
-
-
-   height: 40vh;
-  
-  }
-
-
 
 
 
@@ -361,10 +353,6 @@ wrap i think */
     transition-delay:200ms;
     transition-timing-function:ease-in;
     transition-duration:600ms; /*fix*/
-    */
-
-  
-  }
   
 
 /*
@@ -408,17 +396,25 @@ footer {
  white-space: normal;
 
 
-   background: rgba(61, 34, 53, 0.603); 
+
   grid-area: span;
   background:linear-gradient(blur);
   backdrop-filter: blur(3px);
   text-decoration: none;
-  justify-content:right;
+ 
   -webkit-backdrop-filter: blur(4.5px);
-  top: 10px;
+  top: 80px;
  background-blend-mode: luminosity;
 
+/*
+glassmorphic From https://css.glass */
 
+
+background: rgba(255, 255, 255, 0.11);
+border-radius: 14px;
+box-shadow: 0 4px 30px rgba(241, 194, 194, 0.1);
+backdrop-filter: blur(6.9px); 
+-webkit-backdrop-filter: blur(6.9px);
 
 
 
@@ -426,6 +422,7 @@ footer {
 
 
 #footer-list {
+  -webkit-backdrop-filter: blur(4.5px);
 
 
 
@@ -475,19 +472,19 @@ footer {
 /* #myBtn:hover {
   background-color: #555;
 
-} */
-
-
-
-
-
-
+} 
 
 .li {
 
 
 }
 
+
+
+
+
+
+*/
 
 /* scrollbar*/
 body::-webkit-scrollbar {
@@ -522,20 +519,5 @@ body::-webkit-scrollbar-thumb {
 
 }dd
 
-
-
-/*
-glassmorphic From https://css.glass /* 
-
-
-background: rgba(255, 255, 255, 0.11);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.9px);  !!!
--webkit-backdrop-filter: blur(6.9px);
-border: 1px solid rgba(255, 255, 255, 0.05); */
-
-@import '~mdb-ui-kit/css/mdb.min.css';
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 
