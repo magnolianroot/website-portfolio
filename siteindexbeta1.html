@@ -8,7 +8,8 @@
 
 
     <title>Victoria Joseph | Digital Portfolio</title>  
-<link rel="stylesheet" href="sitestyles.css"> <!--link to css stylesheet-->
+<link rel="stylesheet" href="stylesheet.css"> <!--link to css stylesheet-->
+
 
 <link rel="icon" type="image/x-icon" href="/favicon/favicon-16x16.png">
 
@@ -62,11 +63,10 @@
 <link rel="icon" type="image/png" href="favicon.ico"/>
 
 
-<main> <!--where root directory starts/lives ...class container???-->
+<main > <!--where root directory starts/lives ...class container??  class="container d-flex?-->
 
 <!--class="container .d-flex"  makes flexbox containers-->
 
-alert("welcome to the home portal");
 
 <!--june 24 recent ver <div class=" homepage grid"> fix-->
   
@@ -74,10 +74,18 @@ alert("welcome to the home portal");
   col-xs-6 
 
 
-<body class="container d-flex" >  <!--nav parent container i.e. all containers-->
+<body " >  <!--nav parent container i.e. all containers-->
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   
+
+<!--alert w close button-->
+  <div class="alert alert-primary alert-dismissible fade show" role="alert">
+    welcome to the home portal
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
 
 
 
@@ -94,13 +102,20 @@ alert("welcome to the home portal");
 
 <!--flexbox-->
 
+<script type="text/javascript">  
+  function alertbox(){  
+   alert("the skills are in the name");  
+  }  
+  </script>  
+  <input type="button" value="click" onclick="alertbox()"/>  
 
 <header>
-<nav class="sticky-top navbar navbar-brand navbar-expand-lg role = "navigation">
+
+<nav class=" navbar sticky-top navbar-expand-lg role = "navigation">
   <div class="container-fluid">    <!--container wrapper-->
 
     <!-- Toggle button -->
-    <button class="navbar-toggler  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+    <button class="navbar-toggler  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -134,7 +149,7 @@ alert("welcome to the home portal");
 
 <!--ripple + favicon fix collapse-->
 <button btn-lg data-mdb-ripple-init data-mdb-tooltip-init data-mdb-placement="top" title="Tooltip on top" data-mdb-ripple-color="success" type="button" class="btn btn-light">my resume</button>
-href="experienced-web-dev-pdf.pdf" target="_blank">
+href="experienced-web-dev-pdf.pdf" target="_blank">  
 
 
  <!--containher wrapper, toggle button after navbar-expand-md class only added for nvr collapse-->
@@ -142,7 +157,7 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
      <div class="container-fluid">
         <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
-          <a
+          <a>
             class="nav-link dropdown-toggle"
             href="#"
             id="navbarDropdown"
@@ -194,65 +209,131 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
 <!--
 <div id="homepage"></div>
 <a class="link" href="#homeportal" data-scroll>home portal</a>
-<!-- update link <a class="link" href="#projects" data-scroll>Projects</a>
+ update link <a class="link" href="#projects" data-scroll>Projects</a>
 <a class="down" href="#main" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 
 </div>
 -->
 
 
-
-<span class=" col-mb-4">    <!--make title resume link-->
-  <a class="site-title"  href="experienced-web-dev-pdf.pdf" target="_blank">Victoria Joseph ~ Full Stack Developer • Designer  <!--fixed-->
-</div></a>
+<div class="site-title">
+<span class=" col-mb-4">
+  <!--title resume link-->
+  <a class=" link-opacity-25-hover" href="experienced-web-dev-pdf.pdf" target="_blank">Victoria Joseph ~ Full Stack Developer • Designer  <!--fixed--></a>
 </span>
+</div>
 
 
 <!--put this side by side w pre -->
 <!--bootstrap 4 flexbox about section-->
 
 <!--h2 fix-->
-  <section>
-    <div class="col-mb-4 ">
+
+
+    <div>
 <pre>
-        <br> skills:
+  <br>  skills:
         JavaScript    HTML      CSS
         Bootstrap     SQL       Node.js
         Shopify       WordPress UI/UX
         PHP           GitHub    Git   
       </pre>
-      </div>
-      <section>
+         </div>
+
+<ul class="list-group list-group-light">
+  <li class="list-group-item border-0">An item</li>
+  <li class="list-group-item border-0">A second item</li>
+  <li class="list-group-item border-0">A third item </li>
+  <li class="list-group-item border-0">A fourth item </li>
+  <li class="list-group-item border-0">And a fifth one </li>
+</ul>
+
 
 
 
     </header>  <!--header end-->
-<!-- <div class="row">-->
-    <div class="row" >
+
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+
+<!--ecommerce (profile) card with booking/   fix-->
+        <section class="vh-100">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col col-md-9 col-lg-7 col-xl-5">
+                <div class="card" style="border-radius: 15px; background-color: #93ccb0;">
+                  <div class="card-body p-4 text-black">
+                    <div>
+                      <h6 class="mb-4">full stack developer</h6>
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                        <p class="small mb-0"><i class="far fa-clock me-2"></i>3 hrs</p>
+                        <p class="fw-bold mb-0">$25</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="flex-shrink-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                          alt="image of victoria joseph" class="img-fluid rounded-circle border border-light border-2"
+                          style="width: 70px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <div class="d-flex flex-row align-items-center mb-2">
+                          <p class="mb-0 me-2">@magnolianroot</p>
+                        </div>
+                        <div>    <!-- type="button" data-mdb-ripple-init  -->
+                          <button  type="button"data-mdb-tooltip-init title="click me!" data-mdb-ripple-color="success" data-mdb-placement="top" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-sm"
+                            data-mdb-ripple-color="dark">+ Follow</button>
+                          <button  type="button"data-mdb-tooltip-init  title="click me!" data-mdb-ripple-color="success" data-mdb-placement="top" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-sm"
+                            data-mdb-ripple-color="dark">See profile</button>
+                          <button  type="button"data-mdb-tooltip-init title="click me!" data-mdb-ripple-color="success" data-mdb-placement="top" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark btn-floating btn-sm"
+                            data-mdb-ripple-color="dark"><i class="fas fa-comment"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <p class="my-4 pb-1">2 clients</p>
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-rounded btn-block btn-lg"><i
+                        class="far fa-clock me-2"></i>consult with me</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
+
+
+
+<div class="col-md-6">
+ <div class="row" >
       <p> I plan to study Computer Science and specialize in AI, more specifically ML and robotics. I am also very interested in neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions to complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
         </p>
+        </div>
     </div>
   </section>
+
 <!--github pages-->
 
 <!--resume + btn-top fix alignment-->
-<div>
+<div  
 <a id="btn-top" href="#" class="btn btn-light btn-md back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 </div>
 
-<!-- Footer -->
+<!-- Footer   bg-->
  
- <footer id="footer-nav bg-body-tertiary" 
+ <footer id="footer-nav" 
 <div class="container">
 
-  <div id="footer-list">
-
-     <section class="d-flex justify-content-center justify-content-lg-between p-4"
+  <div id="footer-list" class="d-flex justify-content-center justify-content-lg-between p-2"
 
     
-     <div class=" list-item mb-4">
+  <div class=" list-item col-mb-4">
       <!-- LinkedIn -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
         ><i class="fab fa-linkedin"></i   
@@ -270,7 +351,7 @@ href="experienced-web-dev-pdf.pdf" target="_blank">
 
     <!-- Copyright -->
     <div class="--container text-center ">
-      © 2024 Copyright: Victoria Joseph
+      © 2024 Copyright: Victoria Joseph 
       <a class="text-body" href="insert github pages here"></a>
   </div>
 
