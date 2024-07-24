@@ -5,7 +5,7 @@
 
 
 html{
-  height: 100vh; !important /* fixed*/ 
+  height: 100vh; /* fixed*/ 
 
 
 
@@ -23,13 +23,19 @@ html{
 
 }
 
+/* main {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+}
+  
+.hover-container {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
+}
 
 
-/* dark theme bg    background-color: rgb(4, 20, 9);
- lite theme bg      rgb(204, 223, 210);
+font-family: 'Source Code Pro', monospace; font for footer and nav,
 
-font-family: 'Source Code Pro', monospace; font for footer and nav, header
-*/
+  */
+
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
@@ -37,11 +43,17 @@ main {
   background-color: rgb(4, 20, 9);
   margin:auto;
   overflow:hidden;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 
   display: flex;
   flex-wrap: wrap; /*important*/
   align-items: strech; /*important*/
-  display: flex;  */important for div or containher*/
+  display: flex;  /*important for div or containher*/
 
 	flex-flow: row wrap;
   overflow-y: scroll;
@@ -56,10 +68,50 @@ main {
   backdrop-filter: blur(6.9px); 
   -webkit-backdrop-filter: blur(6.9px);
   flex-flow: column wrap;
-
+  cursor: crosshair;
 justify-content: flex-around;
 
 }
+
+/* cursor fix */
+main {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+}
+.hover-container {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
+}
+
+/* cursor download */
+.item-10 {
+  cursor: url(https://assets.codepen.io/210284/download_32.svg), default;
+}
+
+
+/* base cursor */
+
+
+
+
+
+/*
+ <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 800*/
+
+.eb-garamond-uniquifier {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
 
 body {
   margin: 0px;
@@ -82,7 +134,7 @@ body {
 
 .site-title  {
   font-style:italic;
-  font-size: 50px;
+  font-size: 40px;
   
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -93,11 +145,11 @@ body {
 }
 
 
-/*  font-family: 'Source Code Pro', monospace;*/
+/* font-family: 'Source Code Pro', monospace; */
 
 
 
-pre {
+.float-lg {
 
   flex: 2;  
   justify-content: flex-evenly;
@@ -109,9 +161,11 @@ pre {
   justify-content: space-evenly;
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
   border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-  font-family:eb garamond ;
-
- 
+  background-color: #1a0b3bd8;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
 }
 
 
@@ -126,12 +180,13 @@ pre {
 
 
 div:hover {
-  color: #aca4bd;
+  color: #c8c1d8;
   text-shadow:0px 0px 30px #b1507d;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+
 }
 
 
@@ -153,7 +208,7 @@ nav {
    text-decoration: none;
    -webkit-backdrop-filter: blur(4.5px);
   position: sticky;
-
+  font-family: 'Source Code Pro', monospace;
 padding: 0 30px;
 width: 400px;
   margin: 10px;
@@ -205,14 +260,14 @@ col {
 
 div {
 
-
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
 
 .container {
-
+  display: inline-block;
   flex-direction: row; 
     justify-content: center;
 position: relative; 
@@ -220,23 +275,24 @@ position: relative;
     align-items: center;
 transition:0.4s ease-in-out;
     text-align:center;
-   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+
   backdrop-filter: blur(6.9px);  
   -webkit-backdrop-filter: blur(6.9px);
 
   display: flex; /*keep*/ 
   flex-wrap: wrap;
 
-  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px); 
-  -webkit-backdrop-filter: blur(6.9px);
+
   flex-grow: 1;
   flex-shrink: 1;
   width: 100vh;
 
 }
 
+box-shadow {
+  0 6px 20px rgba(23, 28, 100, 0.349);
 
+} 
 
 
 nav-list {
@@ -299,8 +355,8 @@ justify-content: flex-center;
 /* add success to button click effect */
 
 a:hover {
-  color: #fdec6e;
-  text-shadow:0px 0px 30px #f0dc49;
+  color: #cdcaf3;
+  text-shadow:0px 0px 30px #e2acd5;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -361,14 +417,10 @@ wrap i think */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);  !!!
   -webkit-backdrop-filter: blur(6.9px);
-  border: 1px solid rgba(255, 255, 255, 0.05); */
-  
-
-
-
-/*    color: #072016f5;  
-  .container: background-color: #c5afaf;*/
-
+  border: 1px solid rgba(255, 255, 255, 0.05); 
+  color: #072016f5;  
+  .container: background-color: #c5afaf;
+*/
 
 .footer-nav {
 color:inherit;
@@ -410,9 +462,7 @@ footer {
 glassmorphic From https://css.glass */
 
 
-background: rgba(255, 255, 255, 0.11);
-border-radius: 14px;
-box-shadow: 0 4px 30px rgba(241, 194, 194, 0.1);
+border-radius: 14px;g 
 backdrop-filter: blur(6.9px); 
 -webkit-backdrop-filter: blur(6.9px);
 
@@ -516,8 +566,4 @@ body::-webkit-scrollbar-thumb {
 
 .position-absolute{
   font-weight: 700;
-
-}dd
-
-
-
+}
