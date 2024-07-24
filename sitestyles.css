@@ -107,7 +107,24 @@ main {
 
 
 
-
+/* FLOW: UP implement tooltip */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
 
 
 
@@ -116,7 +133,8 @@ main {
 body {
   margin: 0px;
   padding: 0PX;
-
+  display: flex;
+    flex-wrap: wrap;
 }
 
 /* flex-box item grow finish*/
@@ -198,10 +216,9 @@ div:hover {
 }
 */
 
-/*backdrop-filter: blur(3px);*/
-nav {
+/*nav list fix selector*/
+#navbarNav {
   margin: 20px;
- 
    backdrop-filter: rgba(63, 5, 44, 0.363); 
    grid-area: span;
    background:linear-gradient(blur);
@@ -217,28 +234,34 @@ right: 0;
 width: 500px;
   flex-grow: 1;
 top: 0;
-
 gap: 1rem;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 1.5rem 2rem;
- /*justify-content: center;
-align-items: center;*/
-
+ justify-content: center;
+align-items: center;
+flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: wrap;
+justify-content: flex-center;
 
 
 }
  
-
-
- body {    /*container*/
-  display: flex;
+nav-list {
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-wrap: wrap;
-
-
-
+  justify-content: flex-center;
 
 }
+   
+  
+.nav-link {
+  text-decoration: none;
+
+}
+
 
 /*flex items*/
 col {
@@ -269,12 +292,12 @@ div {
 .container {
   display: inline-block;
   flex-direction: row; 
-    justify-content: center;
+justify-content: center;
 position: relative; 
-    box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
-    align-items: center;
+box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
+align-items: center;
 transition:0.4s ease-in-out;
-    text-align:center;
+text-align:center;
 
   backdrop-filter: blur(6.9px);  
   -webkit-backdrop-filter: blur(6.9px);
@@ -295,19 +318,6 @@ box-shadow {
 } 
 
 
-nav-list {
-flex-grow: 1;
-flex-shrink: 1;
-flex-wrap: wrap;
-justify-content: flex-center;
-
- }
- 
-
- .nav-link {
-  text-decoration: none;
-
-}
 
 /* geeks for geeks glow effect
 
@@ -387,17 +397,6 @@ wrap i think */
 .force-overflow {
 	min-height: 450px;
 }
-
-
-
-
-
-/* position: relative on element spying on, usually body*/
-.nav {
-
-
-}
-
 
 
 
