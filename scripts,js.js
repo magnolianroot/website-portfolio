@@ -1,6 +1,40 @@
 
 
 
+<!--site notes
+circle cursor, fluid element-->
+
+
+// cursor effetc make
+document.getElementById("demo").style.cursor = "pointer";
+
+
+/*site theme + alert func*/
+
+alert("welcome to: home portal");  // alert func / fixed
+
+// live alert
+ const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+
+
 //back-to-top button 
 let window = document;
 window.onscroll = function () {
@@ -14,26 +48,14 @@ window.onscroll = function () {
 };
 
 
+
+
+
 //scroll function
 window.addEventListener('scroll', function(){
   this.document.getElementById('showScroll').innerHTML = '';
   
 })
-
-
-// popper 1/10
-const button = document.querySelector('#button');
-const tooltip = document.querySelector('#tooltip');
-
-Popper.createPopper(button, tooltip, {
-  placement: 'top',
-});
-    
-   const popperInstance = Popper.createPopper(button, tooltip);
-
-
-
-//   import { createPopper } from '@popperjs/core';
 
 function show() {
   tooltip.setAttribute('data-show', '');
@@ -124,7 +146,6 @@ $('myAlert').alert('dispose')
 // $('#myModal').modal(options)
 //alert modal
 
-console.log('Hello from script.js!');
 
 
 
@@ -134,16 +155,6 @@ function greet(name) {
 }
 // integrate this function into site form
 
-
-// $('#myModal').modal(options)
-//alert modal
-
-
-
-function nextSlide() {
-  $('myCarouel').carousel('next');
-
-}
 
 //scroll function
 window.addEventListener('scroll', function() {
@@ -169,4 +180,5 @@ const navTop = document.querySelector(".nav-top");
 toggleMenu.addEventListener("click", () => {
   navTop.classList.toggle("is-active");
 });
+
 
