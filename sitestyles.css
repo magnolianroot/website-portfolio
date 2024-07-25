@@ -39,7 +39,6 @@ font-family: 'Source Code Pro', monospace; font for footer and nav,
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
-  font-family:eb garamond ;
   background-color: rgb(4, 20, 9);
   margin:auto;
   overflow:hidden;
@@ -72,6 +71,10 @@ main {
 justify-content: flex-around;
 
 }
+
+
+
+
 
 /* cursor fix */
 main {
