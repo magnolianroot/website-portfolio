@@ -272,17 +272,24 @@ col {
   flex-direction: row;
 }
 
+
+
 @media (min-width: 768px) {
   .col {
     flex-direction: row;
   }
 }
 
-
-
+/* shift from row to col on smaller screens 
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+*/
 
 div {
-
+  
   cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
   flex-grow: 1;
   flex-shrink: 1;
