@@ -147,6 +147,16 @@ $('myAlert').alert('dispose')
 //alert modal
 
 
+//fix
+alertbox.render({
+  alertIcon: 'success',
+  title: 'Thank You!',
+  message: 'AlertBox Popup Message',
+  btnTitle: 'Ok',
+  themeColor: '#000000',
+  btnColor: '#7CFC00',
+  btnColor: true
+});
 
 
 
