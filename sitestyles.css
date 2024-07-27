@@ -34,12 +34,16 @@ html{
 
 font-family: 'Source Code Pro', monospace; font for footer and nav,
 
-  */
+
+
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px); 
+  -webkit-backdrop-filter: blur(6.9px);
 
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
-  background-color: rgb(4, 20, 9);
+
   margin:auto;
   overflow:hidden;
   
@@ -57,12 +61,10 @@ main {
   align-content: space-around;
   overflow-y: auto;    /* Trigger vertical scroll    */
   overflow-x: hidden; /*idk*/
-  padding: 700px 40px;
-
+  padding: 70px 40px;
+  background-color: rgb(15, 7, 48);
   color: #717d9e;
-  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px); 
-  -webkit-backdrop-filter: blur(6.9px);
+  
   flex-flow: column wrap;
   cursor: crosshair;
 justify-content: flex-around;
@@ -127,6 +129,7 @@ body {
   padding: 0PX;
   display: flex;
     flex-wrap: wrap;
+
 }
 
 /* flex-box item grow finish*/
@@ -191,7 +194,7 @@ body {
 
 div:hover {
   color: #c1d8cb;
-  text-shadow:0px 0px 30px #b1507d;
+  text-shadow:0px 0px 30px #e7e7c0;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -210,22 +213,23 @@ div:hover {
 
 
 /*nav list fix selector*/
-.nav {
+ ul .nav {
   margin: 20px;
-   backdrop-filter: rgba(63, 5, 44, 0.363); 
+  color: #c1d8cb;
+  text-shadow:0px 0px 30px #c29aad;
    grid-area: span;
    background:linear-gradient(blur);
    text-decoration: none;
    -webkit-backdrop-filter: blur(4.5px);
   position: sticky;
  
-padding: 0 30px;
+padding: 0 300px;
 left: 0;
 right: 0;
   flex-grow: 1;
 top: 0;
 gap: 1rem;
-flex-wrap: wrap;
+
 justify-content: space-between;
 padding: 1.5rem 2rem;
 
@@ -362,7 +366,7 @@ box-shadow {
 
 a:hover {
   color: #cdcaf3;
-  text-shadow:0px 0px 30px #e2acd5;
+  text-shadow:0px 0px 30px #dfc531;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -372,7 +376,7 @@ a:hover {
 
 
 
-.alert {
+.alertbox {
   opacity: 1.7;
   transition: opacity 0.6s; /* 600ms to fade out */
   font-family:eb garamond ;
