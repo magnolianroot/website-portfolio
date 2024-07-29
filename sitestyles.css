@@ -62,7 +62,7 @@ main {
   overflow-y: auto;    /* Trigger vertical scroll    */
   overflow-x: hidden; /*idk*/
   padding: 70px 40px;
-  background-color: rgb(15, 7, 48);
+  background-color: rgb(27, 27, 32);
   color: #717d9e;
   
   flex-flow: column wrap;
@@ -71,7 +71,10 @@ justify-content: flex-around;
 
 }
 
-
+.alert {
+  width:30%;   
+  height: 50%; 
+}
 
 
 
@@ -140,14 +143,16 @@ body {
     flex-grow: 2;
 }
 
-
+/*
 .d-flex{
   gap:20px;
 }
+*/
+
 
 .site-title  {
   font-style:italic;
-  font-size: 40px;
+  font-size: 60px;
   
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -157,6 +162,15 @@ body {
 
 }
 
+/*padding shorthand fix*/
+div {
+  padding: 25px 50px 75px;
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+margin: 20px;   /*space around element border*/
+
+}
 
 /* font-family: 'Source Code Pro', monospace; */
 
@@ -174,7 +188,7 @@ body {
   justify-content: space-evenly;
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
   border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-  background-color: #1a0b3bd8;
+  background-color: #160a31d8;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight:weight;
