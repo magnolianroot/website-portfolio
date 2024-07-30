@@ -103,10 +103,9 @@
 <header>
 
 
-
-<div id="nav-sticky">
-  <ul class=" nav justify-content-center">  <!--container wrapper-->
-      <!--<div class="container-fluid"> -->
+  <div class="container">  <!--wrapping fixed-->
+<nav class="navbar navbar-expand-lg sticky-top">  <!--container wrapper-->
+  <div class="container-fluid">
       <!--list links-->
         <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">portfolio portal</a>
@@ -131,21 +130,14 @@
           link to my resume
         </a>
             </ul>
+          </div>
           </nav>
         </div>
 
 
-<!--ripple + favicon -->
-  
 <!-- Nav end -->
 
-
-
-<!--resume + btn-top fix alignment-->
-
-    </div>
-</header>        <!--separate from main bluprint-->
-
+</header>        <!--separate from main bluprint, header end-->
 
 
 <!--
@@ -157,6 +149,7 @@
 </div>
 -->
 
+<main>
 <!--alert w close button-->
 <div class="alert alert-primary alert-dismissible fade show" role="alert">
   welcome to my portfolio, stay tuned for new updates
@@ -178,9 +171,9 @@
 <!--h2 fix-->
 
 <div class="container d-flex" >
-<ul class="row ">
+<ul class="row  ">
   <li class="list-group-item border-0">
-    <p> my first personal project - website coded from scratch: first developed with HTML/CSS, MDB, Bootstrap,
+    <p class="unselectable"> my first personal project - website coded from scratch: first developed with HTML/CSS, MDB, Bootstrap,
        added <br> functionality and libraries for dynamics, wrapped in modern UI/UX principles and practices for a 2024 user-friendly interfaced-feel.          
     </p></li>
   <li class="list-group-item border-0">my second project: server-side php program built with laravel</li>
@@ -191,59 +184,46 @@
 </div>
 
 
-    </header>  <!--header end-->
 
 
-        <!-- Force next columns to break to new line -->
-        <div class="w-100"></div>
 
-<!-- (profile) card with booking/   fix + tooltip fix-->
-        <section class="vh-100">
-          <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-              <div class="col col-md-9 col-lg-7 col-xl-5">
-                <div class="card" style="border-radius: 15px; ">
-                  <div class="card-body p-4 text...">
-                    <div>
-                      <h6 class="mb-4">web developer</h6>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
 
-                        <div class="containerd-flex ">
-                          <pre class="col-md" >
+
+
+<!--                     <button  type="button" data-mdb-ripple-init anim="sheen" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark  btn-lg"
+                                             <pre class="col-lg" >
                             <div class="col-lg" ></div>
                             <br>  skills:
                                   JavaScript    HTML      CSS
                                   Bootstrap     SQL       Node.js
                                   PHP           SEO        UI/UX  
-                          </pre>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4">
-                      <div class="flex-shrink-0">
+                          
+                                              <div class="d-flex align-items-center mb-4">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
                         loading="lazy" alt="image of victoria joseph" class="img-fluid rounded-circle border border-2"
-                          style="width: 60px;">  <!--fix bigger-->
-                      </div>
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex flex-row align-items-center mb-2">
+                          style="width: 60px;">  <fix bigger
                           <p class="mb-0 me-2">your partner in automation</p>
                         </div>
-                        <div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr>
-                    <p class="my-4 pb-1">Proficient in HTML, CSS, Bootstrap, and light SEO</p>
+                                          <p class="my-4 pb-1">Proficient in HTML, CSS, Bootstrap, and light SEO</p>
 
                     <button  type="button" data-mdb-ripple-init anim="sheen" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-dark  btn-lg"
                     ><a href="mailto:josephv1791@gmail.com">contact victoria joseph</a>
-                     </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+                     </button>    
+                                </pre> -->
+
+
+
+
+<!--hero section-->
+        <!--mdbcard-->
+        <div class="card d-flex">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-primary" data-mdb-ripple-init>Button</button>
           </div>
-        </section>
+        </div>
+
 
 
 
@@ -251,7 +231,7 @@
 
 <article class="container d-flex">
  <div class="row" >
-      <p> I plan to study Computer Science and specialize in robotics. I am also very interested in web3 & neuroscience.
+      <p class="unselectable"> I plan to study Computer Science and specialize in robotics. I am also very interested in web3 & neuroscience.
        As a self-taught developer, I strive to find simple and efficient solutions your complex problems. 
         Generating innovating ideas and applying data creates products and tools of an ideal envisioned future ...<br>into the best possible reality.
         </p>
@@ -301,14 +281,6 @@
 </div>
 
 
-        <!--mdbcard-->
-        <div class="card d-flex">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-mdb-ripple-init>Button</button>
-          </div>
-        </div>
 
 
 <!--scrollbar-->
@@ -351,4 +323,3 @@
 
 
 </html>
-
