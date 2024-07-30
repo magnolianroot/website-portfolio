@@ -6,7 +6,7 @@
 
 html{
   height: 100vh; /* fixed*/ 
-
+  width: 100vw; /* fixed*/ 
 
 
 }
@@ -16,12 +16,13 @@ html{
   scroll-behavior: smooth;
   initial-letter: 2;
   
-
   
   box-sizing: border-box;
 
 
 }
+
+
 
 /* main {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
@@ -52,10 +53,10 @@ main {
   font-weight: weight;
   font-style: normal;
 
-  align-items: strech; /*important*/
+  /*important*/
   display: flex;  /*important for div or containher*/
 
-	flex-flow: row wrap;
+
   overflow-y: scroll;
   position: relative;
   align-content: space-around;
@@ -63,13 +64,30 @@ main {
   overflow-x: hidden; /*idk*/
   padding: 70px 40px;
   background-color: rgb(27, 27, 32);
-  color: #717d9e;
+ 
   
   flex-flow: column wrap;
   cursor: crosshair;
 justify-content: flex-around;
 
 }
+
+/*padding shorthand fix*/
+div {
+  padding: 25px 50px 75px;
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+margin: 20px;   /*space around element border*/
+flex-wrap: wrap;
+align-items:stretch;
+flex-flow: column wrap;
+flex-flow: row wrap;
+
+}
+
+
+
 
 .alert {
   width:30%;   
@@ -130,8 +148,8 @@ cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height
 body {
   margin: 0px;
   padding: 0PX;
-  display: flex;
-    flex-wrap: wrap;
+  color: #a1b5eb;
+   
 
 }
 
@@ -147,30 +165,23 @@ body {
 .d-flex{
   gap:20px;
 }
-*/
+
+height: 70vh;  Adjust hero height for smaller screens */
 
 
 .site-title  {
   font-style:italic;
-  font-size: 60px;
+  font-size: 3em;
   
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   font-family:eb garamond ;
-
+  margin-bottom: 2vh; 
 }
 
-/*padding shorthand fix*/
-div {
-  padding: 25px 50px 75px;
-  width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-margin: 20px;   /*space around element border*/
 
-}
 
 /* font-family: 'Source Code Pro', monospace; */
 
@@ -208,7 +219,7 @@ margin: 20px;   /*space around element border*/
 
 div:hover {
   color: #c1d8cb;
-  text-shadow:0px 0px 30px #e7e7c0;
+  text-shadow:0px 0px 30px #e7e7c0bd;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -227,7 +238,7 @@ div:hover {
 
 
 /*nav list fix selector*/
- ul .nav {
+nav {
   margin: 20px;
   color: #c1d8cb;
   text-shadow:0px 0px 30px #c29aad;
@@ -244,34 +255,28 @@ right: 0;
 top: 0;
 gap: 1rem;
 
-justify-content: space-between;
+
 padding: 1.5rem 2rem;
 
 flex-grow: 1;
 flex-shrink: 1;
 flex-wrap: wrap;
-justify-content: flex-center;
+
+text-decoration: none;
 
 
 }
  
-nav-list {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-wrap: wrap;
-  justify-content: flex-center;
 
-}
-   
   
 .nav-link {
-  text-decoration: none;
+
 
 }
 
 
 /*flex items*/
-col {
+.row {
 
   flex-grow: 1;
   flex-shrink: 1;
@@ -296,15 +301,15 @@ col {
 */
 
 div {
-  
-  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
+  /*
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), fix */
   flex-grow: 1;
   flex-shrink: 1;
 }
 
 
 .container {
-  display: inline-block;
+  
   flex-direction: row; 
 justify-content: center;
 position: relative; 
