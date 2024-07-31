@@ -178,7 +178,7 @@ height: 70vh;  Adjust hero height for smaller screens */
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   font-family:eb garamond ;
-  margin-bottom: 2vh; 
+  margin-bottom: 2vh;  
 }
 
 
@@ -219,7 +219,7 @@ height: 70vh;  Adjust hero height for smaller screens */
 
 div:hover {
   color: #c1d8cb;
-  text-shadow:0px 0px 30px #e7e7c0bd;
+ /* text-shadow:0px 0px 30px #e7e7c0bd; */
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -238,10 +238,9 @@ div:hover {
 
 
 /*nav list fix selector*/
-nav {
+.navbar {
   margin: 20px;
   color: #c1d8cb;
-  text-shadow:0px 0px 30px #c29aad;
    grid-area: span;
    background:linear-gradient(blur);
    text-decoration: none;
@@ -268,7 +267,15 @@ text-decoration: none;
 }
  
 
+#form {
+
+
   
+}
+
+
+
+
 .nav-link {
 
 
@@ -585,5 +592,4 @@ body::-webkit-scrollbar-thumb {
 .position-absolute{
   font-weight: 700;
 }
-
 
