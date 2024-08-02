@@ -103,6 +103,8 @@
 <header>
 
 
+  <!--underline link text - no afterglow. nav bigger -->
+<!--add more text for usability, recognizable - add CTA, notif/icon for ecommerce which redirects to updates-->
   <div class="container">  <!--wrapping fixed-->
 <nav class="navbar navbar-expand-lg sticky-top">  <!--container wrapper-->
   <div class="container-fluid">
@@ -151,8 +153,8 @@
 
 <main>
 <!--alert w close button-->
-<div class="alert alert-primary alert-dismissible fade show border border-2" role="alert">
-  welcome to Victoria's portfolio site <!--insert php last update func-->
+<div class="alert alert-success alert-dismissible fade show border border-2" role="alert">
+  welcome to Victoria's portfolio site. Check back for blog updates and newsletter drop! <!--insert php last update func-->
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
@@ -215,17 +217,38 @@
 
 
 <!--hero section-->
-        <!--mdbcard-->
-        <div class="card d-flex">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+        <!--mdbcard avatar injection-->
+        <div id="card d-flex border boder-2">
+          <img src="placeholder - insert link here" class="rounded-circle hover-shadow "
+          style="width: 100px;" alt="placeholder" />
+            <p class="card-title">Card title</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">phone</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-mdb-ripple-init>Button</button>
+            <button type="button" class="btn btn-dark" data-mdb-ripple-init>Button</button>
+            <button type="button" class="btn btn-dark">Send Message</button>
           </div>
         </div>
 
 
 
+
+
+ 
+        </div>
+      </div>
+      </div>
+    -->  
 
 <!--"col-md-6"-->
 
@@ -251,31 +274,6 @@
 
 
   <!-- Contact Form Block -->
-  <div class="col-xl-6">
-    <h2 class="pb-4">Message Victoria</h2>
-    <div class="row g-4">
-      <div class="col-6 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">phone</label>
-      <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn btn-dark">Send Message</button>
-  </div>
-</div>
-</div>
-</main>
 
 
 
@@ -309,7 +307,7 @@
       ></a>
 
     <!-- Copyright -->
-    <div class="col-sm text-center ">
+    <div class="col-sm text-center unselectable">
       © 2024 Copyright: Victoria Joseph 
       <a class="text-body" href="insert github pages here"></a>
   </div>
@@ -320,6 +318,16 @@
 
 
 
+
+<?php 
+    
+// To Get the last modification time. 
+$last_modification="updated: " . date ("F d Y H:i:s.", getlastmod()); 
+  
+// To Show the last modification time. 
+echo $last_modification; 
+  
+?> 
 
 <!--scrollbar-->
 <div class="scrollbar" id="style-1">   
