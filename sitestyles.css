@@ -78,17 +78,31 @@ div {
   width: 300px;
   padding: 25px;
   box-sizing: border-box;
-margin: 20px;   /*space around element border*/
+margin: 10px;   /*space around element border*/
 flex-wrap: wrap;
 align-items:stretch;
-flex-flow: column wrap;
-flex-flow: row wrap;
+color: #a1b5eb;
+
 
 }
 
+div:hover {
+  color: #c1d8cb;
+ /* text-shadow:0px 0px 30px #e7e7c0bd; */
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 
+}
 /* 	background: linear-gradient(50deg, hsl(0 0% 50% / 0.25), transparent), hsl(0 0% 0%);
-	overflow: hidden; transparent glassmorphic*/ 
+	overflow: hidden; transparent glassmorphic
+  
+  flex-flow: column wrap;
+  flex-flow: row wrap;
+  
+  
+  */ 
 
 .alert {
   width:30%;   
@@ -148,8 +162,8 @@ cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height
 
 body {
   margin: 0px;
-  padding: 0PX;
-  color: #a1b5eb;
+  padding: 0px;
+
    
 
 }
@@ -183,8 +197,8 @@ height: 70vh;  Adjust hero height for smaller screens */
 }
 
 card fin ver
-#card {
-  max-width: 22rem;
+#card {  /*fix*/
+  max-width:1rem;
   margin: 2rem auto; /* 32px auto */
   padding: 1em; /* 16px */
   border: 0.1em solid #ddd; /* 1.6px */
@@ -238,15 +252,7 @@ card main example
 }
 
 
-div:hover {
-  color: #c1d8cb;
- /* text-shadow:0px 0px 30px #e7e7c0bd; */
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 
-}
 
 
 /*fix
@@ -326,6 +332,10 @@ text-decoration: none;
     flex-direction: column;
   }
 }
+
+flex-direction: row; 
+
+
 */
 
 div {
@@ -333,25 +343,27 @@ div {
   cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), fix */
   flex-grow: 1;
   flex-shrink: 1;
+
+
+
 }
+
+/*   backdrop-filter: blur(6.9px);  
+  -webkit-backdrop-filter: blur(6.9px);*/
 
 
 .container {
   
-  flex-direction: row; 
+  
 justify-content: center;
 position: relative; 
-box-shadow: 0 4px pxgba(155, 141, 212, 0.233);
 align-items: center;
-transition:0.4s ease-in-out;
 text-align:center;
 
-  backdrop-filter: blur(6.9px);  
-  -webkit-backdrop-filter: blur(6.9px);
 
   display: flex; /*keep*/ 
   flex-wrap: wrap;
-
+  background-color: #c5afaf;
 
   flex-grow: 1;
   flex-shrink: 1;
@@ -359,28 +371,19 @@ text-align:center;
 
 }
 
-box-shadow {
-  0 6px 20px rgba(23, 28, 100, 0.349);
-
-} 
 
 
 
-/* geeks for geeks glow effect
 
-    margin-top: 150px;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'century gothic';
-    color: #ffffcc;
-    text-shadow: 0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px green,
-        0 0 30px green,
-        0 0 40px green,
-        0 0 55px green,
-        0 0 70px green;
-*/
+p {
+
+  font-family: 'Source Code Pro', monospace;
+
+
+}
+
+
+
 
 
 
@@ -411,24 +414,6 @@ box-shadow {
 
 /* add success to button click effect */
 
-a:hover {
-  color: #cdcaf3;
-  text-shadow:0px 0px 30px #dfc531;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in-out   ;
-}
-
-
-
-.alertbox {
-  opacity: 1.7;
-  transition: opacity 0.6s; /* 600ms to fade out */
-  font-family:eb garamond ;
-}
-
 
 
 
@@ -449,30 +434,6 @@ wrap i think */
 
 
 
-  .container:hover {
-
-/*
-    transition-delay:200ms;
-    transition-timing-function:ease-in;
-    transition-duration:600ms; /*fix*/
-  
-
-/*
-  background: rgba(255, 255, 255, 0.11);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.9px);  !!!
-  -webkit-backdrop-filter: blur(6.9px);
-  border: 1px solid rgba(255, 255, 255, 0.05); 
-  color: #072016f5;  
-  .container: background-color: #c5afaf;
-*/
-
-.footer-nav {
-color:inherit;
-font-family: 'Source Code Pro', monospace;
-}
-
 
 .flex-grow {
   flex: 1 0 auto;
@@ -488,7 +449,7 @@ background: linear-gradient(rgba);
 
 
 /*footer link inline*/
-footer {
+#foooter {
 
  /* Optional: For improved browser support */
  white-space: normal;
