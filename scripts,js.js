@@ -1,8 +1,13 @@
 
 
+import { Input, Ripple, initMDB } from "mdb-ui-kit";
 
-<!--site notes
-circle cursor, fluid element-->
+initMDB({ Input, Ripple });
+
+// Initialization for ES Users
+import { Input, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input });
 
 
 // cursor effetc make
