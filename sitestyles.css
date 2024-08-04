@@ -301,6 +301,12 @@ text-decoration: none;
 }
 
 
+.navbar-after-scroll {
+  background-color: #c5afaf;
+
+
+  
+}
 
 
 .nav-link {
