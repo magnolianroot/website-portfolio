@@ -101,8 +101,10 @@ justify-content: flex-around;
   */ 
 
 .alert {
-  width:30%;   
-  height: 50%; 
+
+  font-family: "Source Code Pro", monospace;
+
+
 }
 
 
@@ -602,4 +604,3 @@ body::-webkit-scrollbar-thumb {
 .position-absolute{
   font-weight: 700;
 }
-
