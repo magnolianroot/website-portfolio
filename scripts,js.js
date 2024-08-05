@@ -16,6 +16,12 @@ document.getElementById("demo").style.cursor = "pointer";
 
 /*site theme + alert func*/
 
+const sass = require('sass');
+
+const result = sass.compile(scssFilename);
+
+
+
 alert("welcome to: home portal");  // alert func / fixed
 
 // live alert
@@ -195,3 +201,5 @@ const navTop = document.querySelector(".nav-top");
 toggleMenu.addEventListener("click", () => {
   navTop.classList.toggle("is-active");
 });
+
+
