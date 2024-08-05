@@ -1,7 +1,6 @@
 
 @import '~mdb-ui-kit/css/mdb.min.css';
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 
 html{
@@ -40,7 +39,7 @@ font-family: 'Source Code Pro', monospace; font for footer and nav,
   box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
   backdrop-filter: blur(6.9px); 
   -webkit-backdrop-filter: blur(6.9px);
-
+  font-family: "EB Garamond", serif;
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
@@ -48,7 +47,6 @@ main {
   margin:auto;
   overflow:hidden;
   
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -72,29 +70,27 @@ justify-content: flex-around;
 
 }
 
-/*padding shorthand fix*/
-div {
-  padding: 25px 50px 75px;
-  width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-margin: 10px;   /*space around element border*/
-flex-wrap: wrap;
-align-items:stretch;
-color: #a1b5eb;
-
-
+/* sass */
+.mt-0 {
+  margin-top: 0 !important;
 }
 
-div:hover {
-  color: #c1d8cb;
- /* text-shadow:0px 0px 30px #e7e7c0bd; */
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
 }
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+
+
+
 /* 	background: linear-gradient(50deg, hsl(0 0% 50% / 0.25), transparent), hsl(0 0% 0%);
 	overflow: hidden; transparent glassmorphic
   
@@ -164,7 +160,33 @@ body {
   margin: 0px;
   padding: 0px;
 
-   
+  font-family: "DM Sans", sans-serif;
+
+/*padding shorthand fix*/
+  div {
+    padding: 25px 50px 75px;
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 10px;   /*space around element border*/
+    flex-wrap: wrap;
+    align-items:stretch;
+    color: $primary-color;
+    color: #c1d8cb;
+
+
+}
+
+  div:hover {
+    color: #8ca898;
+   /* text-shadow:0px 0px 30px #e7e7c0bd; */
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+    li { display: inline-block; }
+}  
 
 }
 
@@ -187,12 +209,12 @@ height: 70vh;  Adjust hero height for smaller screens */
 .site-title  {
   font-style:italic;
   font-size: 3em;
-  
+  font-family: "Source Code Pro", monospace;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  font-family:eb garamond ;
+ 
   margin-bottom: 2vh;  
 }
 
@@ -305,7 +327,7 @@ text-decoration: none;
   background-color: #c5afaf;
 
 
-  
+
 }
 
 
@@ -574,7 +596,7 @@ body::-webkit-scrollbar-thumb {
 .display-1{
   font-size: 160px;
   font-weight: 1000;
-
+ 
 }
 
 .position-absolute{
