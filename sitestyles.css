@@ -54,7 +54,7 @@ main {
   /*important*/
   display: flex;  /*important for div or containher*/
 
-
+  flex-wrap
   overflow-y: scroll;
   position: relative;
   align-content: space-around;
@@ -68,6 +68,9 @@ main {
   cursor: crosshair;
 justify-content: flex-around;
 
+
+.item { flex-basis: 50%; } /*gives flex-items a base ideal*/
+height: 300px; /*flex container height, main elements inside it stay this height*/
 }
 
 /* sass */
@@ -604,4 +607,3 @@ body::-webkit-scrollbar-thumb {
 .position-absolute{
   font-weight: 700;
 }
-
