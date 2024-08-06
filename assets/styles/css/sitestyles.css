@@ -1,0 +1,609 @@
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+html{
+  height: 100vh; /* fixed*/ 
+  width: 100vw; /* fixed*/ 
+
+
+}
+
+* { 
+  
+  scroll-behavior: smooth;
+  initial-letter: 2;
+  
+  
+  box-sizing: border-box;
+
+
+}
+
+
+
+/* main {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+}
+  
+.hover-container {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
+}
+
+
+font-family: 'Source Code Pro', monospace; font for footer and nav,
+
+
+
+  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
+  backdrop-filter: blur(6.9px); 
+  -webkit-backdrop-filter: blur(6.9px);
+  font-family: "EB Garamond", serif;
+
+/* apply this theme to homepage id */ /*main is container w control of children elements */
+main {
+
+  margin:auto;
+  overflow:hidden;
+  
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  /*important*/
+  display: flex;  /*important for div or containher*/
+
+  flex-wrap
+  overflow-y: scroll;
+  position: relative;
+  align-content: space-around;
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden; /*idk*/
+  padding: 70px 40px;
+  background-color: rgb(27, 27, 32);
+ 
+  
+  flex-flow: column wrap;
+  cursor: crosshair;
+justify-content: flex-around;
+
+
+.item { flex-basis: 50%; } /*gives flex-items a base ideal*/
+height: 300px; /*flex container height, main elements inside it stay this height*/
+}
+
+/* sass */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+
+
+
+/* 	background: linear-gradient(50deg, hsl(0 0% 50% / 0.25), transparent), hsl(0 0% 0%);
+	overflow: hidden; transparent glassmorphic
+  
+  flex-flow: column wrap;
+  flex-flow: row wrap;
+  
+  
+  */ 
+
+.alert {
+
+  font-family: "Source Code Pro", monospace;
+
+
+}
+
+
+
+/* cursor fix 
+main {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+}
+.hover-container {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
+}
+
+/* cursor download 
+.item-10 {
+  cursor: url(https://assets.codepen.io/210284/download_32.svg), default;
+}
+*/
+
+/* base cursor 
+cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
+
+
+
+
+
+/*
+ <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 800*/
+
+
+/* FLOW: UP implement tooltip 
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+
+*/
+
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "DM Sans", sans-serif;
+
+/*padding shorthand fix*/
+  div {
+    padding: 25px 50px 75px;
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 10px;   /*space around element border*/
+    flex-wrap: wrap;
+    align-items:stretch;
+    color: $primary-color;
+    color: #c1d8cb;
+
+
+}
+
+  div:hover {
+    color: #8ca898;
+   /* text-shadow:0px 0px 30px #e7e7c0bd; */
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+    li { display: inline-block; }
+}  
+
+}
+
+/* flex-box item grow finish*/
+.item {
+    flex-grow: 1;   
+}
+.item-1 {
+    flex-grow: 2;
+}
+
+/*
+.d-flex{
+  gap:20px;
+}
+
+height: 70vh;  Adjust hero height for smaller screens */
+
+
+.site-title  {
+  font-style:italic;
+  font-size: 3em;
+  font-family: "Source Code Pro", monospace;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+ 
+  margin-bottom: 2vh;  
+}
+
+card fin ver
+#card {  /*fix*/
+  max-width:1rem;
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  border: 0.1em solid #ddd; /* 1.6px */
+
+}
+
+card main example
+.custom-card {
+  max-width: 20rem; /* 320px */
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  border: 0.1em solid #ddd; /* 1.6px */
+  border-radius: 0.5em; /* 8px 
+
+
+!!!! 1em;  16px 
+
+
+
+/* font-family: 'Source Code Pro', monospace; */
+
+
+
+.float-lg {
+
+  flex: 2;  
+  justify-content: flex-evenly;
+  flex-direction: col;
+
+  overflow-y:scroll;
+  display: inline-block;
+ 
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  background-color: #160a31d8;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+
+
+
+/*fix afterglow*/
+
+.site-title:visited, h2:visited {
+  text-decoration: none;
+
+
+}
+
+
+
+
+
+/*fix
+.header, .nav {
+
+
+ font-family: 'Source Code Pro', monospace;  /*add this font to alert
+}
+*/
+
+
+/*nav list fix selector*/
+.navbar {
+  margin: 20px;
+  color: #c1d8cb;
+   grid-area: span;
+   background:linear-gradient(blur);
+   text-decoration: none;
+   -webkit-backdrop-filter: blur(4.5px);
+  position: sticky;
+ 
+padding: 0 300px;
+left: 0;
+right: 0;
+  flex-grow: 1;
+top: 0;
+gap: 1rem;
+
+
+padding: 1.5rem 2rem;
+
+flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: wrap;
+
+text-decoration: none;
+
+
+}
+ 
+
+#form {
+
+
+  
+}
+
+
+.navbar-after-scroll {
+  background-color: #c5afaf;
+
+
+
+}
+
+
+.nav-link {
+
+
+}
+
+
+/*flex items*/
+.row {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+
+
+
+@media (min-width: 768px) {
+  .col {
+    flex-direction: row;
+  }
+}
+
+/* shift from row to col on smaller screens 
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+flex-direction: row; 
+
+
+*/
+
+div {
+  /*
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), fix */
+  flex-grow: 1;
+  flex-shrink: 1;
+
+
+
+}
+
+/*   backdrop-filter: blur(6.9px);  
+  -webkit-backdrop-filter: blur(6.9px);*/
+
+
+.container {
+  
+  
+justify-content: center;
+position: relative; 
+align-items: center;
+text-align:center;
+
+
+  display: flex; /*keep*/ 
+  flex-wrap: wrap;
+  background-color: #c5afaf;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100vh;
+
+}
+
+
+
+
+
+p {
+
+  font-family: 'Source Code Pro', monospace;
+
+
+}
+
+
+
+
+
+
+.navbar-nav:hover {
+
+  text-decoration: none;
+ /* background-color: ;  */
+  
+}
+
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+
+
+  }
+  
+
+
+
+
+
+
+/*themeing target*/
+
+
+
+
+/* add success to button click effect */
+
+
+
+
+
+
+
+/*   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+wrap i think */
+
+
+.force-overflow {
+	min-height: 450px;
+}
+
+
+
+
+
+
+.flex-grow {
+  flex: 1 0 auto;
+
+}
+
+
+/*make div containters somehow translucent bg
+
+/* .navbar {
+background: linear-gradient(rgba);
+}
+
+
+/*footer link inline*/
+#foooter {
+
+ /* Optional: For improved browser support */
+ white-space: normal;
+
+
+
+  grid-area: span;
+  background:linear-gradient(blur);
+  backdrop-filter: blur(3px);
+  text-decoration: none;
+ 
+  -webkit-backdrop-filter: blur(4.5px);
+  top: 80px;
+ background-blend-mode: luminosity;
+
+/*
+glassmorphic From https://css.glass */
+
+
+border-radius: 14px;g 
+backdrop-filter: blur(6.9px); 
+-webkit-backdrop-filter: blur(6.9px);
+
+
+
+}
+
+
+#footer-list {
+  -webkit-backdrop-filter: blur(4.5px);
+
+
+
+}
+
+
+/* /???*/
+.col {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+
+}
+
+
+
+.myul {
+  display: inline-block;
+  text-align: left;
+
+
+}
+
+
+
+/* .navmake blurry effect */
+
+
+
+
+
+
+
+/*back to top button hidden*/
+#myBtn {
+  position:fixed;
+  bottom: 36px;
+  right: 30px;
+  inline-size: 90px;
+  z-index: 1000;
+  cursor:grabbing;
+  display: none;
+
+}
+
+/* #myBtn:hover {
+  background-color: #555;
+
+} 
+
+.li {
+
+
+}
+
+
+
+
+
+
+*/
+
+/* scrollbar*/
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(216, 203, 203, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 11, 14);
+  outline: 2px solid rgb(22, 1, 6);
+}
+
+
+/* hero area */
+
+.about-img{
+ margin-left: -100px;
+ right: -60px;
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+ 
+}
+
+.position-absolute{
+  font-weight: 700;
+}
