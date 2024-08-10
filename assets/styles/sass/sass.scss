@@ -1,19 +1,6 @@
+@import "../css/styles.css"
 $primary-color: #a1b5eb;
 $secondary-color: #c1d8cb;  
 $tertiary-color:  #8ca898;
 
 
-/*padding shorthand fix*/
-div {
-    padding: 25px 50px 75px;
-    width: 300px;
-    padding: 25px;
-    box-sizing: border-box;
-  margin: 10px;   /*space around element border*/
-  flex-wrap: wrap;
-  align-items:stretch;
-  color: $secondary-color
-  
-  
-  }
-  

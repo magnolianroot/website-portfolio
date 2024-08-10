@@ -21,6 +21,13 @@ const sass = require('sass');
 const result = sass.compile(scssFilename);
 
 
+//alert
+  function alertbox(){  
+   alert("the skills are in the name");  
+  }  
+  <input type="button" value="click" onclick="alertbox()"/>  
+
+
 
 alert("welcome to: home portal");  // alert func / fixed
 
