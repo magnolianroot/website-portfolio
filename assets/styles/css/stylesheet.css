@@ -1,71 +1,33 @@
-
-
-
-/*layout problem*/
-
-@import '~mdb-ui-kit/css/mdb.min.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
-
-html{
-  height: 100vh; /* fixed*/ 
-  width: 100vw; /* fixed*/ 
-  scroll-behavior: smooth;
-  initial-letter: 2;
-  
-  
-  box-sizing: border-box;
-
-}
-
-/*bootstrap css variables
-:root {
-  --purple: #6f42c1;
-}
-.custom-element {
-  color: var(--purple);
-}
-*/
-
-/* main {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
-}
-  
-.hover-container {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
-}
-
-
-font-family: 'Source Code Pro', monospace; font for footer and nav,
-
-
-
-  box-shadow: 0 6px 20px rgba(23, 28, 100, 0.349);
-  backdrop-filter: blur(6.9px); 
-  -webkit-backdrop-filter: blur(6.9px);
+@ -42,56 +42,37 @@ font-family: 'Source Code Pro', monospace; font for footer and nav,
   font-family: "EB Garamond", serif;
 
 /* apply this theme to homepage id */ /*main is container w control of children elements */
 main {
+main  {
 
   margin:auto;
   overflow:hidden;
   
+ 
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
 
   /*important*/
+  display: flex;  /*important for div or containher*/
   display: flex;  
 
-  flex-wrap
+  
+  flex-direction: column;
   overflow-y: scroll;
   position: relative;
   align-content: space-around;
   overflow-y: auto;    /* Trigger vertical scroll    */
   overflow-x: hidden; /*idk*/
+
   padding: 70px 40px;
   background-color: rgb(27, 27, 32);
+
  
   
   flex-flow: column wrap;
@@ -77,7 +39,7 @@ justify-content: flex-around;
 height: 300px; /*flex container height, main elements inside it stay this height*/
 }
 
-/* sass 
+/* sass */
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -94,85 +56,35 @@ height: 300px; /*flex container height, main elements inside it stay this height
 .p-3 {
   padding: $spacer !important;
 }
-*/
 
+
+/*
+.item 
+ flex-basis: 50%;  /*gives flex-items a base ideal
+height: 300px; /*flex container height, main elements inside it stay this height
+*/
 
 
 /* 	background: linear-gradient(50deg, hsl(0 0% 50% / 0.25), transparent), hsl(0 0% 0%);
-	overflow: hidden; transparent glassmorphic
-  
-  flex-flow: column wrap;
-  flex-flow: row wrap;
-  
-  
-  */ 
-
-.alert {
-
-  font-family: "Source Code Pro", monospace;
-
-
-}
-
-
-
-/* cursor fix 
-main {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
-}
-.hover-container {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), default;
-}
-
-/* cursor download 
-.item-10 {
-  cursor: url(https://assets.codepen.io/210284/download_32.svg), default;
-}
-*/
-
-/* base cursor 
-cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 7.5 7.5'%3E%3Cpath d='M0 3.8a3.7 3.7 0 1 1 7.5 0 3.7 3.7 0 0 1-7.5 0zm.5 0a3.3 3.3 0 1 0 6.6 0 3.3 3.3 0 0 0-6.6 0zm2.9 0c0 .2.2.3.4.3a.4.4 0 1 0-.4-.3z' style='fill:currentColor;stroke:currentColor;stroke-width:.0419595'/%3E%3C/svg%3E") 8 8, pointer;
-
-
-
-
-
+@ -162,11 +143,13 @@ cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height
 
 
 body {
   margin: 0px;
   padding: 0px;
 
+  background-color: rgb(27, 27, 32);
   font-family: "DM Sans", sans-serif;
 
-/*padding shorthand fix*/
-  .container {
-    padding: 25px 50px 75px;
-    width: 300px;
-    padding: 25px;
-    box-sizing: border-box;
-    margin: 10px;   /*space around element border*/
-    flex-wrap: wrap;
-    align-items:stretch;
-    color: #c1d8cb;
 
-  
-  
-   justify-content: center;
-      position: relative; 
-      align-items: center;
-      text-align:center;
-      
-      
-        display: flex; /*keep*/ 
-      
-      
-      
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 100vh;
-  }
-      
+}
+
+/*padding shorthand fix*/
+  div {
+    padding: 25px 50px 75px;
+@ -182,27 +165,16 @@ body {
+
+}
 
   div:hover {
     color: #8ca898;
@@ -185,138 +97,57 @@ body {
     li { display: inline-block; }
 }  
 
-
+}
 
 /* flex-box item grow finish*/
 .item {
     flex-grow: 1;   
+  flex-grow: 1;   
 }
 .item-1 {
     flex-grow: 2;
+  flex-grow: 2;
 }
 
 /*
 .d-flex{
   gap:20px;
-}
-
-height: 70vh;  Adjust hero height for smaller screens */
-
-
-.site-title  {
-  font-style:italic;
-  font-size: 3em;
-  font-family: "Source Code Pro", monospace;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
- 
-  margin-bottom: 2vh;  
-}
-
-card fin ver
-#card {  /*fix*/
-  max-width:1rem;
-  margin: 2rem auto; /* 32px auto */
-  padding: 1em; /* 16px */
-  border: 0.1em solid #ddd; /* 1.6px */
-
-}
-
-card main example
-.custom-card {
-  max-width: 20rem; /* 320px */
+@ -238,7 +210,8 @@ card main example
   margin: 2rem auto; /* 32px auto */
   padding: 1em; /* 16px */
   border: 0.1em solid #ddd; /* 1.6px */
   border-radius: 0.5em; /* 8px 
+  border-radius: 0.5em; 
+}
 
 
 !!!! 1em;  16px 
-
-
-
-/* font-family: 'Source Code Pro', monospace; */
-
-
-
-.float-lg {
-
-  flex: 2;  
-  justify-content: flex-evenly;
-  flex-direction: col;
-
-  overflow-y:scroll;
+@ -259,7 +232,7 @@ card main example
   display: inline-block;
  
   justify-content: space-evenly;
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+
   border-radius: 10px; /* Optional: Add border-radius for rounded corners */
   background-color: #160a31d8;
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight:weight;
-  font-style: normal;
-}
-
-
-
-/*fix afterglow*/
-
-.site-title:visited, h2:visited {
-  text-decoration: none;
-
-
-}
-
-
-
-
-
-/*fix
-.header, .nav {
-
-
- font-family: 'Source Code Pro', monospace;  /*add this font to alert
-}
-*/
+@ -292,13 +265,13 @@ card main example
 
 
 /*nav list fix selector*/
 .navbar {
+#main-navbar {
   margin: 20px;
   color: #c1d8cb;
    grid-area: span;
    background:linear-gradient(blur);
    text-decoration: none;
    -webkit-backdrop-filter: blur(4.5px);
+
   position: sticky;
  
 padding: 0 300px;
-left: 0;
-right: 0;
-  flex-grow: 1;
-top: 0;
-gap: 1rem;
-
-
-padding: 1.5rem 2rem;
-
-flex-grow: 1;
-flex-shrink: 1;
-flex-wrap: wrap;
-
-text-decoration: none;
-
-
-}
- 
-
-#form {
-
-
-  
+@ -328,13 +301,6 @@ text-decoration: none;
 }
 
 
@@ -330,50 +161,27 @@ text-decoration: none;
 
 .nav-link {
 
-
-}
-
-
-/*flex items*/
-.row {
-
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 100%;
-  flex-direction: row;
-}
-
-
-
-@media (min-width: 768px) {
-  .col {
-    flex-direction: row;
-  }
-}
-
-/* shift from row to col on smaller screens 
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-flex-direction: row; 
-
-
+@ -372,22 +338,31 @@ flex-direction: row;
 */
 
 div {
   /*
   cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1021.cur), fix */
+
+
   flex-grow: 1;
   flex-shrink: 1;
+
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+margin: 10px;   /*space around element border*/
+flex-wrap: wrap;
+align-items:stretch;
 
 
 
 }
-
-
 
 
 
@@ -381,84 +189,28 @@ div {
   -webkit-backdrop-filter: blur(6.9px);*/
 
 
-
-
-
-p {
-
-  font-family: 'Source Code Pro', monospace;
-
-
-}
-
-
-
-
-
-
-.navbar-nav:hover {
-
-  text-decoration: none;
- /* background-color: ;  */
+.container {
   
-}
-
-
-  .nav-link:hover::before {
-    transform: scaleX(1);
-
-
-  }
   
 
+justify-content: center;
+position: relative; 
+align-items: center;
+@ -396,7 +371,7 @@ text-align:center;
+
+  display: flex; /*keep*/ 
+  flex-wrap: wrap;
+  background-color: #c5afaf;
 
 
-
-
-
-/*themeing target*/
-
-
-
-
-/* add success to button click effect */
-
-
-
-
-
-
-
-/*   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-wrap i think */
-
-
-.force-overflow {
-	min-height: 450px;
-}
-
-
-
-
-
-
-.flex-grow {
-  flex: 1 0 auto;
-
-}
-
-
-/*make div containters somehow translucent bg
-
-/* .navbar {
-background: linear-gradient(rgba);
-}
+  flex-grow: 1;
+  flex-shrink: 1;
+@ -482,30 +457,15 @@ background: linear-gradient(rgba);
 
 
 /*footer link inline*/
 #foooter {
+#footer-list {
 
  /* Optional: For improved browser support */
  white-space: normal;
@@ -484,102 +236,4 @@ backdrop-filter: blur(6.9px);
 
 
 
-}
-
-
-#footer-list {
-  -webkit-backdrop-filter: blur(4.5px);
-
-
-
-}
-
-
-/* /???*/
-.col {
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-
-
-}
-
-
-
-.myul {
-  display: inline-block;
-  text-align: left;
-
-
-}
-
-
-
-/* .navmake blurry effect */
-
-
-
-
-
-
-
-/*back to top button hidden*/
-#myBtn {
-  position:fixed;
-  bottom: 36px;
-  right: 30px;
-  inline-size: 90px;
-  z-index: 1000;
-  cursor:grabbing;
-  display: none;
-
-}
-
-/* #myBtn:hover {
-  background-color: #555;
-
-} 
-
-.li {
-
-
-}
-
-
-
-
-
-
-*/
-
-/* scrollbar*/
-body::-webkit-scrollbar {
-  width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(216, 203, 203, 0.3);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(24, 11, 14);
-  outline: 2px solid rgb(22, 1, 6);
-}
-
-
-/* hero area */
-
-.about-img{
- margin-left: -100px;
- right: -60px;
-}
-
-.display-1{
-  font-size: 160px;
-  font-weight: 1000;
- 
-}
-
-.position-absolute{
-  font-weight: 700;
 }
