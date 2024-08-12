@@ -11,26 +11,32 @@ html{
 
 }
 
+
 main {
- 
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden;
+  overflow-y: scroll;
 font-optical-sizing: auto;
 font-weight: weight;
 font-style: normal;
+/* flex-flow: column wrap;
+flex-wrap:wrap;
+
 flex-flow: column wrap;
+
 /*important*/
 display: flex;  
 
-flex-wrap:wrap;
-overflow-y: scroll;
+
+
 position: relative;
 align-content: space-around;
-overflow-y: auto;    /* Trigger vertical scroll    */
-overflow-x: hidden; /*idk*/
+ /*idk*/
 padding: 70px 40px;
 background-color: rgb(27, 27, 32);
 
 
-flex-flow: column wrap;
+
 
 justify-content: flex-around;
 
@@ -43,10 +49,16 @@ height: 300px; /*flex container height, main elements inside it stay this height
 body {
 
   background-color: rgb(27, 27, 32);
+  font-family: "DM Sans", sans-serif;
+
+  /*
   margin: 0px;
   padding: 0px;
+*/
+
+
   justify-content: center;
-  font-family: "DM Sans", sans-serif;
+ 
 
  }
 
