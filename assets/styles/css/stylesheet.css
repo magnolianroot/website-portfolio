@@ -31,7 +31,7 @@ background-color: rgb(27, 27, 32);
 
 
 flex-flow: column wrap;
-cursor: crosshair;
+
 justify-content: flex-around;
 
 
@@ -76,10 +76,16 @@ body {
   margin: 10px;
 
 
-  
+
 }
 
-
+/* flex-box item grow finish*/
+.item {
+  flex-grow: 1;   
+}
+.item-1 {
+  flex-grow: 2;
+}
 
 /* li display: inline-block; */
 
@@ -89,3 +95,220 @@ div:hover {
   
  
 }  
+
+
+
+.site-title  {
+  font-style:italic;
+  font-size: 3em;
+  font-family: "Source Code Pro", monospace;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+
+  margin-bottom: 2vh;  
+}
+
+card fin ver
+#card {  /*fix*/
+  max-width:1rem;
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  border: 0.1em solid #ddd; /* 1.6px */
+
+}
+
+card main example
+.custom-card {
+  max-width: 20rem; /* 320px */
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  border: 0.1em solid #ddd; /* 1.6px */
+  border-radius: 0.5em; /* 8px */
+}
+
+
+
+
+.float-lg {
+
+  flex: 2;  
+  justify-content: flex-evenly;
+  flex-direction: col;
+
+  overflow-y:scroll;
+  display: inline-block;
+
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  background-color: #160a31d8;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+
+
+.site-title:visited, h2:visited {
+  text-decoration: none;
+
+
+}
+
+.navbar {
+  margin: 20px;
+  color: #c1d8cb;
+   background:linear-gradient(blur);
+   text-decoration: none;
+   -webkit-backdrop-filter: blur(4.5px);
+  position: sticky;
+
+padding: 0 300px;
+left: 0;
+right: 0;
+  flex-grow: 1;
+top: 0;
+gap: 1rem;
+
+
+padding: 1.5rem 2rem;
+
+flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: wrap;
+
+text-decoration: none;
+
+
+}
+
+
+
+.navbar-nav:hover {
+
+  text-decoration: none;
+ /* background-color: ;  */
+
+}
+
+.row {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+
+
+
+p {
+
+  font-family: 'Source Code Pro', monospace;
+
+
+}
+
+
+.force-overflow {
+	min-height: 450px;
+}
+
+#foooter {
+
+  /* Optional: For improved browser support */
+  white-space: normal;
+ 
+ 
+ 
+   grid-area: span;
+   background:linear-gradient(blur);
+   backdrop-filter: blur(3px);
+   text-decoration: none;
+ 
+   -webkit-backdrop-filter: blur(4.5px);
+   top: 80px;
+  background-blend-mode: luminosity;
+ 
+ /*
+ glassmorphic From https://css.glass */
+ 
+ 
+ border-radius: 14px;g 
+ backdrop-filter: blur(6.9px); 
+ -webkit-backdrop-filter: blur(6.9px);
+ 
+ 
+ 
+ }
+ 
+ #footer-list {
+  -webkit-backdrop-filter: blur(4.5px);
+
+
+
+}
+
+/* /???*/
+.col {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+
+}
+
+
+
+.myul {
+  display: inline-block;
+  text-align: left;
+
+
+}
+
+
+
+/*back to top button */
+#myBtn {
+  position:fixed;
+  bottom: 36px;
+  right: 30px;
+  inline-size: 90px;
+  z-index: 1000;
+  cursor:grabbing;
+  display: none;
+
+}
+
+
+/* scrollbar*/
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(216, 203, 203, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 11, 14);
+  outline: 2px solid rgb(22, 1, 6);
+}
+/* hero area */
+
+.about-img{
+  margin-left: -100px;
+  right: -60px;
+ }
+ 
+ .display-1{
+   font-size: 160px;
+   font-weight: 1000;
+ 
+ }
+ 
+ .position-absolute{
+   font-weight: 700;
+ }
