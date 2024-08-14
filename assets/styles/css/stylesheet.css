@@ -84,11 +84,13 @@ body {
 
 
 
+
+ /*add flash effect*/
  .alert {
  
    font-family: "Source Code Pro", monospace;
- 
- 
+  border: #c1d8cb;
+   
  }
 
 
@@ -201,7 +203,15 @@ card main example
 }
 
 
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
 
+  background-color: #333;
+  color: white;
+
+}
 
 
 
@@ -227,14 +237,15 @@ flex-grow: 1;
 flex-shrink: 1;
 flex-wrap: wrap;
 
-text-decoration: none;
+
 
 
 }
 
-.nav-item {
+ /*fixed*/
+.nav-item { 
 list-style: none;
-
+text-decoration: none;
 
 }
 
