@@ -12,6 +12,13 @@ html{
 }
 
 
+/* css variable selector*/
+:root {
+  --bgcolor: rgb(3, 8, 36);
+}
+
+
+
 main {
 /* Trigger vertical scroll    overflow-x: hidden;   overflow-y: scroll  */
 flex-wrap:wrap;  /*FIX*/
@@ -20,12 +27,13 @@ font-weight: weight;
 font-style: normal;
 
 /* bug display: flex; */
+overflow-y:scroll;
 
 
-/* align-content: space-around;  fix*/
+/* align-content: space-around;  fix  background-color: rgb(6, 6, 34); */
 
-background-color: rgb(6, 6, 34);
-
+/* fixed*/
+background-color: var(--bgcolor);
 
 
 
@@ -83,13 +91,37 @@ body {
   text-align:center;
   flex-grow: 1;
   flex-shrink: 1;
-  width: 30vh;
+  width: 30 vh;
  
   margin: 100px;
+  font-family: "EB Garamond", serif;
+  flex: 2; 
+  justify-content: flex-evenly;
+
 
 
 
 }
+
+
+.g-col-5 {
+
+  
+ 
+  flex-direction: col;
+
+
+  display: inline-block;
+
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+
+
+  
+
+
+}
+
 
 /* flex-box item grow finish*/
 .item {
@@ -123,11 +155,12 @@ div:hover {
 }
 
 card fin ver
-#card {  /*fix*/
+.blockquote {  /*fix*/
   max-width:1rem;
   margin: 2rem auto; /* 32px auto */
   padding: 1em; /* 16px */
   border: 0.1em solid #ddd; /* 1.6px */
+  font-family: 'Source Code Pro', monospace;
 
 }
 
@@ -143,24 +176,6 @@ card main example
 
 
 
-.float-lg {
-
-  flex: 2;  
-  justify-content: flex-evenly;
-  flex-direction: col;
-
-  overflow-y:scroll;
-  display: inline-block;
-
-  justify-content: space-evenly;
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-  background-color: #160a31d8;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight:weight;
-  font-style: normal;
-}
 
 
 .site-title:visited, h2:visited {
@@ -168,6 +183,11 @@ card main example
 
 
 }
+
+
+
+
+
 
 .navbar {
   margin: 20px;
@@ -220,6 +240,11 @@ p {
   font-family: "DM Sans", sans-serif;
 
 
+}
+/* Change the color of the first line in a paragraph */
+.container::first-line {
+  color: blue;
+  font-weight: bold;
 }
 
 
