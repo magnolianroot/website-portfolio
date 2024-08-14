@@ -104,7 +104,7 @@ flexbox-->
 <nav id="main-navbar" class="navbar navbar-expand-lg sticky-top navbar-before-scroll">  <!--container wrapper-->
   <div class="col container-fluid">
       <!--list links-->
-
+        <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-house fa-2x"></i></a>
         </li>
           <a class="nav-link"  href="https://github.com/magnolianroot" target="_blank" role="button"
