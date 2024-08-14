@@ -12,10 +12,26 @@ html{
 }
 
 
-/* css variable selector*/
+/* css variable selector - important*/
 :root {
-  --bgcolor: rgb(3, 8, 36);
+  --bgcolor: rgb(6, 4, 27);
 }
+
+
+.list-group-item {
+
+  max-width: 20rem; /* 320px */
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  border: 5em solid #ddd; /* 1.6px */
+  border-radius: 0.5em; /* 8px */
+
+
+}
+
+
+
+
 
 
 
