@@ -43,11 +43,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
 />
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
+
 <!-- MDB -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
@@ -109,7 +105,7 @@ flexbox-->
 <!--add more text for usability, recognizable - add CTA, notif/icon for ecommerce which redirects to updates-->
   <div class="container-lg">  <!--wrapping fixed-->
 <nav id="main=navbar" class="navbar navbar-expand-lg sticky-top navbar-before-scroll">  <!--container wrapper-->
-  <div class="container-fluid">
+  <div class="col container-fluid">
       <!--list links-->
         <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-house fa-2x"></i></a>
@@ -157,7 +153,7 @@ flexbox-->
 </div>
 -->
 
-<main>
+<main class="col">
 <!--alert w close button-->
 <div class="alert alert-success alert-dismissible fade show border border-2 " role="alert">
   <i class="bi bi-bell-fill"> welcome to Victoria's portfolio site. Check back for tech news updates, my 1st newsletter, and a game app in the works✍</i>
@@ -175,8 +171,8 @@ flexbox-->
 
 
 <div class="ms-4 container d-flex border border-2 " >
-  <div class="row">
-<ul class="col">
+
+<ul class="col">   <!--row deleted  -->
   <li class="list-group-item border-0">
     <p class="unselectable"> my first personal project - website coded from scratch: first developed with HTML/CSS, MDB, Bootstrap,
        added <br> functionality and libraries for dynamics, wrapped in modern UI/UX principles and practices for a 2024 user-friendly interfaced-feel.          
@@ -186,7 +182,6 @@ flexbox-->
 </ul>
     </div>
 <div class="container">
-<div class="row">
   <ul class="col">
 <article>
   <div class="container col d-flex border border-2 " >
@@ -268,8 +263,8 @@ flexbox-->
 <!--"col-md-6"-->
 
 
-<!--blockquote-->
-<div class="card border border border-dark mb-3 p-2 " style="max-width: 18rem;">
+<!--blockquote-->  <!--mb-3 p-2-->
+<div class="card border border border-dark " style="max-width: 18rem;">
   <div class="card-header">top tip | regarding my journey</div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
@@ -294,15 +289,6 @@ ex of control grid col/row w css grid/flexbox - spacing between items
 
 
 
-<!--swiper parallax func
-<swiper-container>
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
-  <swiper-slide>Slide ...</swiper-slide>
-</swiper-container>
--->
-
 
   <!-- Contact Form Block -->
  <!-- data-mdb-ripple-init data-mdb-ripple-unbound="true" data-mdb-ripple-color="dark"-->
@@ -321,6 +307,7 @@ ex of control grid col/row w css grid/flexbox - spacing between items
 
 <div class="container">
   <footer>
+    <!---->
   <div id="footer-list" class="d-flex justify-content-center justify-content-lg-between p-3">
 
   <div class=" col-sm list-item ">
@@ -339,6 +326,11 @@ ex of control grid col/row w css grid/flexbox - spacing between items
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://instagram.com/m4gnusroot" target="_blank" role="button"
         ><i class="fab fa-instagram"></i
       ></a>
+      ></a>
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://stackoverflow.com/users/25164818/m4gnusroot" target="_blank" role="button"
+        ><i class="fab fa-stack-overflow"></i
+      ></a>
+
 
     <!-- Copyright -->
     <div class="col-sm text-center unselectable">
@@ -420,3 +412,4 @@ window.addEventListener('scroll', function () {
 
 
 </html>
+
