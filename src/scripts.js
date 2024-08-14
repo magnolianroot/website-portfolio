@@ -45,7 +45,9 @@ window.addEventListener('scroll', function () {
 })
 */
 
-
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#main-navbar'
+})
 
 // live alert
  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')

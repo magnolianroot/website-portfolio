@@ -2,7 +2,7 @@
 <html lang="en" data-mdb-theme="dark">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ">
 
 
 
@@ -37,14 +37,14 @@
 
 
 />
-<!-- MDB -->
+
 <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
 />
 
-<!-- MDB -->
+<!-- MDB fixed -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
   rel="stylesheet"
@@ -53,18 +53,15 @@
 <!--bootstrap icons-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!--navbar func-->
-<link rel="stylesheet" href="css/mdb.min.css" />
-
 
 <link rel="icon" type="image/png" href="favicon.ico"/> <!--favicon-->
 
 
-<main> <!--where root directory starts/lives ...class container??  class="container d-flex?-->
+<main > <!--where root directory starts-->
 
 
 
-<body> <!--nav parent container i.e. all containers
+<body data-bs-spy="scroll"tabindex="0" > <!--nav parent container i.e. all containers make scrollable?
 
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
   <div data-bs-target="#scroller"  data-bs-spy="scroll"  tabindex="0" ></div>
@@ -104,7 +101,7 @@ flexbox-->
   <!--underline link text - no afterglow. nav bigger -->
 <!--add more text for usability, recognizable - add CTA, notif/icon for ecommerce which redirects to updates-->
   <div class="container-lg">  <!--wrapping fixed-->
-<nav id="main=navbar" class="navbar navbar-expand-lg sticky-top navbar-before-scroll">  <!--container wrapper-->
+<nav id="main-navbar" class="navbar navbar-expand-lg sticky-top navbar-before-scroll">  <!--container wrapper-->
   <div class="col container-fluid">
       <!--list links-->
         <li class="nav-item">
@@ -172,7 +169,7 @@ flexbox-->
 
 <div class="ms-4 container d-flex border border-2 " >
 
-<ul class="col-4">   <!--row deleted  -->
+<ul class="g-col-5">   <!--row deleted  -->
 
   <li class="list-group-item border-0">
     <p class="unselectable"> my first personal project - website coded from scratch: first developed with HTML/CSS, MDB, Bootstrap,
@@ -183,7 +180,9 @@ flexbox-->
 </ul>
     </div>
 <div class="container">
-<!--spacing here-->
+<!--spacing here--> or   <!--<div class="row"></div -->
+    <!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
 <article>
   <div class="container col d-flex border border-2 " >
        <p class="unselectable"> I plan to study Computer Science and specialize in robotics. I am also very interested in web3 & neuroscience.
@@ -370,16 +369,17 @@ echo $last_modification;
 
 
 
-<script src="scripts,js.js"></script><!--site js file-->
+<script src="scripts.js"></script><!--site js file-->
 <!--bootstrap--> <!--in meta-->
 <!--jquery--> <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-<!-- MDB -->
+
+<!-- MDB 
 <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
 ></script>
-
+-->
 
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.umd.min.js"></script>
