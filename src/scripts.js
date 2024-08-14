@@ -31,6 +31,22 @@ const result = sass.compile(scssFilename);
 
 alert("welcome to: home portal");  // alert func / fixed
 
+/*
+<!-- Custom scripts
+type="text/javascript">
+
+const navbar = document.getElementById("main-navbar")
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("navbar-after-scroll")
+  } else {
+    navbar.classList.remove("navbar-after-scroll")
+  }
+})
+*/
+
+
+
 // live alert
  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {

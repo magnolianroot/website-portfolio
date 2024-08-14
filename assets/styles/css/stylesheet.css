@@ -31,9 +31,9 @@ display: flex;
 
 position: relative;
 align-content: space-around;
- /*idk*/
-padding: 70px 40px;
-background-color: rgb(27, 27, 32);
+
+
+background-color: rgb(17, 17, 51);
 
 
 
@@ -48,8 +48,7 @@ height: 300px; /*flex container height, main elements inside it stay this height
 
 body {
 
-  background-color: rgb(27, 27, 32);
- 
+  
   font-family: 'Source Code Pro', monospace;
   margin: 0;
 
@@ -88,7 +87,7 @@ body {
   flex-shrink: 1;
   width: 100vh;
   background-color: #c5afaf;
-  margin: 10px;
+  margin: 100px;
 
 
 
@@ -230,12 +229,12 @@ p {
 	min-height: 450px;
 }
 
-#foooter {
+footer {
 
   /* Optional: For improved browser support */
   white-space: normal;
  
- 
+  font-family: "Source Code Pro", monospace;
  
    grid-area: span;
    background:linear-gradient(blur);
@@ -265,16 +264,6 @@ p {
 
 }
 
-/* /???*/
-.col {
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-
-
-}
-
-
 
 .myul {
   display: inline-block;
@@ -285,8 +274,8 @@ p {
 
 
 
-/*back to top button */
-#myBtn {
+/*back to top button 
+#btn-top {
   position:fixed;
   bottom: 36px;
   right: 30px;
@@ -296,16 +285,14 @@ p {
   display: none;
 
 }
-
+*/
 
 /* scrollbar*/
 body::-webkit-scrollbar {
   width: 1em;
 }
 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(216, 203, 203, 0.3);
-}
+
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(24, 11, 14);
