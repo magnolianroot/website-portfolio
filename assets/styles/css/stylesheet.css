@@ -7,15 +7,15 @@ html{
   scroll-behavior: smooth;
   initial-letter: 2;
   box-sizing: border-box;
-
+  overflow: scroll;
 
 }
 
 
 main {
-  overflow-y: auto;    /* Trigger vertical scroll    */
-  overflow-x: hidden;
-  overflow-y: scroll;
+/* Trigger vertical scroll    overflow-x: hidden;  */
+
+
 font-optical-sizing: auto;
 font-weight: weight;
 font-style: normal;
