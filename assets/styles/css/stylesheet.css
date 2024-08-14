@@ -13,27 +13,20 @@ html{
 
 
 main {
-/* Trigger vertical scroll    overflow-x: hidden;  */
+/* Trigger vertical scroll    overflow-x: hidden;   overflow-y: scroll  */
+flex-wrap:wrap;  /*FIX*/
 
-
-font-optical-sizing: auto;
 font-weight: weight;
 font-style: normal;
-/* flex-flow: column wrap;
-flex-wrap:wrap;
 
-flex-flow: column wrap;
+/* bug display: flex; */
 
-/*important*/
-display: flex;  
+
+/* align-content: space-around;  fix*/
 
 
 
-position: relative;
-align-content: space-around;
 
-
-background-color: rgb(17, 17, 51);
 
 
 
@@ -41,8 +34,10 @@ background-color: rgb(17, 17, 51);
 justify-content: flex-around;
 
 
-/* .item { flex-basis: 50%; } /*gives flex-items a base ideal*/
-height: 300px; /*flex container height, main elements inside it stay this height*/
+/* .item { flex-basis: 50%; } /*gives flex-items a base ideal  
+margin: 0px;   height: 300px;
+  padding: 0px; */
+ /*flex container height, main elements inside it stay this height*/
 }
 
 
@@ -50,21 +45,20 @@ body {
 
   
   font-family: 'Source Code Pro', monospace;
-  margin: 0;
-  overflow-y: scroll
+
+
 
   /*
-  margin: 0px;
-  padding: 0px;
-*/
 
+*/
+background-color: rgb(17, 17, 51);
 
   justify-content: center;
- 
+
 
  }
 
- 
+
 
  .alert {
  
@@ -76,8 +70,10 @@ body {
 
 
  .container {
-  width: 250rem;
-  height: 100rem; /*flex container height, main elements inside it stay this height*/
+  /*flex container height, main elements inside it stay this height
+   width: 250rem;
+  height: 100rem;
+  */
   padding: 25px 50px 75px;
 
   color: #c1d8cb;
