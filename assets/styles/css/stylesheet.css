@@ -288,19 +288,10 @@ footer {
 */
 
 /* scrollbar*/
-body::-webkit-scrollbar {
-  width: 1em;
-}
 
+/* hero section*/
 
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(24, 11, 14);
-  outline: 2px solid rgb(22, 1, 6);
-}
-/* hero area */
-
-.about-img{
+.img{
   margin-left: -100px;
   right: -60px;
  }
