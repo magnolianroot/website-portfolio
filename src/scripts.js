@@ -31,6 +31,19 @@ const result = sass.compile(scssFilename);
 
 alert("welcome to: home portal");  // alert func / fixed
 
+/*carousel*/
+const myCarouselElement = document.querySelector('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+
+
+
+
+
+
 /*
 <!-- Custom scripts
 type="text/javascript">
