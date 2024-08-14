@@ -232,7 +232,11 @@ text-decoration: none;
 
 }
 
+.nav-item {
+list-style: none;
 
+
+}
 
 .navbar-nav:hover {
 
