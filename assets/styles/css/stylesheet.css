@@ -24,7 +24,7 @@ font-style: normal;
 
 /* align-content: space-around;  fix*/
 
-
+background-color: rgb(6, 6, 34);
 
 
 
@@ -51,7 +51,7 @@ body {
   /*
 
 */
-background-color: rgb(17, 17, 51);
+
 
   justify-content: center;
 
@@ -74,15 +74,17 @@ background-color: rgb(17, 17, 51);
    width: 250rem;
   height: 100rem;
   */
-  padding: 25px 50px 75px;
+
+  /*top right bottom left - shorthand*/
+  padding: 3rem 5rem;
 
   color: #c1d8cb;
-  align-items: center;
+  
   text-align:center;
   flex-grow: 1;
   flex-shrink: 1;
-  width: 100vh;
-  background-color: #c5afaf;
+  width: 30vh;
+ 
   margin: 100px;
 
 
