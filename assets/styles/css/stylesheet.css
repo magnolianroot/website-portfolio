@@ -94,7 +94,13 @@ body {
  
    font-family: "Source Code Pro", monospace;
   border: #c1d8cb;
-   
+  width: 19rem;
+  margin: 0 auto;
+  font-size: 14px;
+  height: auto;
+
+
+
  }
 
 
