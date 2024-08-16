@@ -366,9 +366,24 @@ p {
   }
   
 
+ 
+  /*carousel */
+
+  .slides {
+    overflow-x: auto;
+    display: flex;
+    flex-shrink: 0;  /*fix*/
+    scroll-snap-type: x mandatory;
 
 
+  }
 
+  .slides > div {
+    display: flex;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+  }
 
 
 /*themeing target*/

@@ -39,7 +39,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false
 })
 
-/*carousel duration&=*/
+/*carousel duration*/
 $(document).ready(function() {
   jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 4000  // 4 seconds
 });
