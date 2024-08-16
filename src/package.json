@@ -1,0 +1,21 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "author": "Vicotoria Joseph <josephv1791@gmail.com>",
+
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+    
+  }
+
+  {
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  }
+
