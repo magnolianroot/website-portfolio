@@ -244,7 +244,13 @@ backdrop-filter: blur(3.6px);
 
 }
 
+.skills {
+ flex-direction: row;
+ flex-wrap: wrap;
 
+
+
+}
 
 .nav-item { /* From https://css.glass */
 
