@@ -101,12 +101,17 @@ flexbox-->
   <!--underline link text - no afterglow. nav bigger -->
 <!--add more text for usability, recognizable - add CTA, notif/icon for ecommerce which redirects to updates-->
   <div class="container-lg">  <!--wrapping fixed-->
-<nav id="main-navbar" class="navbar navbar-expand-lg sticky-top navbar-before-scroll">  <!--container wrapper-->
-  <div class="col container-fluid">
-      <!--list links-->
+<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top border-bottom border-body">  <!--container wrapper-->
+  <div class="container-fluid">
+        <!--list links-->
+        <!-- Logo -->
+        <a class="navbar-brand me-1" href="#"><img src="./img/logo.png"  height="20px" alt="victoria-joseph-logo"
+        loading="lazy" />
+        </a>
         <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-house fa-2x"></i></a>
         </li>
+        <li class="nav-item">
           <a class="nav-link"  href="https://github.com/magnolianroot" target="_blank" role="button"
           ><i class="fab fa-github fa-2x"></i
         ></a>
@@ -299,7 +304,8 @@ flexbox-->
 
 <!--hero section-->
         <!--mdbcard avatar -->
-        <div class="container">
+        <div id="contact-card">
+          <div class="container">
         <div id="card d-flex border border border-dark mb-3" style="max-width: 18rem;"
           <img src="/assets/icons/IMG_20240508_173626_376.jpg" class="rounded-circle shadow-3 hover-shadow mb-3 " style="width: 150px;">
              alt="victoria joseph developer selfie">
@@ -323,6 +329,7 @@ flexbox-->
 <br> actively seeking 1st junior/entry lvl position 
 <br> HTML/CSS, JS, Bootstrap, PHP </p>
             <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-ripple-color="success" data-mdb-ripple-unbound="true" >Send Message</button>
+            </div>
           </div>
         </div>   
 

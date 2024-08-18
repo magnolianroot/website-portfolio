@@ -7,6 +7,7 @@ html{
   scroll-behavior: smooth;
   initial-letter: 2;
   box-sizing: border-box;
+  
   overflow: scroll;
 
 }
@@ -14,7 +15,7 @@ html{
 
 /* css variable selector - important*/
 :root {
-  --bgcolor: rgb(6, 4, 27);
+  --bgcolor: rgb(10, 6, 36);
 }
 
 
@@ -56,7 +57,7 @@ overflow-y:scroll;
 background-color: var(--bgcolor);
 
 padding: 70px 40px;
-background-color: rgb(27, 27, 32);
+background-color: rgb(11, 11, 39);
 
 
 
@@ -73,7 +74,7 @@ margin: 0px;   height: 300px;
 body {
 
   background-color: rgb(27, 27, 32);
-  font-family: 'Source Code Pro', monospace;
+ 
 
 
 
@@ -114,8 +115,8 @@ body {
 
   /*top right bottom left - shorthand*/
   padding: 3rem 5rem;
+  color: #afc4ff;
 
-  color: #c1d8cb;
   
   text-align:center;
   flex-grow: 1;
@@ -163,43 +164,28 @@ body {
 /* li display: inline-block; */
 
 
-div:hover {
-  color: #8ca898;
-  
+p:hover {
+  -webkit-backdrop-filter: blur(4.5px);
  
 }  
 
 
 
 .site-title  {
-  font-style:italic;
-  font-size: 3em;
+  
+  font-size: 2.8rem;
   font-family: "Source Code Pro", monospace;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 
-  margin-bottom: 2vh;  
+ 
 }
 
-card fin ver
-.blockquote {  /*fix*/
-  max-width:1rem;
-  margin: 2rem auto; /* 32px auto */
+
+
+#contact-card {
+
+  
   padding: 1em; /* 16px */
-  border: 0.1em solid #ddd; /* 1.6px */
   font-family: 'Source Code Pro', monospace;
-
-}
-
-card main example
-.custom-card {
-  max-width: 20rem; /* 320px */
-  margin: 2rem auto; /* 32px auto */
-  padding: 1em; /* 16px */
-  border: 0.1em solid #ddd; /* 1.6px */
-  border-radius: 0.5em; /* 8px */
 }
 
 
@@ -226,15 +212,13 @@ card main example
 
 
 
-.navbar {
+#main-navbar {
   margin: 20px;
-  color: #c1d8cb;
-   background:linear-gradient(blur);
-   text-decoration: none;
-   -webkit-backdrop-filter: blur(4.5px);
-  position: sticky;
+  color: #f0b3c2;
 
-padding: 0 300px;
+
+
+padding: 0 30px;
 left: 0;
 right: 0;
   flex-grow: 1;
@@ -247,18 +231,29 @@ padding: 1.5rem 2rem;
 flex-grow: 1;
 flex-shrink: 1;
 flex-wrap: wrap;
-
-
-
-
-}
-
- /*fixed*/
-.nav-item { 
 list-style: none;
 text-decoration: none;
 
 }
+#navbar {
+background: rgba(200, 122, 164, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.6px);
+-webkit-backdrop-filter: blur(3.6px);
+
+}
+
+
+
+.nav-item { /* From https://css.glass */
+
+
+  
+  }
+  
+
+
 
 .navbar-nav:hover {
 
