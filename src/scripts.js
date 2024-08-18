@@ -52,9 +52,20 @@ const result = sass.compile(scssFilename);
   }  
   <input type="button" value="click" onclick="alertbox()"/>  
 
+  
 
 
+  //alert fix 
 alert("welcome to: home portal");  // alert func / fixed
+alertbox.onclick = () => {
+  setUserName();
+};
+
+alert.onclick = () => {
+  setUserName();
+};
+
+
 
 /*carousel*/
 const myCarouselElement = document.querySelector('#myCarousel')
