@@ -235,7 +235,7 @@ list-style: none;
 text-decoration: none;
 
 }
-#navbar {
+nav fix {
 background: rgba(200, 122, 164, 0.07);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
