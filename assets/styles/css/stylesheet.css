@@ -134,6 +134,15 @@ body {
 }
 
 
+
+div {
+
+
+  flex-wrap: wrap;
+}
+
+
+
 .g-col-5 {
 
   
@@ -247,7 +256,7 @@ backdrop-filter: blur(3.6px);
 .skills {
  flex-direction: row;
  flex-wrap: wrap;
-
+text
 
 
 }
