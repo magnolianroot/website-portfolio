@@ -107,6 +107,26 @@ body {
 
 
 
+
+#bio {
+
+flex-wrap: wrap;
+list-style: none;
+padding: 2rem 2rem;
+margin: 3rem 2rem;
+}
+
+
+
+.skills {
+
+  list-style: none;
+
+
+  
+}
+
+
  .container {
   /*flex container height, main elements inside it stay this height
    width: 250rem;
@@ -115,7 +135,7 @@ body {
 
   /*top right bottom left - shorthand*/
   padding: 3rem 5rem;
-  color: #afc4ff;
+  
 
   
   text-align:center;
@@ -134,7 +154,7 @@ body {
 }
 
 
-
+/* fix wrap*/
 div {
 
 
