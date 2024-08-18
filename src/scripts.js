@@ -48,15 +48,21 @@ const result = sass.compile(scssFilename);
 
 //alert
   function alertbox(){  
-   alert("the skills are in the name");  
+   alert("welcome to: home portal the skills are in the name");  
   }  
   <input type="button" value="click" onclick="alertbox()"/>  
 
   
 
 
+
+
+  //bottom of file
+let myButton = document.querySelector("button");
+let myHeading = document.querySelector("h1");
+
   //alert fix 
-alert("welcome to: home portal");  // alert func / fixed
+alert("");  // alert func / fixed
 alertbox.onclick = () => {
   setUserName();
 };

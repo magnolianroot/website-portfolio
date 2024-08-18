@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" data-mdb-theme="dark">
   <head>
@@ -12,7 +13,7 @@
     <meta name="robots" content="index,follow">
 
     -->
-   <title>Digital Developer | Designer Portfolio 2024</title>  
+   <title>Digital Developer Portfolio 2024</title>  
 <link rel="stylesheet" href="../assets/styles/css/stylesheet.css"> <!--link fixed-->
 
 
@@ -150,33 +151,109 @@ flexbox-->
 </div>
 -->
 
-<div class="col">
-<!--alert w close button-->
+
+
+
+
+<div class="container-fluid">
 <div class="alert alert-success alert-dismissible fade show border border-2 " role="alert">
-  <i class="bi bi-bell-fill"> welcome to Victoria's portfolio site. Check back for tech news updates, my 1st newsletter, and a game app in the works✍</i>
+  <i class="bi bi-bell-fill"> welcome to Victoria's developer/designer portfolio site. Check back for tech news updates, <br> my 1st newsletter, and a game app created with Ren'Py.✍</i>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
 
 
+
+  <div id="scroll-text">This is scrolling text.<div>
+</div>
+
+<!--fic scroll-->
 <span class="site-title">
+  <div id="scroll-container">
   <!--title resume link-->
-  <a class=" link-opacity-50-hover" href="../assets/icons/Experienced Web Developer  (1).pdf" target="_blank">Victoria Joseph ~ Full Stack Developer • Designer</a>
+  <a class=" link-opacity-50-hover" href="../assets/icons/Experienced Web Developer  (1).pdf" target="_blank"></a>
+  <div id="scroll-text">Victoria Joseph ~ Full Stack Developer • Designer</a>
+  </div>
+ </div>
 </span>
 
 
 
-<!--div ms-4 container -->
+<!--div  container -->
 <div class="container d-flex  ">
-<ul class="g-col-5">   <!--row deleted  -->
-  <li class="list-group-item border border-3">
+<ul class="g-col-5">   
+  <li class="list-group-item border border-2">
     <p class="unselectable"> my first personal project - website coded from scratch: first developed with HTML/CSS, MDB, Bootstrap,
        added <br> functionality and libraries for dynamics, wrapped in modern UI/UX principles and practices for a 2024 user-friendly interfaced-feel.          
-    </p></li>
+    </p>
   <li class="list-group-item border border-2">my second project: server-side php program built with laravel</li>
   <li class="list-group-item border border-2">alongside my 3rd project: e-commerce site with wordpress or shopify</li>
 </ul>
     </div>
+
+
+    <!--spotify playslist fix-->
+<div class="container">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7uV6LTGb4t8ZgPHiYu5jtN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+
+
+
+
+<!-- ... somewhere in your html ... -->
+<nav id="navigation"></nav>
+<!-- ... more html ... -->
+
+    <div class="row">   <!--fix-->
+      <div class="col-lg-4">
+    <ol id="carousel-indicators " class="carousel slide carousel-fade "data-bs-ride=carousel">
+      <!--<div class="carousel-indicators">-->
+        <li type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+        <li type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+        <li type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/icons/spotify ai-review-1-victoria-joseph.jpg" class="d-block w-100" alt="slide 1">
+          <div class="carousel-caption">
+            <h3>my presenation on Spotify's DJ X - august '24</h3>
+            <blockquote class="blockquote mb-0">
+            <p>created with Canva</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active"> 
+          <img src="/assets/icons/spotify-ai-review-2-victoria-joseph.jpg" class="d-block w-100" alt="slide 2">
+        </div>
+        <div class="carousel-item ">
+          <img src="/assets/icons/spotify-ai-review-3-victoria-joseph.jpg" class="d-block w-100" alt="slide 3">
+        </div>
+        <div class="carousel-item ">
+          <img src="/assets/icons/spotify-ai-review-4-victoria-joseph.jpg" class="d-block w-100" alt="slide 4">
+        </div>
+        <div class="carousel-item ">
+          <img src="/assets/icons/spotify-ai-review-5-victoria-joseph.jpg" class="d-block w-100" alt="slide 5">
+        </div>
+        <div class="carousel-item ">
+          <img src="/assets/icons/spotify-ai-review-6-victoria-joseph.jpg" class="d-block w-100" alt="slide 6">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    </div>
+
+
+
 <!--spacing here--> or
     <div class=" container d-flex border border-2 ">
 <article>  <!-- fix-->
@@ -223,9 +300,10 @@ flexbox-->
 
 <!--hero section-->
         <!--mdbcard avatar -->
+        <div class="container">
         <div id="card d-flex border border border-dark mb-3" style="max-width: 18rem;"
-          <img src="../assets/icons/IMG_20240508_173626_376.jpg" class="rounded-circle shadow-3 hover-shadow mb-3 " style="width: 150px;">
-             alt="victoria joseph developer selfie" />
+          <img src="/assets/icons/IMG_20240508_173626_376.jpg" class="rounded-circle shadow-3 hover-shadow mb-3 " style="width: 150px;">
+             alt="victoria joseph developer selfie">
             <p class="card-title">Contact</p>
             <h5 class="mb-2"><strong>Victoria Joseph</strong></h5>
             <p class="text-muted">Web Developer <span class="badge bg-tertiary">PRO</span></p>
@@ -240,6 +318,8 @@ flexbox-->
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">message</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <p><input type="submit" value="Send" /></p>
+
             </div>
             <p class="card-text">
 <br> 2 yrs exp 
@@ -247,7 +327,7 @@ flexbox-->
 <br> HTML/CSS, JS, Bootstrap, PHP </p>
             <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-ripple-color="success" data-mdb-ripple-unbound="true" >Send Message</button>
           </div>
-
+        </div>   
 
 
  
@@ -258,12 +338,13 @@ flexbox-->
 
 
 <!--blockquote-->  <!--mb-3 p-2-->
-<div class="card border border border-2 " style="max-width: 18rem;">
-  <div class="card-header">top tip | regarding my journey</div>
+<div class="container">
+<div class="card border-primary mb-3 " style="max-width: 18rem;">
+  <div class="card-header ">top tip | regarding my journey <hr class="hr hr-blurry" />
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p>"if you can get through this you can get through anything"</p>
-      <footer class="blockquote-footer">from Brad, <cite title="Source Title">my mentor</cite>
+      <footer class="blockquote-footer">Brad, <cite title="Source Title">mentor fig.</cite></footer>
     </blockquote>
   </div>
 </div>
@@ -289,40 +370,40 @@ ex of control grid col/row w css grid/flexbox - spacing between items
 
 <!--resume + btn-top fix alignment-->
 <div>
-<a id="btn-top" href="#" class="btn btn-light btn-md back-to-top data-mdb-ripple-init data-mdb-ripple-unbound="true" role="button"><i class="fas fa-chevron-up"></i></a>
+<a id="btn-top" href="#" class="btn btn-secondary btn-md back-to-top data-mdb-ripple-init data-mdb-ripple-unbound="true" role="button"><i class="fas fa-chevron-up"></i></a>
 </div>
 
 
-<div class="container"</div> <!--fix -->
+
 
 
 <!-- Footer container-->
  
 
-<div class="container ">
-  <footer class=" bg-body-tertiary text-center ">
+<div class="container-lg">
+  <footer class=" ">
     <!---->
-  <div id="footer-list" class="d-flex justify-content-center justify-content-lg-between p-3">
+  <div id="footer-list" class="d-flex justify-content-lg-between p-3">
 
-  <div class=" g-col-6 list-item ">
+  <div class=" col-lg list-item ">
       <!-- LinkedIn -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
-        ><i class="fab fa-linkedin"></i   
+        ><i class="fab fa-linkedin fa-2x"></i   
       ></a>
       <!-- Twitter -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://github.com/magnolianroot" target="_blank" role="button"
-        ><i class="fab fa-github"></i
+        ><i class="fab fa-github fa-2x"></i
       ></a>
       <!-- Github -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://x.com/magnolianroot" target="_blank" role="button"
-        ><i class="fab fa-twitter"></i
+        ><i class="fab fa-twitter fa-2x"></i
       ></a>
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://instagram.com/m4gnusroot" target="_blank" role="button"
-        ><i class="fab fa-instagram"></i
+        ><i class="fab fa-instagram fa-2x"></i
       ></a>
-      ></a>
+      </a>
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://stackoverflow.com/users/25164818/m4gnusroot" target="_blank" role="button"
-        ><i class="fab fa-stack-overflow"></i
+        ><i class="fab fa-stack-overflow fa-2x"></i
       ></a>
 
 
@@ -331,6 +412,13 @@ ex of control grid col/row w css grid/flexbox - spacing between items
       © 2024 Copyright: Victoria Joseph 
       <a class="text-body" href="insert github pages here"></a>
   </div>
+
+
+<div class="col">
+<p>Created with <span style="color: #BA6573;">❤</span> by Vic</p>
+</div>
+
+
 </div>
     <!-- Copyright -->
     </footer>
@@ -364,7 +452,7 @@ echo $last_modification;
 
 
 
-<script src="scripts.js"></script><!--site js file-->
+<script  type="module" src="scripts.js"></script><!--site js file-->
 <!--bootstrap--> <!--in meta-->
 <!--jquery--> <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
