@@ -182,8 +182,8 @@ flexbox-->
 
 <!--div  container -->  <!--php clock here-->
 <div class="container border border-2">
-  <div id="bio">
-    <ul class="skills">
+    <div class="col">
+    <ul id="skill-list">
       <p class="unselectable"><strong>Skills: 2+ yrs of Front-End Developer Experience.</strong> <br>
         As of 8/24 I'm working on creating:
         <br> a RESTful API using ASP.NET Core
@@ -196,15 +196,14 @@ flexbox-->
     <li><i class="fab fa-mdb fa-2x "></i></li>
     <li ><i class="fab fa-bootstrap fa-2x"></i></li>
     <li><i class="fab fa-php fa-2x"></i></li>
-
+      </ul>
     <!--fix
     <i class="fab fa-laravel"></i>
     <i class="fab fa-node-js"></i>
     sql <i class="bi bi-filetype-sql"></i> <!--bootstrap-->
-  -->
-  </ul>
+  --
 </div>
-</div>
+
   <!--
     my second project: server-side php contact card built with laravel</li>
 alongside my 3rd project: e-commerce site with wordpress or shopify</li>
@@ -214,11 +213,6 @@ alongside my 3rd project: e-commerce site with wordpress or shopify</li>
 
 
     <!--spotify playslist fix-->
-<div class="container">
-  <div class="col-md-4">
-    <iframe style="border-radius:25px " src="https://open.spotify.com/embed/playlist/7uV6LTGb4t8ZgPHiYu5jtN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div>
-</div>
 
 
 
@@ -266,8 +260,16 @@ alongside my 3rd project: e-commerce site with wordpress or shopify</li>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
+    <div class="container">
+      <div class="row">
+        <iframe style="border-radius:25px " src="https://open.spotify.com/embed/playlist/7uV6LTGb4t8ZgPHiYu5jtN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </div>
-    </div>
+
+  </div>  <!--card + spotify wrapper end-->
+
 
 
 
@@ -398,12 +400,12 @@ ex of control grid col/row w css grid/flexbox - spacing between items
 <!-- Footer container-->
  
 
-<div class="container-lg">
+<div class="container-lg ">
   <footer class=" ">
     <!---->
-  <div id="footer-list" class="d-flex justify-content-lg-between p-3">
+  <div id="footer-list " class="d-flex justify-content-lg-between p-3">
 
-  <div class=" col-lg list-item ">
+  <div class="col-lg list-item ">
       <!-- LinkedIn -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-3" href="https://www.linkedin.com/in/victoria-joseph-in/" target="_blank" role="button"
         ><i class="fab fa-linkedin fa-2x"></i   

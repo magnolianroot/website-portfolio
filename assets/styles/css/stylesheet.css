@@ -38,30 +38,32 @@ html{
 }
 
 
-
+/* 
+font-weight: weight;
+font-style: normal;
+*/
 
 main {
 /* Trigger vertical scroll    overflow-x: hidden;   overflow-y: scroll  */
-flex-wrap:wrap;  /*FIX*/
-
-font-weight: weight;
-font-style: normal;
+ /*FIX flex-wrap:wrap; */
 
 /* bug display: flex; */
 overflow-y:scroll;
 
 
-/* align-content: space-around;  fix  background-color: rgb(6, 6, 34); */
-
-/* fixed*/
-background-color: var(--bgcolor);
-
-padding: 70px 40px;
-background-color: rgb(11, 11, 39);
-
-
+/* align-content: space-around; 
 
 justify-content: flex-around;
+fix  background-color: rgb(6, 6, 34); */
+
+
+
+padding: 3rem 2rem;
+background-color: rgb(7, 7, 27);
+
+
+
+
 
 
 /* .item { flex-basis: 50%; } /*gives flex-items a base ideal  
@@ -73,17 +75,17 @@ margin: 0px;   height: 300px;
 
 body {
 
-  background-color: rgb(27, 27, 32);
+
  
 
 
 
   /*
-
+  justify-content: center;
 */
 
 
-  justify-content: center;
+
 
 
  }
@@ -96,10 +98,10 @@ body {
  
    font-family: "Source Code Pro", monospace;
   border: #c1d8cb;
-  width: 19rem;
+  width: 16rem; 
   margin: 0 auto;
-  font-size: 14px;
-  height: auto;
+  font-size: 15px;
+
 
 
 
@@ -108,23 +110,33 @@ body {
 
 
 
-#bio {
+.row {
+  list-style:none;
+  gap: 3rem;
+  color: #a6cfc0;
 
-flex-wrap: wrap;
 list-style: none;
 padding: 2rem 2rem;
 margin: 3rem 2rem;
+
+
 }
 
 
-
+/* if 
 .skills {
 
-  list-style: none;
 
 
-  
+
+
+
 }
+*/
+
+
+
+
 
 
  .container {
@@ -240,6 +252,19 @@ p:hover {
 }
 
 
+#skill-list {
+display: inline;
+
+
+}
+
+#footer-list {
+
+
+
+
+}
+
 
 #main-navbar {
   margin: 20px;
@@ -315,7 +340,7 @@ p {
 }
 /* Change the color of the first line in a paragraph */
 .container::first-line {
-  color: blue;
+ 
   font-weight: bold;
 }
 
