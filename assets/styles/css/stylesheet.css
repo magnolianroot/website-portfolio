@@ -526,6 +526,25 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
 }
 
+/*margin padding spacing*/
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+
 /* media query example */
 #wrapper {width:95%;  margin: 0 auto; }
 
