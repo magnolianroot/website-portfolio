@@ -22,7 +22,6 @@ root.render(<NavigationBar />);
 
 
 
-ui
 
 
 import { Input, Ripple, initMDB } from "mdb-ui-kit";
