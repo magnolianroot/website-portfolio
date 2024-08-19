@@ -97,10 +97,10 @@ body {
  .alert {
  
    font-family: "Source Code Pro", monospace;
-  border: #c1d8cb;
+
   width: 16rem; 
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 16px;
 
 
 
@@ -148,7 +148,6 @@ margin: 3rem 2rem;
   /*top right bottom left - shorthand*/
   padding: 3rem 5rem;
   
-
   
   text-align:center;
   flex-grow: 1;
@@ -206,7 +205,7 @@ div {
 
 
 p:hover {
-  -webkit-backdrop-filter: blur(4.5px);
+
  
 }  
 
@@ -217,7 +216,6 @@ p:hover {
   font-size: 2.8rem;
   font-family: "Source Code Pro", monospace;
 
- 
 }
 
 
