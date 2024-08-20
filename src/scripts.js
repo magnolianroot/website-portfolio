@@ -21,7 +21,8 @@ const root = createRoot(domNode);
 root.render(<NavigationBar />);
 
 
-
+// custom alert box fix
+document.getElementById.alertbox("welcome to Victoria's developer portfolio");
 
 
 import { Input, Ripple, initMDB } from "mdb-ui-kit";
@@ -34,7 +35,7 @@ import { Input, initMDB } from "mdb-ui-kit";
 initMDB({ Input });
 
 
-// cursor effetc make
+// cursor effetc fix
 document.getElementById("demo").style.cursor = "pointer";
 
 
@@ -47,9 +48,9 @@ const result = sass.compile(scssFilename);
 
 //alert
   function alertbox(){  
-   alert("welcome to: home portal the skills are in the name");  
+   alert("welcome to home portal: the skills are in the name");  
   }  
-  <input type="button" value="click" onclick="alertbox()"/>  
+  
 
   
 /*initialize popover*/ 
@@ -65,15 +66,6 @@ const popover = new bootstrap.Popover('.example-popover', {
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
-  //alert fix 
-alert("");  // alert func / fixed
-alertbox.onclick = () => {
-  setUserName();
-};
-
-alert.onclick = () => {
-  setUserName();
-};
 
 
 
