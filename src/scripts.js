@@ -52,8 +52,13 @@ const result = sass.compile(scssFilename);
   <input type="button" value="click" onclick="alertbox()"/>  
 
   
+/*initialize popover*/ 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-
+const popover = new bootstrap.Popover('.example-popover', {
+  container: 'body'
+})
 
 
   //bottom of file
