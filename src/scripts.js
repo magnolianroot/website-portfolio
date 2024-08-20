@@ -5,11 +5,46 @@ document.body.innerHTML = '<div id="app"></div>';
 
 // Render your React component instead
 const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
+
 
 
 /* react */
-import { createRoot } from 'react-dom/client';
+const container = document.querySelector('container');
+container.addEventListener('mouseover', () => {
+  console.log('Button clicked!');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function NavigationBar() {
   // TODO: Actually implement a navigation bar
@@ -20,9 +55,17 @@ const domNode = document.getElementById('navigation');
 const root = createRoot(domNode);
 root.render(<NavigationBar />);
 
+console.log("Hello, World!");
 
 // custom alert box fix
 document.getElementById.alertbox("welcome to Victoria's developer portfolio");
+ onload="showAlert()"
+
+ function showAlert() {
+  var myText = "This can be whatever text you like!";
+  alert (myText);
+}
+
 
 
 import { Input, Ripple, initMDB } from "mdb-ui-kit";
@@ -46,13 +89,8 @@ const sass = require('sass');
 const result = sass.compile(scssFilename);
 
 
-//alert
-  function alertbox(){  
-   alert("welcome to home portal: the skills are in the name");  
-  }  
-  
 
-  
+
 /*initialize popover*/ 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
