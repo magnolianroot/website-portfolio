@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client';
 
+import //
+
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
 
@@ -10,11 +12,15 @@ const root = createRoot(document.getElementById('app'));
 
 /* react */
 const container = document.querySelector('container');
-container.addEventListener('mouseover', () => {
-  console.log('Button clicked!');
+div.addEventListener('mouseover', () => {
+  div.style.backgroundColor = 'blue';
 });
 
-
+// Add a mouseout event listener
+div.addEventListener('mouseover, () => {
+  // Change the button's background color back to its original color
+  div.style.backgroundColor = '';
+});
 
 
 
