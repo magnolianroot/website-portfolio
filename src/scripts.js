@@ -11,7 +11,7 @@ const root = createRoot(document.getElementById('app'));
 
 
 /* react */
-const container = document.querySelector('container');
+const container = document.querySelector('container');i
 div.addEventListener('mouseover', () => {
   div.style.backgroundColor = 'blue';
 });
@@ -22,7 +22,24 @@ div.addEventListener('mouseover, () => {
   div.style.backgroundColor = '';
 });
 
+//ex
+const button = document.querySelector('button');
+const div = document.querySelector('div');
+button.addEventListener('click', () => {
+  div.style.backgroundColor = 'blue';
+});
 
+
+
+<!--
+<script>
+  let d = new Date();
+  alert("Today's date is " + d);
+</script>
+-->
+
+
+// <link rel="icon" type="image/png" href="favicon.ico"/> <!--favicon-->
 
 
 
