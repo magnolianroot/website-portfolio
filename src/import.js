@@ -12,3 +12,16 @@ function loadHTML(id, url) {
    loadHTML('header-placeholder', 'header.html');
    loadHTML('nav-placeholder', 'nav.html');
    loadHTML('footer-placeholder', 'footer.html');
+
+   document.addEventListener('DOMContentLoaded', () => {
+    loadHeader('header-placeholder');
+    loadNavbar('navbar-placeholder');
+    loadSiteTitle('site-title-placeholder');
+    loadAlert('alert-placeholder');
+    loadSkills('skills-placeholder');
+    loadCarousel('carousel-placeholder');
+    loadSpotify('spotify-placeholder');
+    loadAbout('about-placeholder');
+    loadContactCard('contact-card-placeholder');
+    loadFooter('footer-placeholder');
+   });
