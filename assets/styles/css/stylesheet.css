@@ -123,12 +123,6 @@ body {
  /*add flash effect*/
  .alert {
  
-   font-family: "Source Code Pro", monospace;
-
-  width: 16rem; 
-  margin: 0 auto;
-  font-size: 16px;
-
 
 
 
@@ -865,10 +859,14 @@ body::-webkit-scrollbar-thumb {
  }
  
  #alert-placeholder {
-  height: 60px; /* Adjust height for alert */
-  background-color: hashtag#f8d7da;
-  border-color: hashtag#f5c6cb;
-  color: hashtag#721c24;
+  font-family: "Source Code Pro", monospace;
+
+  width: 16rem; 
+  height: 30rem;
+ 
+  font-size: 16px;
+
+
  }
  
  #skills-placeholder {
