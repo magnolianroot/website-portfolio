@@ -71,21 +71,11 @@ font-style: normal;
 */
 
 main {
-/* Trigger vertical scroll    overflow-x: hidden;   overflow-y: scroll  */
- /*FIX flex-wrap:wrap; */
 
-/* bug display: flex; */
 overflow-y:scroll;
 
 
-/* align-content: space-around; 
 
-justify-content: flex-around;
-fix  background-color: rgb(6, 6, 34); */
-
-
-
-padding: 3rem 2rem;
 background-color: rgb(7, 7, 27);
 
 
@@ -120,170 +110,8 @@ body {
 
 
 
- /*add flash effect*/
- .alert {
- 
 
 
-
- }
-
-
-
-
-.row {
-  list-style:none;
-  gap: 3rem;
-  color: #a6cfc0;
-
-list-style: none;
-padding: 2rem 2rem;
-margin: 3rem 2rem;
-
-
-}
-
-
-/* if 
-.skills {
-
-
-
-
-
-
-}
-*/
-
-
-
-
-
-
- .container {
-  /*flex container height, main elements inside it stay this height
-   width: 250rem;
-  height: 100rem;
-  */
-
-  /*top right bottom left - shorthand*/
-  padding: 3rem 5rem;
-  
-  
-  text-align:center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  width: 30 vh;
- 
-  margin: 2rem 4rem;
-  font-family: "EB Garamond", serif;
-  flex: 2; 
-  justify-content: flex-evenly;
-
-font-size: large;
-
-
-}
-
-
-/* fix wrap*/
-div {
-
-
-
-}
-
-
-
-.g-col-5 {
-
-  
- 
-  flex-direction: col;
-
-
-  display: inline-block;
-
-  justify-content: space-evenly;
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-
-
-  
-
-
-}
-
-
-/* flex-box item grow finish*/
-.item {
-  flex-grow: 1;   
-}
-.item-1 {
-  flex-grow: 2;
-}
-
-/* li display: inline-block; */
-
-
-p:hover {
-
-
-
- 
-}  
-
-/* 3d parallax effect on hover */
-img {
-  --f: .1; /* the parallax factor (the smaller the better) */
-  --r: 10px; /* radius */
-  
-  --_f: calc(100%*var(--f)/(1 + var(--f)));
-  --_a: calc(90deg*var(--f));
-  width: 250px; /* the image size */
-  aspect-ratio: calc(1 + var(--f));
-  object-fit: cover;
-  clip-path: inset(0 var(--_f) 0 0 round var(--r));
-  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
-  transition: .5s;
-  cursor: pointer;
-}
-img:hover {
-  clip-path: inset(0 0 0 var(--_f) round var(--r));
-  --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
-}
-
-/* fancy hover effect on avatar 
-img {
-  --s: 280px; /* image size */
-  --b: 5px; /* border thickness */
-  --c: #C02942; /* border color */
-  --f: 1; /* initial scale 
-  
-  width: var(--s);
-  aspect-ratio: 1;
-  padding-top: calc(var(--s)/5);
-  cursor: pointer;
-  border-radius: 0 0 999px 999px;
-  --_g: 50%/calc(100%/var(--f)) 100% no-repeat content-box;
-  --_o: calc((1/var(--f) - 1)*var(--s)/2 - var(--b));
-  outline: var(--b) solid var(--c);
-  outline-offset: var(--_o);
-  background: 
-    radial-gradient(
-      circle closest-side,
-      #ECD078 calc(99% - var(--b)),var(--c) calc(100% - var(--b)) 99%,#0000
-     ) var(--_g);
-  -webkit-mask:
-    linear-gradient(#000 0 0) no-repeat
-     50% calc(1px - var(--_o)) / calc(100%/var(--f) - 2*var(--b) - 2px) 50%,
-    radial-gradient(circle closest-side,#000 99%,#0000) var(--_g);
-  transform: scale(var(--f));
-  transition: .5s;
-}
-img:hover {
-  --f: 1.35; /* hover scale */
-}
-*/
 
 
 
@@ -829,18 +657,47 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Style for all placeholder elements */
-.placeholder {
+div.placeholder {
+
+
   width: 100%;
   height: 150px; /* Default height, adjust as necessary */
-  background-color: hashtag#e0e0e0; /* Light gray background to indicate placeholder */
-  border: 2px dashed hashtag#ccc; /* Dashed border to distinguish placeholder */
+  background-color: rgb(7, 7, 27);
+  border: 2px;
+  border-color: #a6cfc0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
   color: #888;
   margin: 20px 0; /* Space between placeholders */
+
+
+
+    /*flex container height, main elements inside it stay this height
+   width: 250rem;
+  height: 100rem;
+  */
+
+  /*top right bottom left - shorthand*/
+  padding: 3rem 5rem;
+  
+  text-align:center;
+  text-align:center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 30 vh;
+ 
+  justify-content: flex-evenly;
+  font-family: "EB Garamond", serif;
+  flex: 2; 
+  justify-content: flex-evenly;
+
+font-size: large;
+
+
  }
+ 
  
  /* Individual placeholders for specific sections */
 #header-placeholder {
@@ -872,6 +729,9 @@ body::-webkit-scrollbar-thumb {
  #skills-placeholder {
   height: 200px; /* Adjust height for skills section */
   background-color: hashtag#e2e3e5;
+
+  
+
  }
  
  #carousel-placeholder {
@@ -898,3 +758,18 @@ body::-webkit-scrollbar-thumb {
   height: 100px; /* Adjust height for footer */
   background-color: hashtag#dcdcdc;
  }
+
+
+ /*fix*/
+
+ .row {
+  list-style:none;
+  gap: 3rem;
+  color: #a6cfc0;
+
+list-style: none;
+padding: 2rem 2rem;
+margin: 3rem 2rem;
+
+
+}
