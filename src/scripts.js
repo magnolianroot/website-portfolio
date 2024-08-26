@@ -1,9 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-
-
- import { loadHeader, loadNavbar, loadSiteTitle, loadAlert, loadSkills, loadCarousel, loadSpotify, loadAbout, loadContactCard, loadFooter } from './loadContent.js';
-
+ import {loadPlaceholders} from 'import.js';
 
  
 function NavigationBar() {
