@@ -1,74 +1,11 @@
 import { createRoot } from 'react-dom/client';
 
-import //
-
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
-
-// Render your React component instead
-const root = createRoot(document.getElementById('app'));
 
 
-
-/* react */
-const container = document.querySelector('container');i
-div.addEventListener('mouseover', () => {
-  div.style.backgroundColor = 'blue';
-});
-
-// Add a mouseout event listener
-div.addEventListener('mouseover, () => {
-  // Change the button's background color back to its original color
-  div.style.backgroundColor = '';
-});
-
-//ex
-const button = document.querySelector('button');
-const div = document.querySelector('div');
-button.addEventListener('click', () => {
-  div.style.backgroundColor = 'blue';
-});
+ import { loadHeader, loadNavbar, loadSiteTitle, loadAlert, loadSkills, loadCarousel, loadSpotify, loadAbout, loadContactCard, loadFooter } from './loadContent.js';
 
 
-
-<!--
-<script>
-  let d = new Date();
-  alert("Today's date is " + d);
-</script>
--->
-
-
-// <link rel="icon" type="image/png" href="favicon.ico"/> <!--favicon-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 function NavigationBar() {
   // TODO: Actually implement a navigation bar
   return <h1>Hello from React!</h1>;
@@ -78,7 +15,7 @@ const domNode = document.getElementById('navigation');
 const root = createRoot(domNode);
 root.render(<NavigationBar />);
 
-console.log("Hello, World!");
+
 
 // custom alert box fix
 document.getElementById.alertbox("welcome to Victoria's developer portfolio");
@@ -146,19 +83,7 @@ $(document).ready(function() {
 
 
 
-/*
-<!-- Custom scripts
-type="text/javascript">
 
-const navbar = document.getElementById("main-navbar")
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add("navbar-after-scroll")
-  } else {
-    navbar.classList.remove("navbar-after-scroll")
-  }
-})
-*/
 
 const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: '#main-navbar'
@@ -294,27 +219,8 @@ $('myAlert').alert('dispose')
 
 
 
-// $('#myModal').modal(options)
-//alert modal
 
 
-//fix
-alertbox.render({
-  alertIcon: 'success',
-  title: 'Thank You!',
-  message: 'AlertBox Popup Message',
-  btnTitle: 'Ok',
-  themeColor: '#000000',
-  btnColor: '#7CFC00',
-  btnColor: true
-});
-
-
-
-function greet(name) {
-  return "Hello, " + name + "!";
-}
-// integrate this function into site form
 
 
 //scroll function
@@ -323,23 +229,5 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-/*Twitter profile timeline */
-
-twttr.widgets.createTimeline(
-  {
-    sourceType: "profile",
-    screenName: "magnolianroot"
-  },
-  document.getElementById("container")
-);
-
-
-/*navbar togglr */
-  const toggleMenu = document.querySelector(".toggle-menu");
-const navTop = document.querySelector(".nav-top");
-toggleMenu.addEventListener("click", () => {
-  navTop.classList.toggle("is-active");
-});
 
 
